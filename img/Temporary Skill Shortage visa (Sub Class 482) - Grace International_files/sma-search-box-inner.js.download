@@ -1,0 +1,211 @@
+var OccupationCode = 0;
+var AgentUrl = "";
+loadXMLDoc1(getParamsByID());
+
+function getParamsByID() {
+    var scripts = document.getElementById("sma-search-box-js");
+    if (scripts.src.indexOf("/sma-search-box.js") > -1) {
+        var pa = scripts.src.split("?").pop().split("&");
+        var ppa = pa[0].split("key=")[1];
+        return ppa;
+    }
+    return {};
+}
+
+function loadXMLDoc1(key) {
+    var IsLive = true;
+    if (window.location.toString().indexOf("lenovo-piyush") >= 0 || window.location.toString().indexOf("localhost") >= 0 || window.location.toString().indexOf("192.168.4.202") >= 0)
+        IsLive = false;
+    var head = document.getElementsByTagName('head')[0];
+    if (!window.$) {
+        var SMJQ = document.createElement("script");
+        SMJQ.type = "text/javascript";
+        if (IsLive)
+            SMJQ.src = "https://cdn.searchmyanzsco.com.au/js/jquery-3.6.1.min.js?v=2";
+        else
+            SMJQ.src = "http://lenovo-piyush:6262/js/jquery-3.6.1.min.js?v=2";
+        head.appendChild(SMJQ);
+    }
+
+    var SMASBCSS = document.createElement('link');
+    SMASBCSS.rel = 'stylesheet';
+    SMASBCSS.type = 'text/css';
+    if (IsLive) {
+        //SMASBCSS.href = 'https://cdn.searchmyanzsco.com.au/css/sma-search-box.css';
+        SMASBCSS.href = 'https://searchmyanzsco.com.au/js/banner_box/sma-search-box.css?v=10';
+    }
+    else
+        SMASBCSS.href = 'http://lenovo-piyush:6262/js/banner_box/sma-search-box.css?v=3';
+    head.appendChild(SMASBCSS);
+
+    var xmlhttp1 = new XMLHttpRequest();
+    xmlhttp1.onreadystatechange = function () {
+        if (xmlhttp1.readyState == XMLHttpRequest.DONE) {
+            if (xmlhttp1.status == 200) {
+                obj = JSON.parse(xmlhttp1.responseText);
+                obj = JSON.parse(obj.outdata)[0];
+
+                var TextBoxType = "sma-banner-control-rounded";
+                if (obj.searchboxclass != null && obj.searchboxclass != '')
+                    TextBoxType = obj.searchboxclass;
+                var TitleColor = "#000";
+                if (obj.titlecolor != null && obj.titlecolor != '')
+                    TitleColor = obj.titlecolor;
+                var ButtonType = 'sma-banner-btn';
+                if (obj.buttontypeclass != null && obj.buttontypeclass != '')
+                    ButtonType = obj.buttontypeclass;
+                var ButtonColor = '#ff6866';
+                if (obj.buttoncolor != null && obj.buttoncolor != '')
+                    ButtonColor = obj.buttoncolor;
+                var ButtonTextColor = '#fff';
+                if (obj.buttontextcolor != null && obj.buttontextcolor != '')
+                    ButtonTextColor = obj.buttontextcolor;
+                var SMAHTML = '';
+                SMAHTML += '        <div class="' + (obj.showsingleline == false ? "" : "sma-banner-inline") + '"  >';
+                SMAHTML += '            <div class="sma-banner-form-group">';
+                SMAHTML += '                <div class=\"' + obj.titlealignment + ' sma-banner-title\"  style=\"color: ' + TitleColor + ' !important;font-family: \'Open Sans\', \'Arial\', sans-serif !important;\" >Occupation Search</div>';
+                SMAHTML += '                     <div class=\"sma-banner-box\">';
+                SMAHTML += '                             <svg class=\"sma-banner-icon\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 485.213 485.213\" style=\"enable-background:new 0 0 485.213 485.213;\ width:16px; height:16px;" xml:space=\"preserve\">';
+                SMAHTML += '                               <path d=\"M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z\" />';
+                SMAHTML += '                               <path d=\"M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465C318.424,257.208,257.206,318.416,181.956,318.416z\" />';
+                SMAHTML += '                               <path d=\"M75.817,181.955h30.322c0-41.803,34.014-75.814,75.816-75.814V75.816C123.438,75.816,75.817,123.437,75.817,181.955z\" />';
+                SMAHTML += '                             </svg>';
+                SMAHTML += '                             <input class=\"sma-banner-form-control ' + TextBoxType + ' typeahead search__input\" type=\"text\" name=\"search\" id=\"search\" placeholder=\"Type any Occupation\" tabindex=\"1\" autocomplete=\"off\" autocorrect=\"off\" autocapitalize=\"off\">';
+                SMAHTML += '		                     <svg onclick="Clear()" class="sma-banner-clear-search" height="15" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 212.982 212.982" style="enable-background:new 0 0 212.982 212.982;" xml:space="preserve">';
+                SMAHTML += '                               <path style="fill:#999;" d="M131.804,106.491l75.936-75.936c6.99-6.99,6.99-18.323,0-25.312c-6.99-6.99-18.322-6.99-25.312,0l-75.937,75.937L30.554,5.242c-6.99-6.99-18.322-6.99-25.312,0c-6.989,6.99-6.989,18.323,0,25.312l75.937,75.936L5.242,182.427c-6.989,6.99-6.989,18.323,0,25.312c6.99,6.99,18.322,6.99,25.312,0l75.937-75.937l75.937,75.937c6.989,6.99,18.322,6.99,25.312,0c6.99-6.99,6.99-18.322,0-25.312L131.804,106.491z" />';
+                SMAHTML += '                             </svg>';
+                SMAHTML += '                     </div>';
+                SMAHTML += '                     <p class="sma-banner-error" style="display: none;">Please select valid occupation</p>';
+                SMAHTML += '           </div>';
+
+                SMAHTML += '	       <div class="' + obj.buttonalignment + ' sma-banner-action-btn">';
+                SMAHTML += '                     <span class="' + ButtonType + '" style="background: ' + ButtonColor + ' !important; color:' + ButtonTextColor + ' !important;cursor: pointer;" onclick="SearchOccupation();">';
+                SMAHTML += '                          View';
+                SMAHTML += '                          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 24 24" style=" fill:' + ButtonTextColor + '; vertical-align: middle;">';
+                SMAHTML += '                             <path d="M24,12c0-6.627-5.373-12-12-12S0,5.373,0,12c0,6.627,5.373,12,12,12S24,18.627,24,12z M5,11h9.651l-4.276-4.276l1.697-1.697 L19.046,12l-6.974,6.974l-1.697-1.697L14.651,13H5V11z"></path>';
+                SMAHTML += '                          </svg>';
+                SMAHTML += '                     </span>';
+                SMAHTML += '                    <span id="sma-spn-download" class="' + ButtonType + '"  style="background: ' + ButtonColor + ' !important; color:' + ButtonTextColor + ' !important;cursor: pointer;" onclick=\'DownloadPDF("' + obj.logourl + '","","' + obj.domainname + '");\'>';
+                SMAHTML += '                      Download';
+                SMAHTML += '                       <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 26 26" style=" fill:' + ButtonTextColor + '; vertical-align: middle;">';
+                SMAHTML += '                         <path d="M 11 0 C 9.34375 0 8 1.34375 8 3 L 8 11 L 4.75 11 C 3.339844 11 3.042969 11.226563 4.25 12.4375 L 10.84375 19.03125 C 13.042969 21.230469 13.015625 21.238281 15.21875 19.03125 L 21.78125 12.4375 C 22.988281 11.226563 22.585938 11 21.3125 11 L 18 11 L 18 3 C 18 1.34375 16.65625 0 15 0 Z M 0 19 L 0 23 C 0 24.65625 1.34375 26 3 26 L 23 26 C 24.65625 26 26 24.65625 26 23 L 26 19 L 24 19 L 24 23 C 24 23.550781 23.550781 24 23 24 L 3 24 C 2.449219 24 2 23.550781 2 23 L 2 19 Z "></path>';
+                SMAHTML += '                       </svg>';
+                SMAHTML += '                    </span>';
+                SMAHTML += '            </div>';
+                SMAHTML += '      </div>';
+                document.getElementById('div-sma-search-box').innerHTML = SMAHTML;
+
+                var body = document.getElementsByTagName('body')[0];
+
+                var SMSBTH = document.createElement("script");
+                SMSBTH.type = "text/javascript";
+                if (IsLive)
+                    SMSBTH.src = 'https://cdn.searchmyanzsco.com.au/js/bootstrap3-typeahead.min.js';
+                else
+                    SMSBTH.src = 'http://lenovo-piyush:6262/js/banner_box/bootstrap3-typeahead.min.js?v=30';
+                body.appendChild(SMSBTH);
+
+                AgentUrl = obj.whitelabel;
+                setTimeout(function () { FillText(); }, 500);
+
+            }
+        }
+    };
+    //xmlhttp1.open("GET", "https://afpapi.kondesk.com/api/AuthBanner?enccode=" + key + "&trackingurl=konze.com", true);
+    xmlhttp1.open("GET", "https://afpapi.searchmyanzsco.com.au/api/AuthBanner?enccode=" + key + "&trackingurl=" + window.location.href, true);
+    xmlhttp1.send();
+}
+function Clear() {
+    document.getElementById("search").value = "";
+    //$(".typeahead").focus();
+    $(".sma-banner-wrap .dropdown-menu").hide();
+    $('.sma-banner-error').hide();
+}
+
+function FillText() {
+    $.ajax({
+        crossdomain: true,
+        type: 'get',
+        data: JSON.stringify({ _keywords: "" }),
+        datatype: 'json',
+        contentlength: 0,
+        crossdomain: true,
+        url: 'https://api.searchmyanzsco.com.au/api/get_occupation_list',
+        success: function (data) {
+            data = JSON.parse(data);
+            for (var i = 0; i < data.recordsets[0].length; i++) {
+                data.recordsets[0][i].name = data.recordsets[0][i].id + " " + data.recordsets[0][i].name;
+            }
+            $('input.typeahead').typeahead({
+                source: data.recordsets[0],
+                autoselect: true
+            });
+        },
+        error: function (error) {
+            alert("x002 - Olist" + error);
+        }
+    });
+
+    var $input = $(".typeahead");
+    $input.change(function () {
+        if ($input.val().split(' ')[0] != "" && $input.val().split(' ')[0].length == 6 && !isNaN($input.val().split(' ')[0])) {
+            OccupationCode = $input.val().split(' ')[0];
+            $('.sma-banner-error').hide();
+        }
+    });
+}
+function SearchOccupation() {
+    var $input = $(".typeahead");
+    if ($input.val().split(' ')[0] != "" && $input.val().split(' ')[0].length == 6 && !isNaN($input.val().split(' ')[0]) && OccupationCode > 0)
+        window.open(AgentUrl + "/?oc=" + OccupationCode);
+    else {
+        //$input.focus();
+        $('.sma-banner-error').show();
+    }
+}
+
+function DownloadPDF(CompanyLogo, PDFHeader, domainname) {
+    $('#sma-spn-download').attr('disabled', true);
+    document.getElementById("sma-spn-download").style.cursor = "wait";
+
+    var $input = $(".typeahead");
+    if ($input.val().split(' ')[0] != "" && $input.val().split(' ')[0].length == 6 && !isNaN($input.val().split(' ')[0]) && OccupationCode > 0) {
+        var PDFUrl = "https://pdf.searchmyanzsco.com.au/index.aspx?search_id=" + OccupationCode + "&file=test&logo=" + CompanyLogo + "&pdfheader=" + PDFHeader + "&agenturl=" + domainname;
+        $.ajax({
+            crossdomain: true,
+            type: 'get',
+            data: JSON.stringify({ _keywords: "" }),
+            datatype: 'json',
+            contentlength: 0,
+            crossdomain: true,
+            url: PDFUrl,
+            success: function (data) {
+                $('#sma-spn-download').attr('disabled', false);
+                document.getElementById("sma-spn-download").style.cursor = "pointer";
+                data = JSON.parse(data);
+                openTab(data.FileUrl);
+            },
+            error: function (error) {
+                alert("x003 - download" + error);
+            }
+        });
+    }
+    else {
+        //$input.focus();
+        $('.sma-banner-error').show();
+        $('#sma-spn-download').attr('disabled', false);
+        document.getElementById("sma-spn-download").style.cursor = "pointer";
+    }
+}
+
+function openTab(url) {
+    // Create link in memory
+    var a = window.document.createElement("a");
+    a.target = '_blank';
+    a.href = url;
+
+    // Dispatch fake click
+    var e = window.document.createEvent("MouseEvents");
+    e.initMouseEvent("click", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+    a.dispatchEvent(e);
+};
