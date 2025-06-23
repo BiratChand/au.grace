@@ -3,6 +3,7 @@ $pageTitle = "Grace International";
 $currentPage = "index";
 include 'header.php';
 include 'navbar.php';
+include 'database.php';
 ?>
 <!-- Page Specific Content Starts Here -->
 <!-- Carousel Start -->
