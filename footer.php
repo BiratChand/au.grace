@@ -21,10 +21,68 @@
             <!-- Contact Section -->
             <div class="col-md-4">
                 <h4 class="footer-title">Contact Us</h4>
+                <h4 class="footer-title" style="color: white;">NEPAL OFFICE</h4>
                 <p class="footer-text">
-                    <i class="fas fa-map-marker-alt"></i> 123 Grace Street, City, Country<br>
-                    <i class="fas fa-phone-alt"></i> +123 456 7890<br>
-                    <i class="fas fa-envelope"></i> info@graceinternational.com
+                    Address: Buddhanagar, Nearby Himalayan Ayurved Medical Science College<br>
+                    Phone Number: 977 01 5913321/20<br>
+                    Hotline Number: +977 9849194949<br>
+                    Email: reception.buddhanagar@grace.edu.<br><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-title" style="color: white;">AUSTRALIA OFFICE</h4>
+                <p class="footer-text">
+                    Address: Suite 1508, Level 15, 97-99 Bathurst Street, Sydney, NSW 2000<br>
+                    Phone Number: +61 (02) 9286 3447<br>
+                    Email: sydney@graceintlgroup.com<br><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-title" style="color: white;">KENYA OFFICE</h4>
+                <p class="footer-text">
+                    Address: Kenya Office Eldoret, 301/2nd Floor, Stow-burg Plaza Oginga Odinga Street – Eldoret<br>
+                    Phone Number: +254 716361048<br>
+                    Email: eldoret@graceintlgroup.com<br><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-title" style="color: white;">INDIA OFFICE</h4>
+                <p class="footer-text">
+                    Address: Office No. 505, 6th Floor, Westend Mall, Near District Centre, Janak Puri (West), New Delhi, 110058, India<br>
+                    Phone Number: +91 (11) 45542231<br>
+                    Email: india@graceintlgroup.com<br><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-title" style="color: white;">PAKISTAN OFFICE</h4>
+                <p class="footer-text">
+                    Address: F-8 Markaz, Al Babar Center Level 1 Islamabad, Pakistan<br>
+                    Phone Number: +92 (335) 5441602<br>
+                    Email: pakistan@graceintlgroup.com<br><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-title" style="color: white;">BANGLADESH OFFICE</h4>
+                <p class="footer-text">
+                    Address: Abdul Hamid Road, Kadamtoli, Sylhet, (1st Floor), Humayun Rashid Chattar<br>
+                    Phone Number: +8801733791725, +61469884800<br>
+                    Email: director.bangladesh@graceintlgroup.com<br><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-title" style="color: white;">INDONESIA OFFICE</h4>
+                <p class="footer-text">
+                    Address: Menara BCA Level 45 & 50, JI. MH Thamrin No. 1, Menteng, Jakarta- 10310, Indonesia<br>
+                    Phone Number: (+62) 87850020074<br>
+                    Email: director.indonesia@graceintlgroup.com<br><br>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4 class="footer-title" style="color: white;">DUBAI OFFICE</h4>
+                <p class="footer-text">
+                    Address: PO Box 33256, Office S02 Bin Hareb Building AI Mararr Dubai 33256<br>
+                    Phone Number: +971 45548034, +971 523110230<br>
+                    Email: dubai@graceintlgroup.com<br><br>
                 </p>
             </div>
         </div>
