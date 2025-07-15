@@ -31,6 +31,15 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Header Styles -->
+    <link href="css/header-styles.css" rel="stylesheet">
+
+    <script>
+        window.onload = function() {
+            document.getElementById('spinner').classList.remove('show');
+        }
+    </script>
 </head>
 
 <body>
@@ -48,7 +57,7 @@
     <!-- Topbar Start -->
     <div class="container-fluid topbar px-0 d-none d-lg-block">
         <div class="container px-0">
-            <div class="row gx-0 align-items-center" style="height: 45px;">
+            <div class="row gx-0 align-items-center">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
                         <a href="#" class="text-white me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find
@@ -61,14 +70,10 @@
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
-                                class="fab fa-facebook-f text-dark"></i></a>
-                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
-                                class="fab fa-twitter text-white"></i></a>
-                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i
-                                class="fab fa-instagram text-white"></i></a>
-                        <a href="#" class="btn btn-primary btn-square rounded-circle nav-fill me-0"><i
-                                class="fab fa-linkedin-in text-white"></i></a>
+                        <a href="#" class="btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>
@@ -79,11 +84,8 @@
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid sticky-top px-0">
-        <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
-        </div>
-        <div class="container px-0">
-            <!-- The <nav> element will be in navbar.php -->
-            <!-- End of content for header.php before navbar -->
+        <!-- The <nav> element will be in navbar.php -->
+        <!-- End of content for header.php before navbar -->
 
     <!-- Modal Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

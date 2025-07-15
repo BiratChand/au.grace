@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "What Does a Financial Advisor Do?",
+    "answer": "A financial advisor provides guidance to clients on various financial matters including investments, insurance, retirement planning, tax strategies, and estate planning. They help assess your financial situation, understand your goals, and develop personalized strategies to achieve those objectives."
+  },
+  {
+    "id": 2,
+    "question": "What industries do you specialize in?",
+    "answer": "We specialize in providing migration services across multiple industries including education, healthcare, IT, engineering, business, and trades. Our expertise spans student visas, skilled migration, business visas, partner visas, and more, with a deep understanding of each industry's specific requirements and pathways."
+  },
+  {
+    "id": 3,
+    "question": "Can you guarantee for growth?",
+    "answer": "While we can't promise specific outcomes as migration policies can change, we guarantee our complete commitment to delivering expert guidance based on current legislation. Our track record demonstrates consistent success in helping clients achieve their migration goals through personalized strategies and thorough application preparation."
+  },
+  {
+    "id": 4,
+    "question": "What makes your business plans so special?",
+    "answer": "Our business plans stand out because they're tailored specifically to your unique circumstances and goals. We combine industry expertise with up-to-date knowledge of migration requirements to create comprehensive, compliant plans that maximize your chances of success. Each plan undergoes rigorous review by our experienced team."
+  },
+  {
+    "id": 5,
+    "question": "How long does the visa application process take?",
+    "answer": "Processing times vary significantly depending on the visa type, your individual circumstances, and current department workloads. Student visas typically take 4-8 weeks, while some skilled migration visas may take 6-18 months. During your consultation, we'll provide current estimated timeframes specific to your situation."
+  },
+  {
+    "id": 6,
+    "question": "What services do you provide for international students?",
+    "answer": "We offer comprehensive services for international students including course selection, university/college applications, student visa applications, accommodation assistance, health insurance arrangement, pre-departure briefings, and ongoing support throughout your study journey in Australia."
+  }
+] 

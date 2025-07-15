@@ -63,54 +63,47 @@ include 'database.php';
 <!-- Carousel End -->
 
 
-<!-- About Start -->
-<div class="container-fluid about bg-light py-5">
+<!-- Modern Welcome Section Start -->
+<div class="container-fluid py-5 glossy-bg">
     <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="about-img">
-                    <img src="img/Aus.png" class="img-fluid w-100 rounded-top bg-white" alt="Image">
+        <div class="row align-items-center">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="glossy-card p-3" style="position: relative;">
+                    <img src="img/Aus.png" class="img-fluid rounded-4" alt="Australia Map">
+                    <div class="position-absolute" style="bottom: -20px; right: -20px; z-index: -1; width: 150px; height: 150px; border-radius: 50%; background: rgba(0, 123, 255, 0.1);"></div>
+                    <div class="position-absolute" style="top: -20px; left: -20px; z-index: -1; width: 120px; height: 120px; border-radius: 50%; background: rgba(0, 123, 255, 0.05);"></div>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
-                <h4 class="text-primary"></h4>
-                <h1 class="display-5 mb-4">Welcome to
-                    Grace International Melbourne</h1>
-                <h4 class="text ps-4 mb-4">Where we connect life & learning.</h4>
-                <div class="row g-4 text-center align-items-center justify-content-center">
-                    <div class="col-sm-4">
-                        <div class="bg-primary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <span class="counter-value fs-1 fw-bold text-dark"
-                                    data-toggle="counter-up">26</span>
-                                <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">K+</h4>
-                            </div>
-                            <div class="w-100 d-flex align-items-center justify-content-center">
-                                <p class="text-white mb-0">STUDENTS</p>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="ms-lg-4">
+                    <h1 class="display-5 mb-4 gradient-text">Welcome to Grace International Melbourne</h1>
+                    <h4 class="text-dark opacity-75 mb-4 fw-light">Where we connect life & learning.</h4>
+                    
+                    <div class="row g-4">
+                        <div class="col-sm-4">
+                            <div class="stat-card p-4 text-center h-100">
+                                <div class="mb-2">
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up">26</span>
+                                    <span class="display-5 fw-bold text-primary">K+</span>
+                                </div>
+                                <p class="mb-0 text-dark fw-medium">STUDENTS</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="bg-primary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <span class="counter-value fs-1 fw-bold text-dark"
-                                    data-toggle="counter-up">500</span>
-                                <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">+</h4>
-                            </div>
-                            <div class="w-100 d-flex align-items-center justify-content-center">
-                                <p class="text-white mb-0">EDUCATION PARTNERS</p>
+                        <div class="col-sm-4">
+                            <div class="stat-card p-4 text-center h-100">
+                                <div class="mb-2">
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up">500</span>
+                                    <span class="display-5 fw-bold text-primary">+</span>
+                                </div>
+                                <p class="mb-0 text-dark fw-medium">EDUCATION PARTNERS</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="bg-primary rounded p-4">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <span class="counter-value fs-1 fw-bold text-dark"
-                                    data-toggle="counter-up">18</span>
-                                <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;"></h4>
-                            </div>
-                            <div class="w-100 d-flex align-items-center justify-content-center">
-                                <p class="text-white mb-0">YEARS</p>
+                        <div class="col-sm-4">
+                            <div class="stat-card p-4 text-center h-100">
+                                <div class="mb-2">
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up">18</span>
+                                </div>
+                                <p class="mb-0 text-dark fw-medium">YEARS</p>
                             </div>
                         </div>
                     </div>
@@ -119,7 +112,7 @@ include 'database.php';
         </div>
     </div>
 </div>
-<!-- About End -->
+<!-- Modern Welcome Section End -->
 
 
 <!-- Services Start -->
@@ -343,129 +336,43 @@ include 'database.php';
 
 
 <!-- Team Start -->
-<div class="container-fluid team pb-5">
-    <div class="container pb-5">
+<div class="container-fluid team py-5">
+    <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
             <h4 class="text-primary">Our Team</h4>
             <h1 class="display-4">Our Grace International Dedicated Team Member</h1>
+            <a href="team.php" class="btn btn-primary rounded-pill py-2 px-4">View All Team Members</a>
         </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Pawan-Thapaliya-600x428.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
+        <div class="row g-4">
+            <?php
+            include 'includes/team_data.php';
+            $teamMembers = getTeamMembers();
+            $delay = 0.1;
+
+            $teamMembers = array_slice($teamMembers, 0, 4);
+            
+            foreach ($teamMembers as $member) {
+                echo '<div class="col-lg-6 col-xl-3 mb-4 wow fadeInUp" data-wow-delay="' . $delay . 's">
+                    <div class="card team-card h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="' . $member['image'] . '" class="card-img-top" alt="' . $member['name'] . '">
+                            <div class="team-social">
+                                <a href="' . $member['social']['linkedin'] . '" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="' . $member['social']['facebook'] . '" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="' . $member['social']['twitter'] . '" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Pawan Thapaliya</h4>
-                            <h6 class="text-white">MARN: 1466008</h6>
-                            <p class="text-muted mb-0">Pawan, our principal migration agent, leads Grace
-                                International’s Melbourne team. Registered since 2014, he excels in time
-                                management, team leadership, and delivering exceptional migration services
-                                with expertise and dedication.</p>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">' . $member['name'] . '</h4>
+                            <span class="team-position">' . $member['position'] . '</span>
+                            <div class="marn-badge">MARN: ' . $member['marn'] . '</div>
+                            <p class="card-text">' . $member['description'] . '</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Viola-Rong-600x428.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Viola Rong</h4>
-                            <h6 class="text-white">MARN: 1801289</h6>
-                            <p class="text-muted mb-0">Certified migration agent since 2018 Viola has been
-                                working in visa and migration for almost seven years. She has an eye for
-                                detail and has excellent communication and interpersonal skills.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Simrita-Ranjitkar-1.png" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Simrita Kanjitkar</h4>
-                            <h6 class="text-white">MARN: 1798972</h6>
-                            <p class="text-muted mb-0">Simrita, a highly focused and reliable registered
-                                migration agent since 2017, works at Grace International’s Sydney office.
-                                A team player with exceptional communication, she embraces challenges to
-                                support clients effectively.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/Sirat-Teji-400x400.jpeg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Sirat Teji</h4>
-                            <h6 class="text-white">MARN: 22717800</h6>
-                            <p class="text-muted mb-0">Sirat Teji, a skilled Registered Migration Agent at Grace
-                                International Sydney, specializes in Australian Migration Law, offering tailored
-                                solutions for General Skilled Migration, Partner, Student, and Temporary
-                                Graduate
-                                visas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div>';
+                $delay += 0.2;
+            }
+            ?>
         </div>
     </div>
 </div>
@@ -564,119 +471,10 @@ include 'database.php';
 
 
 <!-- FAQ Start -->
-<div class="container-fluid faq py-5">
-    <div class="container py-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="pb-5">
-                    <h4 class="text-primary">FAQs</h4>
-                    <h1 class="display-4">Get the Answers to Common Questions</h1>
-                </div>
-                <div class="accordion bg-light rounded p-4" id="accordionExample">
-                    <div class="accordion-item border-0 mb-4">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseTOne">
-                                What Does a Financial Advisor Do?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body my-2">
-                                <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                                    nemo impedit,
-                                    sapiente quis illo quia nulla atque maxime fuga minima ipsa
-                                    quae cum
-                                    consequatur, sit, delectus exercitationem odit officiis
-                                    maiores! Neque, quidem
-                                    corrupti modi architecto eos saepe incidunt dignissimos
-                                    rerum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-0 mb-4">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                What industries do you specialize in?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body my-2">
-                                <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                                    nemo impedit,
-                                    sapiente quis illo quia nulla atque maxime fuga minima ipsa
-                                    quae cum
-                                    consequatur, sit, delectus exercitationem odit officiis
-                                    maiores! Neque, quidem
-                                    corrupti modi architecto eos saepe incidunt dignissimos
-                                    rerum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-0 mb-4">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                Can you guarantee for growth?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body my-2">
-                                <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                                    nemo impedit,
-                                    sapiente quis illo quia nulla atque maxime fuga minima ipsa
-                                    quae cum
-                                    consequatur, sit, delectus exercitationem odit officiis
-                                    maiores! Neque, quidem
-                                    corrupti modi architecto eos saepe incidunt dignissimos
-                                    rerum.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item border-0 mb-0">
-                        <h2 class="accordion-header" id="headingFour">
-                            <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                aria-expanded="false" aria-controls="collapseFour">
-                                What makes your business plans so special?
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body my-2">
-                                <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                                    nemo impedit,
-                                    sapiente quis illo quia nulla atque maxime fuga minima ipsa
-                                    quae cum
-                                    consequatur, sit, delectus exercitationem odit officiis
-                                    maiores! Neque, quidem
-                                    corrupti modi architecto eos saepe incidunt dignissimos
-                                    rerum.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
-                <div class="faq-img RotateMoveRight rounded">
-                    <img src="img/faq-img.jpg" class="img-fluid rounded w-100" alt="Image">
-                    <a class="faq-btn btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read
-                        More Q & A <i class="fas fa-arrow-right ms-2"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+include 'includes/faq_handler.php';
+echoFAQs(['limit' => 4]);
+?>
 <!-- FAQ End -->
 
 <!-- form start -->

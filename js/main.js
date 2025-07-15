@@ -16,16 +16,47 @@
     new WOW().init();
 
 
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(window).width() > 992) {
-            if ($(this).scrollTop() > 45) {
-                $('.sticky-top .container').addClass('shadow-sm').css('max-width', '100%');
-            } else {
-                $('.sticky-top .container').removeClass('shadow-sm').css('max-width', $('.topbar .container').width());
-            }
-        } else {
-            $('.sticky-top .container').addClass('shadow-sm').css('max-width', '100%');
+    // Navbar - simplified container sizing
+    $(document).ready(function() {
+        // No need to set container width manually since we're using standard Bootstrap container widths
+        
+        // Handle dropdown menu behavior for better UX
+        if ($(window).width() > 1200) {
+            $('.navbar .nav-item.dropdown').hover(
+                function() {
+                    $(this).find('.dropdown-menu').stop(true, true).fadeIn(200);
+                },
+                function() {
+                    $(this).find('.dropdown-menu').stop(true, true).fadeOut(200);
+                }
+            );
+        }
+        
+        // Form validation and AJAX submission
+        if ($('.contact-form form').length) {
+            $('.contact-form form').on('submit', function(e) {
+                // Form validation will be handled by PHP, this is just for the AJAX part
+                
+                // Show feedback to user
+                const formMessage = function(type, message) {
+                    const alertClass = type === 'success' ? 'alert-success' : 'alert-danger';
+                    const iconClass = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
+                    const title = type === 'success' ? 'Success!' : 'Error!';
+                    
+                    return `<div class="alert ${alertClass} alert-dismissible fade show">
+                        <h5><i class="fas ${iconClass} me-2"></i> ${title}</h5>
+                        <p class="mb-0">${message}</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>`;
+                };
+                
+                // Scroll to top of form for better UX
+                const scrollToForm = function() {
+                    $('html, body').animate({
+                        scrollTop: $('.contact-form').offset().top - 100
+                    }, 400);
+                };
+            });
         }
     });
 

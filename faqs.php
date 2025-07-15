@@ -29,82 +29,32 @@ include 'navbar.php';
                         <h1 class="display-4">Get the Answers to Common Questions</h1>
                     </div>
                     <div class="accordion bg-light rounded p-4" id="accordionExample">
-                        <div class="accordion-item border-0 mb-4">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseTOne">
-                                    What Does a Financial Advisor Do?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body my-2">
-                                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit,
-                                        sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum
-                                        consequatur, sit, delectus exercitationem odit officiis maiores! Neque, quidem
-                                        corrupti modi architecto eos saepe incidunt dignissimos rerum.</p>
+                        <?php
+                        include 'includes/faq_data.php';
+                        $faqs = getFAQs();
+                        
+                        foreach($faqs as $index => $faq) {
+                            $collapseId = 'collapse' . $faq['id'];
+                            $headingId = 'heading' . $faq['id'];
+                            $isFirst = $index === 0;
+                            
+                            echo '<div class="accordion-item border-0 mb-4">
+                                <h2 class="accordion-header" id="' . $headingId . '">
+                                    <button class="accordion-button ' . (!$isFirst ? 'collapsed' : '') . ' text-dark fs-5 fw-bold rounded-top" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="' . ($isFirst ? 'true' : 'false') . '"
+                                        aria-controls="' . $collapseId . '">
+                                        ' . $faq['question'] . '
+                                    </button>
+                                </h2>
+                                <div id="' . $collapseId . '" class="accordion-collapse collapse ' . ($isFirst ? 'show' : '') . '" aria-labelledby="' . $headingId . '"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <p>' . $faq['answer'] . '</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-4">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    What industries do you specialize in?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body my-2">
-                                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit,
-                                        sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum
-                                        consequatur, sit, delectus exercitationem odit officiis maiores! Neque, quidem
-                                        corrupti modi architecto eos saepe incidunt dignissimos rerum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-4">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Can you guarantee for growth?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body my-2">
-                                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit,
-                                        sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum
-                                        consequatur, sit, delectus exercitationem odit officiis maiores! Neque, quidem
-                                        corrupti modi architecto eos saepe incidunt dignissimos rerum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item border-0 mb-0">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top"
-                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour">
-                                    What makes your business plans so special?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body my-2">
-                                    <h5>Dolor sit amet consectetur adipisicing elit.</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo impedit,
-                                        sapiente quis illo quia nulla atque maxime fuga minima ipsa quae cum
-                                        consequatur, sit, delectus exercitationem odit officiis maiores! Neque, quidem
-                                        corrupti modi architecto eos saepe incidunt dignissimos rerum.</p>
-                                </div>
-                            </div>
-                        </div>
+                            </div>';
+                        }
+                        ?>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
