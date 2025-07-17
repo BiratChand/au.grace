@@ -8,57 +8,51 @@ include 'database.php';
 <!-- Page Specific Content Starts Here -->
 <!-- Carousel Start -->
 <div class="header-carousel owl-carousel">
-    <div class="header-carousel-item">
-        <div class="header-carousel-item-img-1">
-            <img src="img/Melbourne.jpg" class="img-fluid w-100" alt="Image">
+    <?php
+    // Location handler is already included in header.php
+    
+    // Get sliders for current city
+    $sliders = getCitySliders();
+    
+    // Loop through sliders
+    foreach ($sliders as $index => $slider) {
+        $position = isset($slider['position']) ? $slider['position'] : 'center';
+        $alignClass = '';
+        
+        if ($position == 'start') {
+            $alignClass = 'text-start';
+        } elseif ($position == 'end') {
+            $alignClass = 'text-end';
+        } else {
+            $alignClass = 'text-center';
+        }
+        
+        $imgClass = "header-carousel-item-img-" . ($index + 1);
+    ?>
+    <div class="header-carousel-item <?php echo ($position == 'center') ? 'mx-auto' : ''; ?>">
+        <div class="<?php echo $imgClass; ?>">
+            <img src="<?php echo $slider['image']; ?>" class="img-fluid w-100" alt="Image">
         </div>
-
         <div class="carousel-caption">
-            <div class="carousel-caption-inner text-start p-3">
+            <div class="carousel-caption-inner <?php echo $alignClass; ?> p-3">
                 <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated"
-                    data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">STUDY|WORK|MIGRATE
+                    data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;"><?php echo $slider['title']; ?>
                 </h1>
                 <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s"
-                    style="animation-delay: 1.5s; color:white ">in Australia
+                    style="animation-delay: 1.5s; color:white "><?php echo $slider['subtitle']; ?>
                 </p>
                 <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated"
-                    data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" style="background-color: #198754;" href="form1.php">Apply
+                    data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="form1.php">Apply
                     Now</a>
                 <a class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated"
                     data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="migration.php">Read
                     More</a>
-
             </div>
         </div>
     </div>
-    <div class="header-carousel-item mx-auto">
-        <div class="header-carousel-item-img-2">
-            <img src="img/passports.jpg" class="img-fluid w-100" alt="Image">
-        </div>
-        <div class="carousel-caption">
-            <div class="carousel-caption-inner text-center p-3">
-                <h1 class="display-1 text-capitalize text-white mb-4">STUDY|WORK|MIGRATE</h1>
-                <p class="mb-5 fs-5" style="color:white">in Australia
-                </p>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" style="background-color: #198754;" href="form1.php">Apply Now</a>
-                <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="migration.php">Read More</a>
-            </div>
-        </div>
-    </div>
-    <div class="header-carousel-item">
-        <div class="header-carousel-item-img-3">
-            <img src="img/world-map.jpg" class="img-fluid w-100" alt="Image">
-        </div>
-        <div class="carousel-caption">
-            <div class="carousel-caption-inner text-end p-3">
-                <h1 class="display-1 text-capitalize text-white mb-4">STUDY|WORK|MIGRATE</h1>
-                <p class="mb-5 fs-5" style="color:white">in Australia
-                </p>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" style="background-color: #198754;" href="form1.php">Apply Now</a>
-                <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="migration.php">Read More</a>
-            </div>
-        </div>
-    </div>
+    <?php
+    }
+    ?>
 </div>
 <!-- Carousel End -->
 
@@ -75,16 +69,35 @@ include 'database.php';
                 </div>
             </div>
             <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+                <?php
+                // Location handler is already included in header.php
+                
+                // Get welcome content for current city
+                $welcome = getCityWelcome();
+                $title = isset($welcome['title']) ? $welcome['title'] : 'Welcome to Grace International';
+                $subtitle = isset($welcome['subtitle']) ? $welcome['subtitle'] : 'Where we connect life & learning.';
+                $stats = isset($welcome['stats']) ? $welcome['stats'] : [
+                    'students' => '26K+',
+                    'partners' => '500+',
+                    'years' => '18'
+                ];
+                ?>
                 <div class="ms-lg-4">
-                    <h1 class="display-5 mb-4 gradient-text">Welcome to Grace International Melbourne</h1>
-                    <h4 class="text-dark opacity-75 mb-4 fw-light">Where we connect life & learning.</h4>
+                    <h1 class="display-5 mb-4 gradient-text"><?php echo $title; ?></h1>
+                    <h4 class="text-dark opacity-75 mb-4 fw-light"><?php echo $subtitle; ?></h4>
                     
                     <div class="row g-4">
                         <div class="col-sm-4">
                             <div class="stat-card p-4 text-center h-100">
                                 <div class="mb-2">
-                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up">26</span>
-                                    <span class="display-5 fw-bold text-primary">K+</span>
+                                    <?php
+                                    // Parse the students value to separate number and suffix
+                                    preg_match('/^(\d+)(.*)$/', $stats['students'], $matches);
+                                    $studentNum = isset($matches[1]) ? $matches[1] : '26';
+                                    $studentSuffix = isset($matches[2]) ? $matches[2] : 'K+';
+                                    ?>
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up"><?php echo $studentNum; ?></span>
+                                    <span class="display-5 fw-bold text-primary"><?php echo $studentSuffix; ?></span>
                                 </div>
                                 <p class="mb-0 text-dark fw-medium">STUDENTS</p>
                             </div>
@@ -92,8 +105,14 @@ include 'database.php';
                         <div class="col-sm-4">
                             <div class="stat-card p-4 text-center h-100">
                                 <div class="mb-2">
-                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up">500</span>
-                                    <span class="display-5 fw-bold text-primary">+</span>
+                                    <?php
+                                    // Parse the partners value to separate number and suffix
+                                    preg_match('/^(\d+)(.*)$/', $stats['partners'], $matches);
+                                    $partnersNum = isset($matches[1]) ? $matches[1] : '500';
+                                    $partnersSuffix = isset($matches[2]) ? $matches[2] : '+';
+                                    ?>
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up"><?php echo $partnersNum; ?></span>
+                                    <span class="display-5 fw-bold text-primary"><?php echo $partnersSuffix; ?></span>
                                 </div>
                                 <p class="mb-0 text-dark fw-medium">EDUCATION PARTNERS</p>
                             </div>
@@ -101,7 +120,7 @@ include 'database.php';
                         <div class="col-sm-4">
                             <div class="stat-card p-4 text-center h-100">
                                 <div class="mb-2">
-                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up">18</span>
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up"><?php echo $stats['years']; ?></span>
                                 </div>
                                 <p class="mb-0 text-dark fw-medium">YEARS</p>
                             </div>

@@ -1,3 +1,9 @@
+<?php
+// Start session at the very beginning before any output
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,6 +46,11 @@
             document.getElementById('spinner').classList.remove('show');
         }
     </script>
+    
+    <?php
+    // Pre-load location handler to avoid headers already sent issues
+    include_once 'includes/location_handler.php';
+    ?>
 </head>
 
 <body>
@@ -55,17 +66,19 @@
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 d-none d-lg-block">
+    <div class="container-fluid topbar px-0 d-none d-lg-block" style="position: relative; z-index: 1000;">
         <div class="container px-0">
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <a href="#" class="text-white me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find
-                            A Location</a>
-                        <a href="#" class="text-white me-4"><i
+                        <?php 
+                        // Display city selector (location_handler.php already included in header)
+                        echo generateCitySelectorHtml(); 
+                        ?>
+                        <a href="#" class="text-white ms-4 me-4"><i
                                 class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
                         <a href="#" class="text-white me-0"><i
-                                class="fas fa-envelope text-primary me-2"></i>Grace@graceintlgroup.com</a>
+                                class="fas fa-envelope text-primary me-2"></i>grace@graceintlgroup.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
@@ -83,9 +96,9 @@
 
 
     <!-- Navbar & Hero Start -->
-    <div class="container-fluid sticky-top px-0">
-        <!-- The <nav> element will be in navbar.php -->
-        <!-- End of content for header.php before navbar -->
+    <div class="container-fluid sticky-top px-0" style="z-index: 1;">
+            <!-- The <nav> element will be in navbar.php -->
+            <!-- End of content for header.php before navbar -->
 
     <!-- Modal Search Start -->
     <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

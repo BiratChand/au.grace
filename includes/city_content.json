@@ -1,0 +1,312 @@
+{
+  "SYDNEY": {
+    "sliders": [
+      {
+        "image": "img/carousel-1.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Sydney, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Sydney, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Sydney, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Sydney",
+      "subtitle": "Where dreams meet opportunities in the Harbor City.",
+      "stats": {
+        "students": "12K+",
+        "partners": "300+",
+        "years": "15"
+      }
+    }
+  },
+  "MELBOURNE": {
+    "sliders": [
+      {
+        "image": "img/Melbourne.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Melbourne, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Melbourne, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Melbourne, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Melbourne",
+      "subtitle": "Where we connect life & learning in the cultural capital.",
+      "stats": {
+        "students": "26K+",
+        "partners": "500+",
+        "years": "18"
+      }
+    }
+  },
+  "ADELAIDE": {
+    "sliders": [
+      {
+        "image": "img/carousel-3.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Adelaide, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Adelaide, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Adelaide, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Adelaide",
+      "subtitle": "Your gateway to education in the Festival City.",
+      "stats": {
+        "students": "8K+",
+        "partners": "150+",
+        "years": "10"
+      }
+    }
+  },
+  "BRISBANE": {
+    "sliders": [
+      {
+        "image": "img/carousel-2.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Brisbane, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Brisbane, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Brisbane, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Brisbane",
+      "subtitle": "Your education partner in the Sunshine State.",
+      "stats": {
+        "students": "15K+",
+        "partners": "250+",
+        "years": "12"
+      }
+    }
+  },
+  "CANBERRA": {
+    "sliders": [
+      {
+        "image": "img/carousel-1.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Canberra, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Canberra, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Canberra, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Canberra",
+      "subtitle": "Excellence in education at the nation's capital.",
+      "stats": {
+        "students": "7K+",
+        "partners": "120+",
+        "years": "9"
+      }
+    }
+  },
+  "DANDENONG": {
+    "sliders": [
+      {
+        "image": "img/carousel-2.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Dandenong, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Dandenong, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Dandenong, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Dandenong",
+      "subtitle": "Your multicultural education hub in Melbourne's southeast.",
+      "stats": {
+        "students": "5K+",
+        "partners": "100+",
+        "years": "8"
+      }
+    }
+  },
+  "GLENROY": {
+    "sliders": [
+      {
+        "image": "img/Glenroy-Office-2.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Glenroy, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Glenroy, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Glenroy, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Glenroy",
+      "subtitle": "Your local education partner in Melbourne's north.",
+      "stats": {
+        "students": "4K+",
+        "partners": "80+",
+        "years": "7"
+      }
+    }
+  },
+  "HOBART": {
+    "sliders": [
+      {
+        "image": "img/carousel-3.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Hobart, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Hobart, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Hobart, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Hobart",
+      "subtitle": "Your education gateway in Tasmania's capital.",
+      "stats": {
+        "students": "3K+",
+        "partners": "60+",
+        "years": "6"
+      }
+    }
+  },
+  "PERTH": {
+    "sliders": [
+      {
+        "image": "img/carousel-1.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Perth, Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Perth, Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Perth, Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International Perth",
+      "subtitle": "Your education partner on Australia's western shore.",
+      "stats": {
+        "students": "10K+",
+        "partners": "200+",
+        "years": "11"
+      }
+    }
+  },
+  "DEFAULT": {
+    "sliders": [
+      {
+        "image": "img/Melbourne.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Australia",
+        "position": "start"
+      },
+      {
+        "image": "img/passports.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Australia",
+        "position": "center"
+      },
+      {
+        "image": "img/world-map.jpg",
+        "title": "STUDY|WORK|MIGRATE",
+        "subtitle": "in Australia",
+        "position": "end"
+      }
+    ],
+    "welcome": {
+      "title": "Welcome to Grace International",
+      "subtitle": "Where we connect life & learning.",
+      "stats": {
+        "students": "26K+",
+        "partners": "500+",
+        "years": "18"
+      }
+    }
+  }
+} 

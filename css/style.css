@@ -2440,3 +2440,64 @@ a:hover {
         font-size: 60px;
     }
 }
+
+/* City Selector Styles */
+.city-selector .btn {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.city-selector .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.city-selector .dropdown-menu {
+    min-width: 180px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 8px 0;
+    margin-top: 8px;
+    background: #fff;
+}
+
+.city-selector .dropdown-item {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.city-selector .dropdown-item:hover,
+.city-selector .dropdown-item.active {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    color: var(--bs-primary);
+}
+
+.city-selector .dropdown-item.active::before {
+    content: "✓";
+    margin-right: 6px;
+    color: var(--bs-primary);
+}
+
+@media (max-width: 768px) {
+    .city-selector {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    .city-selector .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .city-selector .dropdown-menu {
+        width: 100%;
+    }
+}

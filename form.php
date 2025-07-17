@@ -116,12 +116,12 @@ function test_input($data) {
                                     <div class="alert alert-success">
                                         <h4><i class="fas fa-check-circle me-2"></i> Thank You!</h4>
                                         <p>Your message has been sent successfully. We will get back to you as soon as possible.</p>
-                                    </div>
+            </div>
                                 <?php elseif (!empty($errorMessage)): ?>
                                     <div class="alert alert-danger">
                                         <h4><i class="fas fa-exclamation-circle me-2"></i> Error!</h4>
                                         <p><?php echo $errorMessage; ?></p>
-                                    </div>
+                </div>
                                 <?php endif; ?>
 
                                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
@@ -132,7 +132,7 @@ function test_input($data) {
                                         <?php if (!empty($nameErr)): ?>
                                             <div class="invalid-feedback"><?php echo $nameErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
+                </div>
                                     
                                     <div class="form-floating mb-4">
                                         <input type="email" class="form-control <?php echo (!empty($emailErr)) ? 'is-invalid' : ''; ?>" 
@@ -141,7 +141,7 @@ function test_input($data) {
                                         <?php if (!empty($emailErr)): ?>
                                             <div class="invalid-feedback"><?php echo $emailErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
+                </div>
                                     
                                     <div class="form-floating mb-4">
                                         <input type="text" class="form-control <?php echo (!empty($numberErr)) ? 'is-invalid' : ''; ?>" 
@@ -150,8 +150,8 @@ function test_input($data) {
                                         <?php if (!empty($numberErr)): ?>
                                             <div class="invalid-feedback"><?php echo $numberErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
-                                    
+                </div>
+
                                     <div class="form-floating mb-4">
                                         <textarea class="form-control <?php echo (!empty($messageErr)) ? 'is-invalid' : ''; ?>" 
                                                   id="message" name="message" placeholder="Message" style="height: 150px;"><?php echo $message; ?></textarea>
@@ -159,17 +159,17 @@ function test_input($data) {
                                         <?php if (!empty($messageErr)): ?>
                                             <div class="invalid-feedback"><?php echo $messageErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
-                                    
+                </div>
+
                                     <div class="text-center">
                                         <button type="submit" class="glossy-button">
                                             <i class="fas fa-paper-plane me-2"></i> Send Message
                                         </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
                 </div>
             </div>
         </div>

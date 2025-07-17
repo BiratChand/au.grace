@@ -135,6 +135,9 @@
 
 <!-- Template Javascript -->
 <script src="js/main.js"></script>
+
+<!-- Location Javascript -->
+<script src="js/location.js"></script>
 </body>
 
 </html>
