@@ -363,9 +363,6 @@ include 'database.php';
             <a href="team.php" class="btn btn-primary rounded-pill py-2 px-4">View All Team Members</a>
         </div>
         <div class="row g-4">
-            <script>
-                alert('current city: <?php echo getCurrentUserCity(); ?>');
-            </script>
             <?php
             $delay = 0.1;
 

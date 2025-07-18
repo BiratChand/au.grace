@@ -37,7 +37,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    
+
     <!-- Header Styles -->
     <link href="css/header-styles.css" rel="stylesheet">
 
@@ -46,7 +46,7 @@ if (session_status() == PHP_SESSION_NONE) {
             document.getElementById('spinner').classList.remove('show');
         }
     </script>
-    
+
     <?php
     // Pre-load location handler to avoid headers already sent issues
     include_once 'includes/location_handler.php';
@@ -71,14 +71,14 @@ if (session_status() == PHP_SESSION_NONE) {
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
-                        <?php 
+                        <?php
                         // Display city selector (location_handler.php already included in header)
-                        echo generateCitySelectorHtml(); 
+                        echo generateCitySelectorHtml();
                         ?>
                         <a href="#" class="text-white ms-4 me-4"><i
                                 class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
                         <a href="#" class="text-white me-0"><i
-                                class="fas fa-envelope text-primary me-2"></i>Grace@graceintlgroup.com</a>
+                                class="fas fa-envelope text-primary me-2"></i>grace@graceintlgroup.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
@@ -96,26 +96,26 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
     <!-- Navbar & Hero Start -->
-    <div class="container-fluid sticky-top px-0">
-            <!-- The <nav> element will be in navbar.php -->
-            <!-- End of content for header.php before navbar -->
+    <div class="container-fluid sticky-top px-0" style="z-index: 10;">
+        <!-- The <nav> element will be in navbar.php -->
+        <!-- End of content for header.php before navbar -->
 
-    <!-- Modal Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center">
-                    <div class="input-group w-75 mx-auto d-flex">
-                        <input type="search" class="form-control p-3" placeholder="keywords"
-                            aria-describedby="search-icon-1">
-                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords"
+                                aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal Search End -->
+        <!-- Modal Search End -->
