@@ -2,7 +2,7 @@
 // Ensure $currentPage is set, default to empty if not.
 $currentPage = isset($currentPage) ? $currentPage : '';
 ?>
-<nav class="navbar navbar-expand-lg navbar-dark bg-white py-3" style="position: relative; z-index: -10;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-white py-3">
     <div class="container">
         <a href="index.php" class="navbar-brand">
             <img src="img/Grace-Logo.png" alt="Grace International" class="img-fluid">

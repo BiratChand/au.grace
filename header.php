@@ -66,7 +66,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 d-none d-lg-block" style="position: relative; z-index: 1000;">
+    <div class="container-fluid topbar px-0 d-none d-lg-block">
         <div class="container px-0">
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-8 text-center text-lg-start mb-lg-0">
@@ -78,7 +78,7 @@ if (session_status() == PHP_SESSION_NONE) {
                         <a href="#" class="text-white ms-4 me-4"><i
                                 class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
                         <a href="#" class="text-white me-0"><i
-                                class="fas fa-envelope text-primary me-2"></i>grace@graceintlgroup.com</a>
+                                class="fas fa-envelope text-primary me-2"></i>Grace@graceintlgroup.com</a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
@@ -96,7 +96,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
     <!-- Navbar & Hero Start -->
-    <div class="container-fluid sticky-top px-0" style="z-index: 1;">
+    <div class="container-fluid sticky-top px-0">
             <!-- The <nav> element will be in navbar.php -->
             <!-- End of content for header.php before navbar -->
 

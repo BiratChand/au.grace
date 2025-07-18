@@ -10,15 +10,15 @@ include 'database.php';
 <div class="header-carousel owl-carousel">
     <?php
     // Location handler is already included in header.php
-    
+
     // Get sliders for current city
     $sliders = getCitySliders();
-    
+
     // Loop through sliders
     foreach ($sliders as $index => $slider) {
         $position = isset($slider['position']) ? $slider['position'] : 'center';
         $alignClass = '';
-        
+
         if ($position == 'start') {
             $alignClass = 'text-start';
         } elseif ($position == 'end') {
@@ -26,30 +26,30 @@ include 'database.php';
         } else {
             $alignClass = 'text-center';
         }
-        
+
         $imgClass = "header-carousel-item-img-" . ($index + 1);
     ?>
-    <div class="header-carousel-item <?php echo ($position == 'center') ? 'mx-auto' : ''; ?>">
-        <div class="<?php echo $imgClass; ?>">
-            <img src="<?php echo $slider['image']; ?>" class="img-fluid w-100" alt="Image">
-        </div>
-        <div class="carousel-caption">
-            <div class="carousel-caption-inner <?php echo $alignClass; ?> p-3">
-                <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated"
-                    data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;"><?php echo $slider['title']; ?>
-                </h1>
-                <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s"
-                    style="animation-delay: 1.5s; color:white "><?php echo $slider['subtitle']; ?>
-                </p>
-                <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated"
-                    data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="form1.php">Apply
-                    Now</a>
-                <a class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated"
-                    data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="migration.php">Read
-                    More</a>
+        <div class="header-carousel-item <?php echo ($position == 'center') ? 'mx-auto' : ''; ?>">
+            <div class="<?php echo $imgClass; ?>">
+                <img src="<?php echo $slider['image']; ?>" class="img-fluid w-100" alt="Image">
+            </div>
+            <div class="carousel-caption">
+                <div class="carousel-caption-inner <?php echo $alignClass; ?> p-3">
+                    <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated"
+                        data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;"><?php echo $slider['title']; ?>
+                    </h1>
+                    <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s"
+                        style="animation-delay: 1.5s; color:white "><?php echo $slider['subtitle']; ?>
+                    </p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated"
+                        data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="form1.php">Apply
+                        Now</a>
+                    <a class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated"
+                        data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="migration.php">Read
+                        More</a>
+                </div>
             </div>
         </div>
-    </div>
     <?php
     }
     ?>
@@ -71,7 +71,7 @@ include 'database.php';
             <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
                 <?php
                 // Location handler is already included in header.php
-                
+
                 // Get welcome content for current city
                 $welcome = getCityWelcome();
                 $title = isset($welcome['title']) ? $welcome['title'] : 'Welcome to Grace International';
@@ -85,7 +85,7 @@ include 'database.php';
                 <div class="ms-lg-4">
                     <h1 class="display-5 mb-4 gradient-text"><?php echo $title; ?></h1>
                     <h4 class="text-dark opacity-75 mb-4 fw-light"><?php echo $subtitle; ?></h4>
-                    
+
                     <div class="row g-4">
                         <div class="col-sm-4">
                             <div class="stat-card p-4 text-center h-100">
@@ -363,13 +363,16 @@ include 'database.php';
             <a href="team.php" class="btn btn-primary rounded-pill py-2 px-4">View All Team Members</a>
         </div>
         <div class="row g-4">
+            <script>
+                alert('current city: <?php echo getCurrentUserCity(); ?>');
+            </script>
             <?php
-            include 'includes/team_data.php';
-            $teamMembers = getTeamMembers();
             $delay = 0.1;
 
+            $teamMembers = getCityTeamMembers();
+
             $teamMembers = array_slice($teamMembers, 0, 4);
-            
+
             foreach ($teamMembers as $member) {
                 echo '<div class="col-lg-6 col-xl-3 mb-4 wow fadeInUp" data-wow-delay="' . $delay . 's">
                     <div class="card team-card h-100">

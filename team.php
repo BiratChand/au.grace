@@ -28,8 +28,7 @@ include 'navbar.php';
             </div>
             <div class="row g-4 justify-content-center team-grid">
                 <?php
-                include 'includes/team_data.php';
-                $teamMembers = getTeamMembers();
+                $teamMembers = getCityTeamMembers();
                 $delay = 0.1;
                 
                 foreach ($teamMembers as $member) {
