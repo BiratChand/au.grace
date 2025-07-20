@@ -280,8 +280,8 @@
     background-color: var(--bs-light);
     color: var(--bs-primary);
 }
-*/
 
+*/
 /*** Navbar End ***/
 
 /*** Carousel Header Start ***/
@@ -1116,9 +1116,14 @@
 }
 
 .footer-title {
-    font-size: 1.5em;
-    color: var(--bs-primary);
+    font-size: 2em;
+    color: var(--bs-primary1);
     margin-bottom: 15px;
+}
+
+.footer-logo img {
+    width: 50px;
+    height: 50px;
 }
 
 .footer-text {
@@ -1175,7 +1180,7 @@
 /*** copyright Start ***/
 /* Grace International Brand Colors */
 :root {
-    --grace-blue-primary: #007bff;
+    --grace-blue-primary: #0066a6;
     /* A vibrant blue, inspired by the logo */
     --grace-blue-dark: #0056b3;
     /* Darker shade for hover states */
@@ -1195,7 +1200,8 @@
     /* Medium shadow */
     --grace-shadow-hover: rgba(0, 0, 0, 0.12);
     /* Hover shadow */
-    --bs-primary: #007bff;
+    --bs-primary: #0066a6;
+    --bs-primary1: white;
     /* Grace blue primary */
     --bs-dark: #0056b3;
     /* Grace blue dark */
@@ -1739,7 +1745,7 @@ a:hover {
     justify-content: center;
 }
 
-.team-grid > div {
+.team-grid>div {
     max-width: 500px;
     flex: 1 1 calc(50% - 20px);
 }
@@ -1920,16 +1926,16 @@ a:hover {
     .team-card img {
         height: 350px;
     }
-    
+
     .team-card .card-body {
         padding: 20px 15px;
     }
-    
+
     .team-card .card-title {
         font-size: 20px;
     }
-    
-    .team-grid > div {
+
+    .team-grid>div {
         flex: 1 1 calc(50% - 20px);
     }
 }
@@ -1938,7 +1944,7 @@ a:hover {
     .team-card img {
         height: 320px;
     }
-    
+
     .team-grid {
         gap: 15px;
     }
@@ -1948,22 +1954,22 @@ a:hover {
     .team-card img {
         height: 280px;
     }
-    
+
     .team-card .card-body {
         padding: 18px;
     }
-    
+
     .team-card .card-text {
         font-size: 13px;
     }
-    
+
     .team-social a {
         width: 40px;
         height: 40px;
         font-size: 16px;
     }
-    
-    .team-grid > div {
+
+    .team-grid>div {
         flex: 1 1 100%;
         max-width: 450px;
     }
@@ -1973,20 +1979,20 @@ a:hover {
     .team-card img {
         height: 250px;
     }
-    
+
     .team-card .card-title {
         font-size: 18px;
     }
-    
+
     .team-card .team-position {
         font-size: 13px;
     }
-    
+
     .team-card .marn-badge {
         font-size: 12px;
         padding: 3px 10px;
     }
-    
+
     .team-grid {
         gap: 10px;
     }
@@ -2006,7 +2012,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, var(--bs-primary), rgba(0,123,255,0.3));
+    background: linear-gradient(90deg, var(--bs-primary), rgba(0, 123, 255, 0.3));
 }
 
 .faq .display-4 {
@@ -2017,7 +2023,7 @@ a:hover {
 
 .faq .accordion {
     border-radius: 12px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
 
@@ -2026,7 +2032,7 @@ a:hover {
     margin-bottom: 15px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
 }
 
@@ -2053,7 +2059,7 @@ a:hover {
 
 .faq .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,123,255,0.25);
+    border-color: rgba(0, 123, 255, 0.25);
 }
 
 .faq .accordion-button::after {
@@ -2081,7 +2087,7 @@ a:hover {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .faq .faq-img img {
@@ -2099,12 +2105,12 @@ a:hover {
     bottom: 30px;
     right: 30px;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .faq .faq-btn:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 /* Contact Form Improvements */
@@ -2121,14 +2127,14 @@ a:hover {
     left: 0;
     width: 100%;
     height: 5px;
-    background: linear-gradient(90deg, var(--bs-primary), rgba(0,123,255,0.3));
+    background: linear-gradient(90deg, var(--bs-primary), rgba(0, 123, 255, 0.3));
 }
 
 .contact-card {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
@@ -2162,13 +2168,13 @@ a:hover {
     padding: 10px 20px;
     font-size: 15px;
     transition: all 0.3s ease;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
 }
 
 .contact-form .form-control:focus {
     background: #fff;
     border-color: var(--bs-primary);
-    box-shadow: 0 5px 15px rgba(0,123,255,0.1);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.1);
 }
 
 .contact-form textarea.form-control {
@@ -2186,12 +2192,12 @@ a:hover {
     font-weight: 600;
     border-radius: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,123,255,0.2);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
 }
 
 .contact-form .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,123,255,0.3);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
 }
 
 .contact-image {
@@ -2246,7 +2252,7 @@ a:hover {
     .contact-image {
         min-height: 300px;
     }
-    
+
     .contact-form {
         padding: 25px;
     }
@@ -2256,7 +2262,7 @@ a:hover {
     .faq {
         padding: 50px 0;
     }
-    
+
     .contact-section {
         padding: 50px 0;
     }
@@ -2275,7 +2281,7 @@ a:hover {
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 }
 
 .glossy-bg::after {
@@ -2285,7 +2291,7 @@ a:hover {
     left: 0;
     right: 0;
     height: 1px;
-    background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0.05), rgba(0,0,0,0));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0));
 }
 
 .glossy-card {
@@ -2303,7 +2309,7 @@ a:hover {
     left: 0;
     right: 0;
     height: 40%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
     z-index: 1;
     border-radius: 15px 15px 0 0;
     pointer-events: none;
@@ -2329,7 +2335,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.3), rgba(255,255,255,0));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
     border-radius: 50px 50px 0 0;
     pointer-events: none;
 }
@@ -2377,7 +2383,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0));
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
     border-radius: 15px 15px 0 0;
     pointer-events: none;
 }
@@ -2392,7 +2398,7 @@ a:hover {
 }
 
 .shadow-soft {
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .team-card .placeholder-image {
@@ -2435,7 +2441,7 @@ a:hover {
     .team-card .placeholder-image {
         height: 250px;
     }
-    
+
     .team-card .placeholder-image::after {
         font-size: 60px;
     }
@@ -2491,12 +2497,12 @@ a:hover {
         margin-bottom: 10px;
         width: 100%;
     }
-    
+
     .city-selector .btn {
         width: 100%;
         justify-content: center;
     }
-    
+
     .city-selector .dropdown-menu {
         width: 100%;
     }
