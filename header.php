@@ -74,19 +74,21 @@ if (session_status() == PHP_SESSION_NONE) {
                         <?php
                         // Display city selector (location_handler.php already included in header)
                         echo generateCitySelectorHtml();
+
+                        $cityContent = getCityContent();
                         ?>
-                        <a href="#" class="text-white ms-4 me-4"><i
-                                class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
-                        <a href="#" class="text-white me-0"><i
-                                class="fas fa-envelope text-primary me-2"></i>grace@graceintlgroup.com</a>
+                        <a href="tel:<?php echo $cityContent['contact_info']['phone']; ?>" class="text-white ms-4 me-4"><i
+                                class="fas fa-phone-alt text-primary me-2"></i><?php echo $cityContent['contact_info']['phone']; ?></a>
+                        <a href="mailto:<?php echo $cityContent['contact_info']['email']; ?>" class="text-white me-0"><i
+                                class="fas fa-envelope text-primary me-2"></i><?php echo $cityContent['contact_info']['email']; ?></a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center text-lg-end">
                     <div class="d-flex align-items-center justify-content-end">
-                        <a href="#" class="btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['facebook']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['twitter']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['instagram']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['linkedin']; ?>" class="btn-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
             </div>

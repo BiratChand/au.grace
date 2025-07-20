@@ -5,6 +5,7 @@ include 'header.php';
 include 'navbar.php';
 include 'database.php';
 ?>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
 <!-- Page Specific Content Starts Here -->
 <!-- Carousel Start -->
 <div class="header-carousel owl-carousel">
@@ -399,7 +400,7 @@ include 'database.php';
 
 
 <!-- Testimonial Start -->
-<div class="container-fluid testimonial-bg bg-light py-5">
+<div class="container-fluid testimonial-bg bg-light py-5 mb-0">
     <div class="container py-5">
         <div class="row g-4 align-items-center">
             <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
@@ -487,6 +488,90 @@ include 'database.php';
     </div>
 </div>
 <!-- Testimonial End -->
+
+<!-- Branches part -->
+<?php
+// Assuming branches.json is in a 'data' directory relative to index.php
+$branches_json_path = __DIR__ . "/data/branches.json";
+$branches_data = [];
+
+if (file_exists($branches_json_path)) {
+    $json_content = file_get_contents($branches_json_path);
+    $branches_data = json_decode($json_content, true);
+    if (json_last_error() !== JSON_ERROR_NONE) {
+        // Handle JSON decoding error
+        error_log("Error decoding branches.json: " . json_last_error_msg());
+        $branches_data = []; // Reset to empty array if there's an error
+    }
+} else {
+    // Handle file not found error
+    error_log("branches.json not found at: " . $branches_json_path);
+}
+
+// Convert PHP array to JSON string for JavaScript
+$branches_json_for_js = json_encode($branches_data);
+?>
+
+
+<div class="container-fluid py-5" style="background-color: #eee;">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+            <h4 class="text-primary">Our Branches</h4>
+            <h1 class="display-4">Our Grace International Branches</h1>
+        </div>
+        <div id="map" style="width: 100%; height: 600px; margin-bottom: 3rem; border-radius: .5rem; box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);"></div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+
+        <script>
+            // Load branches data from the PHP variable
+            const branches = <?php echo $branches_json_for_js; ?>;
+
+            // Initialize the map
+            let map;
+            let initialLat = 27.7172; // Default: Kathmandu, Nepal
+            let initialLng = 85.3240;
+            let initialZoom = 8; // Adjust initial zoom level as needed
+
+            if (branches && branches.length > 0 && branches[0].latitude && branches[0].longitude) {
+                initialLat = parseFloat(branches[0].latitude);
+                initialLng = parseFloat(branches[0].longitude);
+            }
+
+            map = L.map('map').setView([initialLat, initialLng], initialZoom);
+
+            // Add OpenStreetMap tiles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Create a LatLngBounds object to encompass all markers
+            const bounds = L.latLngBounds([]);
+
+            // Add markers for each branch
+            branches.forEach(branch => {
+                if (branch.latitude && branch.longitude) {
+                    const lat = parseFloat(branch.latitude);
+                    const lng = parseFloat(branch.longitude);
+                    const latLng = L.latLng(lat, lng);
+
+                    const marker = L.marker(latLng).addTo(map)
+                        .bindPopup(`<h3>${branch.name}</h3><p>${branch.address || 'Address not available'}</p>`);
+
+                    // Extend the bounds to include this marker
+                    bounds.extend(latLng);
+                } else {
+                    console.warn(`Branch "${branch.name}" has missing latitude or longitude and will not be displayed.`);
+                }
+            });
+
+            // Fit the map to the bounds of all markers, but only if there are markers to fit
+            if (bounds.isValid()) {
+                map.fitBounds(bounds);
+            }
+        </script>
+    </div>
+</div>
 
 
 <!-- FAQ Start -->

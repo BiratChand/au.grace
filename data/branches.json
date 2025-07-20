@@ -1,0 +1,261 @@
+[
+    {
+        "id": 1,
+        "name": "Kathmandu Head Office (Buddhanagar)",
+        "address": "Buddhanagar, Nearby Himalayan Ayurved Medical Science College, Kathmandu, Nepal",
+        "latitude": "27.6787",
+        "longitude": "85.3340"
+    },
+    {
+        "id": 2,
+        "name": "Bagbazar Branch",
+        "address": "Bagbazar, Kathmandu (Opposite of Pipalbot), Nepal",
+        "latitude": "27.7099",
+        "longitude": "85.3168"
+    },
+    {
+        "id": 3,
+        "name": "Baneshwor Branch",
+        "address": "New Baneshwor, PC Complex 2nd Floor, Kathmandu, Nepal",
+        "latitude": "27.6961",
+        "longitude": "85.3283"
+    },
+    {
+        "id": 4,
+        "name": "Lalitpur Office (Kumaripati)",
+        "address": "Kumaripati, Lalitpur (3rd Floor, CG Building), Nepal",
+        "latitude": "27.6652",
+        "longitude": "85.3240"
+    },
+    {
+        "id": 5,
+        "name": "Butwal Branch",
+        "address": "Milanchowk, NMB Bank Building, Butwal, Nepal",
+        "latitude": "27.6976",
+        "longitude": "83.4542"
+    },
+    {
+        "id": 6,
+        "name": "Chitwan Branch",
+        "address": "Sahid Chowk, Narayangarh, Chitwan, Nepal",
+        "latitude": "27.6841",
+        "longitude": "84.4290"
+    },
+    {
+        "id": 7,
+        "name": "Hetauda Branch",
+        "address": "Hetauda‑04, Parijatpath, Hetauda, Nepal",
+        "latitude": "27.4294",
+        "longitude": "85.0392"
+    },
+    {
+        "id": 8,
+        "name": "Pokhara Branch",
+        "address": "Mahendrapool, Pokhara, Nepal",
+        "latitude": "28.2166",
+        "longitude": "83.9926"
+    },
+    {
+        "id": 9,
+        "name": "Biratnagar Branch",
+        "address": "Hanumandas Road, Biratnagar‑7, Biratnagar, Nepal",
+        "latitude": "26.4764",
+        "longitude": "87.2798"
+    },
+    {
+        "id": 10,
+        "name": "Damak Branch",
+        "address": "Beldangi Road Damak 6 Jhapa at KD complex, Damak, Nepal",
+        "latitude": "26.6570",
+        "longitude": "87.6521"
+    },
+    {
+        "id": 11,
+        "name": "Parsa Branch",
+        "address": "Khairahani, Parsa, Nepal",
+        "latitude": "27.6046",
+        "longitude": "84.3857"
+    },
+    {
+        "id": 12,
+        "name": "Baglung Branch",
+        "address": "Harishankar Road – Next building to Hotel Peace Palace, Baglung, Nepal",
+        "latitude": "28.2694",
+        "longitude": "83.5828"
+    },
+    {
+        "id": 13,
+        "name": "Dang Office",
+        "address": "Ghorahi 15, Newroad Dang (in front of Ganesh Chitralaya), Nepal",
+        "latitude": "28.0397",
+        "longitude": "82.4797"
+    },
+    {
+        "id": 14,
+        "name": "Dharan Office",
+        "address": "Sadan Road, Dharan, Nepal",
+        "latitude": "26.8126",
+        "longitude": "87.2834"
+    },
+    {
+        "id": 15,
+        "name": "Itahari Office",
+        "address": "Sangit Chowk, Itahari, Nepal",
+        "latitude": "26.6670",
+        "longitude": "87.2845"
+    },
+    {
+        "id": 16,
+        "name": "Kawasoti Office",
+        "address": "Indrachowk, Kawasoti‑2, Nawalpur, Nepal",
+        "latitude": "27.6263",
+        "longitude": "84.3870"
+    },
+    {
+        "id": 17,
+        "name": "Simara Application Centre",
+        "address": "Simara Business Center, Simara, Nepal",
+        "latitude": "27.0000",
+        "longitude": "84.9667"
+    },
+    {
+        "id": 18,
+        "name": "Sydney Corporate Office",
+        "address": "Suite 1508, Level 15, 97‑99 Bathurst Street, Sydney NSW 2000, Australia",
+        "latitude": "-33.8688",
+        "longitude": "151.2093"
+    },
+    {
+        "id": 19,
+        "name": "Melbourne Regional Office",
+        "address": "Level 14, 282 Collins Street, Melbourne VIC 3000, Australia",
+        "latitude": "-37.8140",
+        "longitude": "144.9633"
+    },
+    {
+        "id": 20,
+        "name": "Adelaide Office",
+        "address": "Suite 2, Level 1, 9A Hindley St, Adelaide SA 5000, Australia",
+        "latitude": "-34.9285",
+        "longitude": "138.6007"
+    },
+    {
+        "id": 21,
+        "name": "Brisbane Office",
+        "address": "Level 5, 190 Edward Street, Brisbane QLD 4000, Australia",
+        "latitude": "-27.4698",
+        "longitude": "153.0251"
+    },
+    {
+        "id": 22,
+        "name": "Canberra Office",
+        "address": "Suite 1.04, 17‑21 University Avenue, City ACT 2601, Australia",
+        "latitude": "-35.2809",
+        "longitude": "149.1300"
+    },
+    {
+        "id": 23,
+        "name": "Dandenong Office",
+        "address": "Level 10, 14 Mason Street, Dandenong VIC 3175, Australia",
+        "latitude": "-37.9823",
+        "longitude": "145.2140"
+    },
+    {
+        "id": 24,
+        "name": "Glenroy Office",
+        "address": "Unit 3/1 Post Office Place, Glenroy VIC 3046, Australia",
+        "latitude": "-37.7090",
+        "longitude": "144.8990"
+    },
+    {
+        "id": 25,
+        "name": "Hobart Office",
+        "address": "Suite 105, Level 1, 86 Murray Street, Hobart TAS 7000, Australia",
+        "latitude": "-42.8821",
+        "longitude": "147.3272"
+    },
+    {
+        "id": 26,
+        "name": "Perth Office",
+        "address": "383 Hay Street, Perth WA 6000, Australia",
+        "latitude": "-31.9505",
+        "longitude": "115.8605"
+    },
+    {
+        "id": 27,
+        "name": "Sylhet Office",
+        "address": "Abdul Hamid Road, Kadamtoli, Sylhet, Bangladesh",
+        "latitude": "24.8949",
+        "longitude": "91.8687"
+    },
+    {
+        "id": 28,
+        "name": "Dubai Office",
+        "address": "Office S02 Bin Hareb Building AI Mararr, PO Box 33256, Dubai, UAE",
+        "latitude": "25.2048",
+        "longitude": "55.2708"
+    },
+    {
+        "id": 29,
+        "name": "Gurugram Office",
+        "address": "G‑308, 3rd Floor, Sushant Shopping Arcade, Sushant Lok Phase‑1, Gurugram, Haryana, India",
+        "latitude": "28.4595",
+        "longitude": "77.0266"
+    },
+    {
+        "id": 30,
+        "name": "New Delhi Office",
+        "address": "Office No. 505, 6th Floor, Westend Mall, Near District Centre, Janak Puri, New Delhi 110058, India",
+        "latitude": "28.6358",
+        "longitude": "77.0600"
+    },
+    {
+        "id": 31,
+        "name": "Jakarta Office",
+        "address": "Menara BCA Level 45 & 50, Jl. MH Thamrin No. 1, Menteng, Jakarta 10310, Indonesia",
+        "latitude": "-6.1950",
+        "longitude": "106.8235"
+    },
+    {
+        "id": 32,
+        "name": "Eldoret Office",
+        "address": "Stow‑burg Plaza, Oginga Odinga Street, Eldoret, Kenya",
+        "latitude": "0.5204",
+        "longitude": "35.2690"
+    },
+    {
+        "id": 33,
+        "name": "Nairobi Office",
+        "address": "Lower Ground Floor, ABSA Tower, Loita Street, Nairobi, Kenya",
+        "latitude": "-1.2921",
+        "longitude": "36.8219"
+    },
+    {
+        "id": 34,
+        "name": "Auckland Office",
+        "address": "Suite 202, 87‑93 Queen Street, Dingwall Building, Auckland, New Zealand",
+        "latitude": "-36.8485",
+        "longitude": "174.7633"
+    },
+    {
+        "id": 35,
+        "name": "Islamabad Office",
+        "address": "F‑8 Markaz, Al Babar Center Level 1, Islamabad, Pakistan",
+        "latitude": "33.6844",
+        "longitude": "73.0479"
+    },
+    {
+        "id": 36,
+        "name": "Cebu Office",
+        "address": "Shop 220, Raintree Mall Annex A, 528 Gen Maxilom Ave, Cebu City 6000, Philippines",
+        "latitude": "10.3157",
+        "longitude": "123.8854"
+    },
+    {
+        "id": 37,
+        "name": "Moratuwa Office",
+        "address": "21 Charles Place, Rawatawatta, Moratuwa, Sri Lanka",
+        "latitude": "6.7880",
+        "longitude": "79.8825"
+    }
+]

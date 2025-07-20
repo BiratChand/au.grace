@@ -32,7 +32,7 @@
     "teams": [
       {
         "id": 1,
-        "name": "Pawan Thapaliya",
+        "name": "Pawan Thapaliyaasdfasdf",
         "position": "Principal Migration Agent",
         "marn": "1466008",
         "image": "img/Pawan-Thapaliya-600x428.jpg",
@@ -95,7 +95,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 2 9267 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "MELBOURNE": {
     "sliders": [
@@ -193,7 +201,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 3 9267 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "ADELAIDE": {
     "sliders": [
@@ -291,7 +307,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 8 8200 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "BRISBANE": {
     "sliders": [
@@ -389,7 +413,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 7 3221 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "CANBERRA": {
     "sliders": [
@@ -487,7 +519,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 2 6270 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "DANDENONG": {
     "sliders": [
@@ -585,7 +625,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 3 9267 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "GLENROY": {
     "sliders": [
@@ -683,7 +731,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 3 9267 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "HOBART": {
     "sliders": [
@@ -781,7 +837,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 3 9267 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "PERTH": {
     "sliders": [
@@ -879,7 +943,15 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 3 9267 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   },
   "DEFAULT": {
     "sliders": [
@@ -977,6 +1049,14 @@
           "twitter": "https://twitter.com/"
         }
       }
-    ]
+    ],
+    "contact_info": {
+      "phone": "+61 3 9267 1111",
+      "email": "info@graceinternational.com.au",
+      "facebook": "https://facebook.com/",
+      "instagram": "https://instagram.com/",
+      "linkedin": "https://linkedin.com/",
+      "twitter": "https://twitter.com/"
+    }
   }
 }
