@@ -141,113 +141,43 @@ include 'navbar.php';
     <div class="container py-5">
         <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
             <h4 class="text-primary">Our Team</h4>
-            <h1 class="display-4">Our Investa Company Dedicated Team Member</h1>
+            <h1 class="display-4">Our Grace International Dedicated Team Member</h1>
+            <a href="team.php" class="btn btn-primary rounded-pill py-2 px-4">View All Team Members</a>
         </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/team-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
+        <div class="row g-4">
+            <?php
+            $delay = 0.1;
+
+            $teamMembers = getCityTeamMembers();
+
+            $teamMembers = array_slice($teamMembers, 0, 4);
+
+            foreach ($teamMembers as $member) {
+                echo '<div class="col-lg-6 col-xl-3 mb-4 wow fadeInUp" data-wow-delay="' . $delay . 's">
+                    <div class="card team-card h-100">
+                        <div class="position-relative overflow-hidden">
+                            <img src="' . $member['image'] . '" class="card-img-top" alt="' . $member['name'] . '">
+                            <div class="team-social">
+                                <a href="' . $member['social']['linkedin'] . '" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="' . $member['social']['facebook'] . '" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="' . $member['social']['twitter'] . '" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Mark D. Brock</h4>
-                            <p class="text-muted mb-0">CEO & Founder</p>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">' . $member['name'] . '</h4>
+                            <span class="team-position">' . $member['position'] . '</span>
+                            <div class="marn-badge">MARN: ' . $member['marn'] . '</div>
+                            <p class="card-text">' . $member['description'] . '</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/team-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Mark D. Brock</h4>
-                            <p class="text-muted mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/team-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Mark D. Brock</h4>
-                            <p class="text-muted mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="team-item rounded">
-                    <div class="team-img">
-                        <img src="img/team-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
-                        <div class="team-icon">
-                            <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                    class="fas fa-share-alt"></i></a>
-                            <div class="team-icon-share">
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href=""><i
-                                        class="fab fa-twitter"></i></a>
-                                <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href=""><i
-                                        class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="team-content bg-dark text-center rounded-bottom p-4">
-                        <div class="team-content-inner rounded-bottom">
-                            <h4 class="text-white">Mark D. Brock</h4>
-                            <p class="text-muted mb-0">CEO & Founder</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </div>';
+                $delay += 0.2;
+            }
+            ?>
         </div>
     </div>
 </div>
-<!-- Team End -->
+
 <!-- Page Specific Content Ends Here -->
 <?php
 include 'footer.php';
