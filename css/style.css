@@ -137,14 +137,26 @@
 
 /*** Topbar Start ***/
 .topbar {
-    padding: 2px 10px 2px 20px;
+    padding: 0;
     background: var(--bs-dark) !important;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .topbar {
-        display: none;
-    }
+.topbar .btn-square {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.topbar a {
+    font-size: 13px;
 }
 
 /*** Topbar End ***/
@@ -1630,6 +1642,10 @@ a:hover {
 
 
 
+.leaflet-control-attribution.leaflet-control {
+    display: none;
+}
+
 
 
 /*** Testimonial new Start ***/
@@ -2452,30 +2468,32 @@ a:hover {
     background: transparent;
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 4px 12px;
-    font-size: 0.85rem;
+    padding: 1px 8px;
+    font-size: 0.75rem;
     transition: all 0.3s ease;
+    height: 24px;
+    display: flex;
+    align-items: center;
 }
 
 .city-selector .btn:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255, 255, 255, 0.5);
-    transform: translateY(-2px);
 }
 
 .city-selector .dropdown-menu {
-    min-width: 180px;
+    min-width: 160px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     border: none;
-    padding: 8px 0;
-    margin-top: 8px;
+    padding: 5px 0;
+    margin-top: 5px;
     background: #fff;
 }
 
 .city-selector .dropdown-item {
-    padding: 8px 16px;
-    font-size: 0.9rem;
+    padding: 5px 10px;
+    font-size: 0.75rem;
     color: #333;
     transition: all 0.2s ease;
 }
@@ -2488,22 +2506,269 @@ a:hover {
 
 .city-selector .dropdown-item.active::before {
     content: "✓";
-    margin-right: 6px;
+    margin-right: 4px;
     color: var(--bs-primary);
 }
 
 @media (max-width: 768px) {
     .city-selector {
-        margin-bottom: 10px;
-        width: 100%;
+        margin-bottom: 0;
+        width: auto;
     }
 
     .city-selector .btn {
-        width: 100%;
+        width: auto;
         justify-content: center;
+        padding: 1px 8px;
+        font-size: 0.75rem;
+        height: 24px;
     }
 
     .city-selector .dropdown-menu {
+        width: auto;
+        min-width: 140px;
+        font-size: 0.75rem;
+    }
+    
+    .city-selector .dropdown-item {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Update the mobile responsiveness fixes */
+
+@media (max-width: 768px) {
+    /* Make carousel buttons more visible and clickable */
+    .carousel-caption {
+        position: relative;
+        z-index: 10;
+        padding: 15px 10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .carousel-caption-inner {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px !important;
+        border-radius: 8px;
+        position: relative;
+        z-index: 20;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 24px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .carousel-caption p {
+        font-size: 14px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .carousel-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
+    }
+    
+    .carousel-buttons .btn {
+        font-size: 14px;
+        padding: 8px 15px !important;
+        margin-bottom: 10px !important;
+        margin-right: 0 !important;
+        width: 80%;
+        max-width: 200px;
+    }
+    
+    /* Hide blue overlay on mobile to make buttons clickable */
+    .header-carousel .header-carousel-item::before,
+    .header-carousel .header-carousel-item::after,
+    .header-carousel .header-carousel-item-img-1::before,
+    .header-carousel .header-carousel-item-img-2::before,
+    .header-carousel .header-carousel-item-img-3::before,
+    .header-carousel .header-carousel-item-img-1::after,
+    .header-carousel .header-carousel-item-img-2::after,
+    .header-carousel .header-carousel-item-img-3::after {
+        display: none !important;
+    }
+    
+    /* Make sure the carousel caption is above everything else */
+    .header-carousel .header-carousel-item .carousel-caption {
+        z-index: 20 !important;
+    }
+    
+    /* Compact header for mobile */
+    .topbar {
+        padding: 2px 0;
+        min-height: 26px;
+    }
+    
+    .topbar .btn-square {
+        width: 22px;
+        height: 22px;
+        font-size: 11px;
+        margin: 0 1px;
+    }
+    
+    .topbar .d-flex {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    .topbar .me-3 {
+        margin-right: 3px !important;
+        font-size: 11px;
+    }
+    
+    .topbar a {
+        font-size: 11px;
+    }
+    
+    /* Ensure buttons are clickable */
+    .header-carousel-item {
+        position: relative;
+    }
+    
+    .header-carousel-item-img-1,
+    .header-carousel-item-img-2,
+    .header-carousel-item-img-3 {
+        position: relative;
+        z-index: 1;
+    }
+    
+    /* Fix map scrolling */
+    #map {
+        touch-action: none;
+    }
+}
+
+/* Footer logo responsiveness */
+.footer-logo-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 150px;
+}
+
+.footer-contact {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.footer-contact p {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-social a {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: var(--bs-primary);
+}
+
+@media (max-width: 576px) {
+    .footer-logo {
+        max-height: 100px;
+    }
+    
+    .footer-contact p {
+        font-size: 13px;
+    }
+    
+    .footer-social a {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+/* Navbar Social Icons */
+.navbar .social-icons a {
+    color: var(--bs-dark);
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.navbar .social-icons a:hover {
+    color: var(--bs-primary);
+}
+
+.navbar .dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+@media (max-width: 768px) {
+    /* Compact header for mobile */
+    .topbar {
+        padding: 2px 0;
+        min-height: 26px;
+    }
+    
+    .city-selector .btn {
+        font-size: 0.7rem;
+        padding: 1px 6px;
+        height: 22px;
+    }
+}
+
+/* Additional carousel caption improvements */
+@media (max-width: 768px) {
+    .header-carousel .header-carousel-item .carousel-caption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 20 !important;
+        padding: 20px;
+    }
+    
+    .carousel-caption-inner {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px !important;
+        border-radius: 8px;
+        position: relative;
+        z-index: 20;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .carousel-buttons {
+        position: relative;
+        z-index: 30 !important;
+    }
+    
+    .carousel-buttons .btn {
+        position: relative;
+        z-index: 30 !important;
+        pointer-events: auto !important;
+    }
+    
+    /* Ensure the entire carousel item doesn't have pointer events blocking */
+    .header-carousel-item * {
+        pointer-events: auto !important;
     }
 }

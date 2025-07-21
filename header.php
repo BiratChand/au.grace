@@ -66,10 +66,10 @@ if (session_status() == PHP_SESSION_NONE) {
 
 
     <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 d-none d-lg-block">
+    <div class="container-fluid topbar px-0 d-lg-block">
         <div class="container px-0">
             <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                <div class="col-8 text-center text-lg-start mb-lg-0">
                     <div class="d-flex flex-wrap">
                         <?php
                         // Display city selector (location_handler.php already included in header)
@@ -77,13 +77,18 @@ if (session_status() == PHP_SESSION_NONE) {
 
                         $cityContent = getCityContent();
                         ?>
-                        <a href="tel:<?php echo $cityContent['contact_info']['phone']; ?>" class="text-white ms-4 me-4"><i
-                                class="fas fa-phone-alt text-primary me-2"></i><?php echo $cityContent['contact_info']['phone']; ?></a>
-                        <a href="mailto:<?php echo $cityContent['contact_info']['email']; ?>" class="text-white me-0"><i
-                                class="fas fa-envelope text-primary me-2"></i><?php echo $cityContent['contact_info']['email']; ?></a>
+                        <a href="tel:<?php echo $cityContent['contact_info']['phone']; ?>" class="text-white ms-4 me-2 me-lg-4">
+                            <i class="fas fa-phone-alt text-primary me-2"></i>
+                            <span class="d-none d-md-inline"><?php echo $cityContent['contact_info']['phone']; ?></span>
+                        </a>
+                        <a href="mailto:<?php echo $cityContent['contact_info']['email']; ?>" class="text-white me-0">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <span class="d-none d-md-inline"><?php echo $cityContent['contact_info']['email']; ?></span>
+                        </a>
+
                     </div>
                 </div>
-                <div class="col-lg-4 text-center text-lg-end">
+                <div class="col-4 text-center text-lg-end">
                     <div class="d-flex align-items-center justify-content-end">
                         <a href="<?php echo $cityContent['contact_info']['facebook']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
                         <a href="<?php echo $cityContent['contact_info']['twitter']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>

@@ -4,6 +4,7 @@ $currentPage = "index";
 include 'header.php';
 include 'navbar.php';
 include 'database.php';
+
 ?>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
 <!-- Page Specific Content Starts Here -->
@@ -42,12 +43,14 @@ include 'database.php';
                     <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s"
                         style="animation-delay: 1.5s; color:white "><?php echo $slider['subtitle']; ?>
                     </p>
-                    <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated"
-                        data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="form1.php">Apply
-                        Now</a>
-                    <a class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated"
-                        data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="migration.php">Read
-                        More</a>
+                    <div class="carousel-buttons">
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated"
+                            data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="form1.php">Apply
+                            Now</a>
+                        <a class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated"
+                            data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="migration.php">Read
+                            More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -510,7 +513,23 @@ $branches_json_for_js = json_encode($branches_data);
                 initialLng = parseFloat(branches[0].longitude);
             }
 
-            map = L.map('map').setView([initialLat, initialLng], initialZoom);
+            map = L.map('map', {
+                scrollWheelZoom: false // Disable scroll wheel zoom by default
+            }).setView([initialLat, initialLng], initialZoom);
+            
+            // Enable zoom only after user clicks on the map
+            map.on('click', function() {
+                if (!map.scrollWheelZoom.enabled()) {
+                    map.scrollWheelZoom.enable();
+                }
+            });
+            
+            // Disable zoom when user clicks outside the map
+            document.addEventListener('click', function(e) {
+                if (!document.getElementById('map').contains(e.target)) {
+                    map.scrollWheelZoom.disable();
+                }
+            });
 
             // Add OpenStreetMap tiles
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -544,7 +563,6 @@ $branches_json_for_js = json_encode($branches_data);
         </script>
     </div>
 </div>
-
 
 <!-- FAQ Start -->
 <?php

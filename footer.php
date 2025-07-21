@@ -4,12 +4,12 @@
         <!-- Footer Top Section -->
         <div class="row">
             <!-- About Section -->
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <h2 class="footer-title">About Us</h2>
                 <p class="footer-text">Grace International is committed to providing exceptional services and solutions to our clients worldwide.</p>
             </div>
             <!-- Quick Links Section -->
-            <div class="col-md-4">
+            <div class="col-md-4 mb-4">
                 <h2 class="footer-title">Quick Links</h2>
                 <ul class="footer-links">
                     <li><a href="about.php">About Us</a></li>
@@ -19,18 +19,32 @@
                 </ul>
             </div>
             <!-- Contact Section -->
-            <div class="col-md-4">
-                <img src="img/Grace-white-Logo.png" alt="Grace International Logo" style="width: 400px; height: 200px;" class="footer-logo mb-3">
-            </div>
-            <!-- Footer Bottom Section -->
-            <div class="row mt-4">
-                <div class="col text-center">
-                    <p class="footer-copyright">© 2023 Grace International. All Rights Reserved.</p>
+            <div class="col-md-4 mb-4">
+                <div class="footer-logo-container">
+                    <img src="img/Grace-white-Logo.png" alt="Grace International Logo" class="img-fluid footer-logo mb-3">
+                </div>
+                <div class="footer-contact">
+                    <?php
+                    $cityContent = getCityContent();
+                    ?>
+                    <p><i class="fas fa-phone-alt text-primary me-2"></i> <?php echo $cityContent['contact_info']['phone']; ?></p>
+                    <p><i class="fas fa-envelope text-primary me-2"></i> <?php echo $cityContent['contact_info']['email']; ?></p>
+                    <div class="footer-social mt-3">
+                        <a href="<?php echo $cityContent['contact_info']['facebook']; ?>" class="btn-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['twitter']; ?>" class="btn-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['instagram']; ?>" class="btn-square rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['linkedin']; ?>" class="btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
-
         </div>
-
+        <!-- Footer Bottom Section -->
+        <div class="row mt-2">
+            <div class="col text-center">
+                <p class="footer-copyright">© 2023 Grace International. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
 </footer>
 <!-- Footer End -->
 
