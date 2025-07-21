@@ -283,70 +283,58 @@ include 'database.php';
             <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
                     <div class="mb-4">
-                        <h4 class="text-primary mb-2">Investment</h4>
+                        <h4 class="text-primary mb-2">Partner Visa(Subclass 820/801)</h4>
                         <div class="d-flex justify-content-between">
-                            <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                            <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
+                            <p class="mb-0"><span class="text-dark fw-bold">On</span> May 14, 2025</p>
+                            <p class="mb-0"><span class="text-dark fw-bold">By</span> Grace International</p>
                         </div>
                     </div>
                     <div class="project-img">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        <div class="blog-plus-icon">
-                            <a href="img/blog-1.jpg" data-lightbox="blog-1"
-                                class="btn btn-primary btn-md-square rounded-pill"><i
-                                    class="fas fa-plus fa-1x"></i></a>
-                        </div>
+                        <img src="img/migration1.jpg" class="img-fluid w-100 rounded" alt="Image">
+
                     </div>
                     <div class="my-4">
-                        <a href="#" class="h4">Revisiting Your Investment & Distribution Goals</a>
+                        <a class="h4">The first partner visa category is the Subclass 820 Visa.</a>
                     </div>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="partner_visa.php">Explore More</a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
                     <div class="mb-4">
-                        <h4 class="text-primary mb-2">Business</h4>
+                        <h4 class="text-primary mb-2">Student Visa</h4>
                         <div class="d-flex justify-content-between">
-                            <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                            <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
+                            <p class="mb-0"><span class="text-dark fw-bold">On</span> Feb 20, 2025</p>
+                            <p class="mb-0"><span class="text-dark fw-bold">By</span> Grace International</p>
                         </div>
                     </div>
                     <div class="project-img">
-                        <img src="img/blog-2.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        <div class="blog-plus-icon">
-                            <a href="img/blog-2.jpg" data-lightbox="blog-2"
-                                class="btn btn-primary btn-md-square rounded-pill"><i
-                                    class="fas fa-plus fa-1x"></i></a>
-                        </div>
+                        <img src="img/visa.jpg" class="img-fluid w-100 rounded" alt="Image">
+
                     </div>
                     <div class="my-4">
-                        <a href="#" class="h4">Dimensional Fund Advisors Interview with Director</a>
+                        <a class="h4">The Subclass 500 visa lets you study full-time in Australia.</a>
                     </div>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="student_visa.php">Explore More</a>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
                     <div class="mb-4">
-                        <h4 class="text-primary mb-2">Consulting</h4>
+                        <h4 class="text-primary mb-2">Temporary Skill Shortage Visa</h4>
                         <div class="d-flex justify-content-between">
-                            <p class="mb-0"><span class="text-dark fw-bold">On</span> Mar 14, 2024</p>
-                            <p class="mb-0"><span class="text-dark fw-bold">By</span> Mark D. Brock</p>
+                            <p class="mb-0"><span class="text-dark fw-bold">On</span> Dec 02, 2024</p>
+                            <p class="mb-0"><span class="text-dark fw-bold">By</span> Grace International</p>
                         </div>
                     </div>
                     <div class="project-img">
-                        <img src="img/blog-3.jpg" class="img-fluid w-100 rounded" alt="Image">
-                        <div class="blog-plus-icon">
-                            <a href="img/blog-3.jpg" data-lightbox="blog-3"
-                                class="btn btn-primary btn-md-square rounded-pill"><i
-                                    class="fas fa-plus fa-1x"></i></a>
-                        </div>
+                        <img src="img/migration5.jpg" class="img-fluid w-100 rounded" alt="Image">
+
                     </div>
                     <div class="my-4">
-                        <a href="#" class="h4">Interested in Giving Back this year? Here are some tips</a>
+                        <a class="h4">Lets employers hire foreign workers to fill local skill shortages</a>
                     </div>
-                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Explore More</a>
+                    <a class="btn btn-primary rounded-pill py-2 px-4" href="tss_visa.php">Explore More</a>
                 </div>
             </div>
         </div>
@@ -407,11 +395,9 @@ include 'database.php';
                 <div class="h-100 rounded">
                     <h4 class="text-primary">Our Feedbacks </h4>
                     <h1 class="display-4 mb-4" style="color: white;">Clients are Talking</h1>
-                    <p class="mb-4" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Harum atque soluta unde
-                        itaque. Consequatur quam odit blanditiis harum veritatis porro.</p>
-                    <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read
-                        All Reviews <i class="fas fa-arrow-right ms-2"></i></a>
+                    <p class="mb-4" style="color: white;"></p>
+                    <!-- <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Read
+                        All Reviews <i class="fas fa-arrow-right ms-2"></i></a> -->
                 </div>
             </div>
             <div class="col-xl-8">
@@ -419,20 +405,15 @@ include 'database.php';
                     <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="d-flex">
                             <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                            <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Magnam eos
-                                impedit eveniet dolorem culpa ullam incidunt vero quo recusandae
-                                nemo? Molestiae
-                                doloribus iure,
-                            </p>
+                            <p class="mt-4">After my Bachelors, my only wish was to study abroad. I had chosen a destination but not a course due to insufficient knowledge of opportunities. Grace International cleared my dilemma, taking full responsibility from briefing me on course details to selecting the best university and city. For similar efficiency with your career, embrace your dream with Grace. </p>
                         </div>
                         <div class="d-flex justify-content-end">
                             <div class="my-auto text-end">
-                                <h5>Person Name</h5>
-                                <p class="mb-0">Profession</p>
+                                <h5>Dibika Darshandari</h5>
+                                <p class="mb-0">Master of International Nursing - UOW</p>
                             </div>
                             <div class="bg-white rounded-circle ms-3">
-                                <img src="img/testimonial-1.jpg" class="rounded-circle p-2"
+                                <img src="img/woman (1).png" class="rounded-circle p-2"
                                     style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);"
                                     alt="">
                             </div>
@@ -441,20 +422,15 @@ include 'database.php';
                     <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="d-flex">
                             <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                            <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Magnam eos
-                                impedit eveniet dolorem culpa ullam incidunt vero quo recusandae
-                                nemo? Molestiae
-                                doloribus iure,
-                            </p>
+                            <p class="mt-4">I'm glad I chose Grace International for my studies; they fully assisted and guided me through the entire process. I believe Grace is the best place for any student planning to study abroad. Their support, the administration, and the welcoming office environment are all truly impressive. Everything was completed right on time, without any deferrals. </p>
                         </div>
                         <div class="d-flex justify-content-end">
                             <div class="my-auto text-end">
-                                <h5>Person Name</h5>
-                                <p class="mb-0">Profession</p>
+                                <h5>Nisha Baniya</h5>
+                                <p class="mb-0">MBA - CSU</p>
                             </div>
                             <div class="bg-white rounded-circle ms-3">
-                                <img src="img/testimonial-2.jpg" class="rounded-circle p-2"
+                                <img src="img/woman.png" class="rounded-circle p-2"
                                     style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);"
                                     alt="">
                             </div>
@@ -463,20 +439,16 @@ include 'database.php';
                     <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.7s">
                         <div class="d-flex">
                             <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
-                            <p class="mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing
-                                elit. Magnam eos
-                                impedit eveniet dolorem culpa ullam incidunt vero quo recusandae
-                                nemo? Molestiae
-                                doloribus iure,
+                            <p class="mt-4">I feel fortunate to be related with the Grace International and satisfied with their entire service. I am extremely grateful to the consultancy for their support in making my processing much more efficient than I expected. I vouch for the organization and encourage to visit Grace International if you are looking for best consultancy for abroad study.
                             </p>
                         </div>
                         <div class="d-flex justify-content-end">
                             <div class="my-auto text-end">
-                                <h5>Person Name</h5>
-                                <p class="mb-0">Profession</p>
+                                <h5>Sanjeet Parajuli</h5>
+                                <p class="mb-0">Bachelor of Business - Torrens University</p>
                             </div>
                             <div class="bg-white rounded-circle ms-3">
-                                <img src="img/testimonial-3.jpg" class="rounded-circle p-2"
+                                <img src="img/man.png" class="rounded-circle p-2"
                                     style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);"
                                     alt="">
                             </div>

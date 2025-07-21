@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "question": "What Does a Financial Advisor Do?",
-    "answer": "A financial advisor provides guidance to clients on various financial matters including investments, insurance, retirement planning, tax strategies, and estate planning. They help assess your financial situation, understand your goals, and develop personalized strategies to achieve those objectives."
+    "question": "What is Student Visa?",
+    "answer": "The Student Visa (Subclass 500) allows international students to study full-time in Australia at primary/secondary schools, vocational training, universities, or other institutions, and permits family members to accompany them."
   },
   {
     "id": 2,
-    "question": "What industries do you specialize in?",
-    "answer": "We specialize in providing migration services across multiple industries including education, healthcare, IT, engineering, business, and trades. Our expertise spans student visas, skilled migration, business visas, partner visas, and more, with a deep understanding of each industry's specific requirements and pathways."
+    "question": "What Can You Do With a Visitor Visa (Subclass 600)?",
+    "answer": "The Visitor Visa allows you to visit family, friends, or tour Australia (including cruises) for up to three months, study or train briefly, but not for business or medical purposes; a Student Visa is recommended for primary study motives."
   },
   {
     "id": 3,
-    "question": "Can you guarantee for growth?",
-    "answer": "While we can't promise specific outcomes as migration policies can change, we guarantee our complete commitment to delivering expert guidance based on current legislation. Our track record demonstrates consistent success in helping clients achieve their migration goals through personalized strategies and thorough application preparation."
+    "question": "What is a Partner Visa?",
+    "answer": "A Partner Visa allows the spouse or de facto partner of an Australian citizen, permanent resident, or eligible New Zealand citizen to live in Australia, either temporarily (Subclass 820/801) or permanently (Subclass 309/100), depending on the application stage and location."
   },
   {
     "id": 4,
-    "question": "What makes your business plans so special?",
-    "answer": "Our business plans stand out because they're tailored specifically to your unique circumstances and goals. We combine industry expertise with up-to-date knowledge of migration requirements to create comprehensive, compliant plans that maximize your chances of success. Each plan undergoes rigorous review by our experienced team."
+    "question": "What is a 485 Visa?",
+    "answer": "The Temporary Graduate Visa (Subclass 485) allows international students who have recently graduated from an Australian educational institution to stay and work in Australia temporarily, with two streams: Graduate Work (up to 18 months) and Post-Study Work (2-4 years, depending on qualification)."
   },
   {
     "id": 5,
-    "question": "How long does the visa application process take?",
-    "answer": "Processing times vary significantly depending on the visa type, your individual circumstances, and current department workloads. Student visas typically take 4-8 weeks, while some skilled migration visas may take 6-18 months. During your consultation, we'll provide current estimated timeframes specific to your situation."
+    "question": "what are the benefits of the Temporary Graduate Visa (Subclass 485)?",
+    "answer": "The Temporary Graduate Visa (Subclass 485) allows recent international graduates to live, work, and study in Australia for 18 months (Graduate Work) or 2-4 years (Post-Study Work), with unrestricted work rights, family inclusion, travel flexibility, and a potential pathway to permanent residency."
   },
   {
     "id": 6,
-    "question": "What services do you provide for international students?",
-    "answer": "We offer comprehensive services for international students including course selection, university/college applications, student visa applications, accommodation assistance, health insurance arrangement, pre-departure briefings, and ongoing support throughout your study journey in Australia."
+    "question": "Can I appeal an AAT decision?",
+    "answer": "Yes. You can file a Notice of Appeal with the Court within twenty-eight days from the day of the AAT decision received."
   }
-] 
+]

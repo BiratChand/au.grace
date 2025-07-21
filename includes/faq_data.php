@@ -1,38 +1,40 @@
 <?php
+
 /**
  * FAQ Data Handler
  * Loads FAQ items from JSON file
  */
 
-function getFAQs() {
+function getFAQs()
+{
     $jsonFile = __DIR__ . '/../data/faqs.json';
-    
+
     if (file_exists($jsonFile)) {
         $jsonData = file_get_contents($jsonFile);
         return json_decode($jsonData, true);
     }
-    
+
     // Fallback data in case JSON file is not found
     return [
         [
             "id" => 1,
-            "question" => "What Does a Financial Advisor Do?",
-            "answer" => "A financial advisor provides guidance to clients on various financial matters including investments, insurance, retirement planning, tax strategies, and estate planning."
+            "question" => "What is Student Visa?",
+            "answer" => "The Student Visa (Subclass 500) allows international students to study full-time in Australia at primary/secondary schools, vocational training, universities, or other institutions, and permits family members to accompany them."
         ],
         [
             "id" => 2,
-            "question" => "What industries do you specialize in?",
-            "answer" => "We specialize in providing migration services across multiple industries including education, healthcare, IT, engineering, business, and trades."
+            "question" => "What Can You Do With a Visitor Visa (Subclass 600)?",
+            "answer" => "The Visitor Visa allows you to visit family, friends, or tour Australia (including cruises) for up to three months, study or train briefly, but not for business or medical purposes; a Student Visa is recommended for primary study motives."
         ],
         [
             "id" => 3,
-            "question" => "Can you guarantee for growth?",
-            "answer" => "While we can't promise specific outcomes as migration policies can change, we guarantee our complete commitment to delivering expert guidance based on current legislation."
+            "question" => "What is a Partner Visa?",
+            "answer" => "A Partner Visa allows the spouse or de facto partner of an Australian citizen, permanent resident, or eligible New Zealand citizen to live in Australia, either temporarily (Subclass 820/801) or permanently (Subclass 309/100), depending on the application stage and location."
         ],
         [
             "id" => 4,
-            "question" => "What makes your business plans so special?",
-            "answer" => "Our business plans stand out because they're tailored specifically to your unique circumstances and goals."
+            "question" => "What is a 485 Visa?",
+            "answer" => "The Temporary Graduate Visa (Subclass 485) allows international students who have recently graduated from an Australian educational institution to stay and work in Australia temporarily, with two streams: Graduate Work (up to 18 months) and Post-Study Work (2-4 years, depending on qualification)."
         ]
     ];
-} 
+}
