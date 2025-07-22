@@ -74,16 +74,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             // SMTP configuration
             $mail->isSMTP();
-            $mail->Host = 'smtp.gmail.com'; // Change to 'smtp.hostinger.com' for Hostinger
+            $mail->Host = 'smtp.hostinger.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'your_email@gmail.com'; // Change to your email
-            $mail->Password = 'your smtp password'; // Change to your app password
-            $mail->SMTPSecure = 'tls'; // Use 'ssl' for Hostinger
-            $mail->Port = 587; // Use 465 for 'ssl'
-
-            // Recipients
-            $mail->setFrom($email, $name); // From user
-            $mail->addAddress($to); // To you
+            $mail->Username = 'data@learnatgrace.com';
+            $mail->Password = '=6iaYZzT'; // your Hostinger mailbox password
+            $mail->SMTPSecure = 'ssl';
+            $mail->Port = 465;
+            
+            $mail->setFrom('data@learnatgrace.com', 'Grace Support');
+            $mail->addReplyTo($email, $name);
+            $mail->addAddress($to); // typically your own email            
 
             // Content
             $mail->Subject = $subject;
