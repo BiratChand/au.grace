@@ -1,5 +1,8 @@
 <?php
-include "database.php";
+require 'vendor/autoload.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 // Define variables and set to empty values
 $nameErr = $emailErr = $numberErr = $messageErr = "";
@@ -9,92 +12,97 @@ $mailSent = false;
 $errorMessage = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validation logic remains the same
+    // Simple validation
     if (empty($_POST['name'])) {
-        $nameErr = "Please enter your name";
+        $nameErr = "Name is required";
     } else {
-        $name = test_input($_POST['name']);
-        if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
-            $nameErr = "Only letters and white space allowed";
-        }
+        $name = $_POST['name'];
     }
 
     if (empty($_POST['email'])) {
-        $emailErr = "Please enter your email";
+        $emailErr = "Email is required";
     } else {
-        $email = test_input($_POST['email']);
-        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            $emailErr = "Invalid email format";
-        }
+        $email = $_POST['email'];
     }
 
     if (empty($_POST['number'])) {
-        $numberErr = "Please enter your phone number";
+        $numberErr = "Phone number is required";
     } else {
-        $number = test_input($_POST['number']);
-        if (!preg_match("/^[0-9\-\(\)\/\+\s]*$/", $number)) {
-            $numberErr = "Invalid phone number format";
-        }
+        $number = $_POST['number'];
     }
 
     if (empty($_POST['message'])) {
-        $messageErr = "Please enter your message";
+        $messageErr = "Message is required";
     } else {
-        $message = test_input($_POST['message']);
+        $message = $_POST['message'];
     }
 
     // Process the form if no errors
     if (empty($nameErr) && empty($emailErr) && empty($numberErr) && empty($messageErr)) {
         $formSubmitted = true;
-        
-        // Store in database
-        $sql = "INSERT INTO students(name, email, number, message) 
-                VALUES('$name', '$email', '$number', '$message')";
-        
-        if (mysqli_query($max, $sql)) {
-            // Email sending logic remains the same
-            $to = "info@graceinternational.com";
-            $subject = "New Contact Form Submission";
-            
-            $emailBody = "You have received a new message from the contact form on your website.\n\n";
-            $emailBody .= "Name: $name\n";
-            $emailBody .= "Email: $email\n";
-            $emailBody .= "Phone: $number\n";
-            $emailBody .= "Message:\n$message\n";
-            
-            $headers = "From: website@graceinternational.com\r\n";
-            $headers .= "Reply-To: $email\r\n";
-            
-            if (mail($to, $subject, $emailBody, $headers)) {
+
+        $to = "bcrypt81@gmail.com";
+        $subject = "Contact Form Submission";
+
+        $emailBody = '
+                        <div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.6;color:#333;">
+                            <h2 style="color:#2d89ef;">New Contact Form Submission</h2>
+                            <table cellpadding="8" style="border-collapse:collapse;">
+                                <tr>
+                                    <td style="font-weight:bold;">Name:</td>
+                                    <td>' . htmlspecialchars($name) . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight:bold;">Email:</td>
+                                    <td><a href="mailto:' . htmlspecialchars($email) . '">' . htmlspecialchars($email) . '</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight:bold;">Phone:</td>
+                                    <td>' . htmlspecialchars($number) . '</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight:bold;vertical-align:top;">Message:</td>
+                                    <td>' . nl2br(htmlspecialchars($message)) . '</td>
+                                </tr>
+                            </table>
+                            <p style="font-size:12px;color:#888;">This message was sent from your website contact form.</p>
+                        </div>
+                    ';
+
+        $mail = new PHPMailer(true);
+
+        try {
+            // SMTP configuration
+            $mail->isSMTP();
+            $mail->Host = 'smtp.gmail.com'; // Change to 'smtp.hostinger.com' for Hostinger
+            $mail->SMTPAuth = true;
+            $mail->Username = 'your_email@gmail.com'; // Change to your email
+            $mail->Password = 'your smtp password'; // Change to your app password
+            $mail->SMTPSecure = 'tls'; // Use 'ssl' for Hostinger
+            $mail->Port = 587; // Use 465 for 'ssl'
+
+            // Recipients
+            $mail->setFrom($email, $name); // From user
+            $mail->addAddress($to); // To you
+
+            // Content
+            $mail->Subject = $subject;
+            $mail->Body    = $emailBody;
+            $mail->AltBody = $emailBody;
+
+            if ($mail->send()) {
                 $mailSent = true;
-                
-                $userSubject = "Thank you for contacting Grace International";
-                $userMessage = "Dear $name,\n\n";
-                $userMessage .= "Thank you for reaching out to Grace International. We have received your message and will get back to you shortly.\n\n";
-                $userMessage .= "Here's a copy of your message:\n\n";
-                $userMessage .= "Message: $message\n\n";
-                $userMessage .= "Best regards,\nThe Grace International Team";
-                
-                $userHeaders = "From: info@graceinternational.com\r\n";
-                mail($email, $userSubject, $userMessage, $userHeaders);
             } else {
-                $errorMessage = "Email could not be sent. Please try again later.";
+                $errorMessage = "Mailer Error: " . $mail->ErrorInfo;
             }
-        } else {
-            $errorMessage = "There was an error saving your message. Please try again.";
+        } catch (Exception $e) {
+            $errorMessage = "Mailer Error: " . $mail->ErrorInfo;
         }
     }
 }
-
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
 ?>
 
-<!-- Modern Contact Section with Integrated Image and Form -->
+<!-- Simple Contact Form -->
 <div class="container-fluid py-5 glossy-bg">
     <div class="container py-5">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
@@ -102,7 +110,6 @@ function test_input($data) {
             <h1 class="display-5 mb-3 gradient-text">Speak to our Team</h1>
             <p class="mb-0">Fill out the form below for a free consultation with our expert team.</p>
         </div>
-
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="glossy-card wow fadeInUp" data-wow-delay="0.3s">
@@ -112,70 +119,64 @@ function test_input($data) {
                         </div>
                         <div class="col-md-7">
                             <div class="p-4 p-md-5">
-                                <?php if ($formSubmitted && empty($errorMessage)): ?>
+                                <?php if ($formSubmitted && $mailSent): ?>
                                     <div class="alert alert-success">
                                         <h4><i class="fas fa-check-circle me-2"></i> Thank You!</h4>
                                         <p>Your message has been sent successfully. We will get back to you as soon as possible.</p>
-            </div>
+                                    </div>
                                 <?php elseif (!empty($errorMessage)): ?>
                                     <div class="alert alert-danger">
                                         <h4><i class="fas fa-exclamation-circle me-2"></i> Error!</h4>
                                         <p><?php echo $errorMessage; ?></p>
-                </div>
+                                    </div>
                                 <?php endif; ?>
 
                                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                                     <div class="form-floating mb-4">
-                                        <input type="text" class="form-control <?php echo (!empty($nameErr)) ? 'is-invalid' : ''; ?>" 
-                                               id="name" name="name" placeholder="Full Name" value="<?php echo $name; ?>">
+                                        <input type="text" class="form-control <?php echo (!empty($nameErr)) ? 'is-invalid' : ''; ?>"
+                                            id="name" name="name" placeholder="Full Name" value="<?php echo $name; ?>">
                                         <label for="name">Full Name</label>
                                         <?php if (!empty($nameErr)): ?>
                                             <div class="invalid-feedback"><?php echo $nameErr; ?></div>
                                         <?php endif; ?>
-                </div>
-                                    
+                                    </div>
+
                                     <div class="form-floating mb-4">
-                                        <input type="email" class="form-control <?php echo (!empty($emailErr)) ? 'is-invalid' : ''; ?>" 
-                                               id="email" name="email" placeholder="Email Address" value="<?php echo $email; ?>">
+                                        <input type="email" class="form-control <?php echo (!empty($emailErr)) ? 'is-invalid' : ''; ?>"
+                                            id="email" name="email" placeholder="Email Address" value="<?php echo $email; ?>">
                                         <label for="email">Email Address</label>
                                         <?php if (!empty($emailErr)): ?>
                                             <div class="invalid-feedback"><?php echo $emailErr; ?></div>
                                         <?php endif; ?>
-                </div>
-                                    
+                                    </div>
+
                                     <div class="form-floating mb-4">
-                                        <input type="text" class="form-control <?php echo (!empty($numberErr)) ? 'is-invalid' : ''; ?>" 
-                                               id="number" name="number" placeholder="Phone Number" value="<?php echo $number; ?>">
+                                        <input type="text" class="form-control <?php echo (!empty($numberErr)) ? 'is-invalid' : ''; ?>"
+                                            id="number" name="number" placeholder="Phone Number" value="<?php echo $number; ?>">
                                         <label for="number">Phone Number</label>
                                         <?php if (!empty($numberErr)): ?>
                                             <div class="invalid-feedback"><?php echo $numberErr; ?></div>
                                         <?php endif; ?>
-                </div>
-
+                                    </div>
                                     <div class="form-floating mb-4">
-                                        <textarea class="form-control <?php echo (!empty($messageErr)) ? 'is-invalid' : ''; ?>" 
-                                                  id="message" name="message" placeholder="Message" style="height: 150px;"><?php echo $message; ?></textarea>
+                                        <textarea class="form-control <?php echo (!empty($messageErr)) ? 'is-invalid' : ''; ?>"
+                                            id="message" name="message" placeholder="Message" style="height: 150px;"><?php echo $message; ?></textarea>
                                         <label for="message">Message</label>
                                         <?php if (!empty($messageErr)): ?>
                                             <div class="invalid-feedback"><?php echo $messageErr; ?></div>
                                         <?php endif; ?>
-                </div>
-
+                                    </div>
                                     <div class="text-center">
                                         <button type="submit" class="glossy-button">
                                             <i class="fas fa-paper-plane me-2"></i> Send Message
                                         </button>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<?php
-mysqli_close($max);
-?>
