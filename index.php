@@ -65,14 +65,8 @@ include 'database.php';
 <div class="container-fluid py-5 glossy-bg">
     <div class="container py-5">
         <div class="row align-items-center">
-            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.1s">
-                <div class="glossy-card p-3" style="position: relative;">
-                    <img src="img/Aus.png" class="img-fluid rounded-4" alt="Australia Map">
-                    <div class="position-absolute" style="bottom: -20px; right: -20px; z-index: -1; width: 150px; height: 150px; border-radius: 50%; background: rgba(0, 123, 255, 0.1);"></div>
-                    <div class="position-absolute" style="top: -20px; left: -20px; z-index: -1; width: 120px; height: 120px; border-radius: 50%; background: rgba(0, 123, 255, 0.05);"></div>
-                </div>
-            </div>
-            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.3s">
+
+            <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.3s">
                 <?php
                 // Location handler is already included in header.php
 
@@ -130,6 +124,13 @@ include 'database.php';
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.1s">
+                <div class="glossy-card p-3" style="position: relative;">
+                    <img src="img/Aus.png" class="img-fluid rounded-4" alt="Australia Map">
+                    <div class="position-absolute" style="bottom: -20px; right: -20px; z-index: -1; width: 150px; height: 150px; border-radius: 50%; background: rgba(0, 123, 255, 0.1);"></div>
+                    <div class="position-absolute" style="top: -20px; left: -20px; z-index: -1; width: 120px; height: 120px; border-radius: 50%; background: rgba(0, 123, 255, 0.05);"></div>
                 </div>
             </div>
         </div>
@@ -516,14 +517,14 @@ $branches_json_for_js = json_encode($branches_data);
             map = L.map('map', {
                 scrollWheelZoom: false // Disable scroll wheel zoom by default
             }).setView([initialLat, initialLng], initialZoom);
-            
+
             // Enable zoom only after user clicks on the map
             map.on('click', function() {
                 if (!map.scrollWheelZoom.enabled()) {
                     map.scrollWheelZoom.enable();
                 }
             });
-            
+
             // Disable zoom when user clicks outside the map
             document.addEventListener('click', function(e) {
                 if (!document.getElementById('map').contains(e.target)) {
