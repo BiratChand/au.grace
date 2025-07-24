@@ -5,8 +5,6 @@ include 'header.php';
 include 'navbar.php';
 
 // Include the form processing logic
-// This will handle form submission and validation
-
 include 'form.php';
 include 'data/contact_details.php';
 ?>
@@ -60,11 +58,52 @@ include 'data/contact_details.php';
         box-shadow: 0 4px 15px var(--grace-shadow-medium);
         border-radius: 12px;
         text-align: center;
-        display: none;
     }
 
     .contact-section.active {
         display: block;
+    }
+
+
+    /* Mobile-specific styles (up to 768px) */
+    @media (max-width: 768px) {
+        .nav-buttons {
+            margin: 1.5rem 0;
+            gap: 0.3rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .nav-buttons button {
+            padding: 0.5rem 0.8rem;
+            font-size: 0.8rem;
+            min-width: 0;
+            width: 100%;
+        }
+
+        .subsection-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.3rem;
+        }
+
+        .subsection-buttons button {
+            padding: 0.4rem 0.8rem;
+            font-size: 0.75rem;
+            min-width: 0;
+            width: 100%;
+        }
+
+        .contact-section {
+            margin: 1rem auto;
+            padding: 1rem;
+        }
+
+        .branch-item p {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+        }
     }
 </style>
 

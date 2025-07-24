@@ -1121,7 +1121,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background-color: var(--bs-dark);
+    background-color: var(--bs-black);
     color: var(--bs-white);
     padding: 40px 20px;
     /* Add padding for spacing */
@@ -1219,6 +1219,7 @@
     --bs-primary1: white;
     /* Grace blue primary */
     --bs-dark: #0056b3;
+    --bs-black: #202020;
     /* Grace blue dark */
     --bs-light: #f0f2f5;
     /* Light grey background */
@@ -2532,7 +2533,7 @@ a:hover {
         min-width: 140px;
         font-size: 0.75rem;
     }
-    
+
     .city-selector .dropdown-item {
         padding: 4px 10px;
         font-size: 0.75rem;
@@ -2542,6 +2543,7 @@ a:hover {
 /* Update the mobile responsiveness fixes */
 
 @media (max-width: 768px) {
+
     /* Make carousel buttons more visible and clickable */
     .carousel-caption {
         position: relative;
@@ -2551,7 +2553,7 @@ a:hover {
         left: 0;
         right: 0;
     }
-    
+
     .carousel-caption-inner {
         background-color: rgba(0, 0, 0, 0.7);
         padding: 15px !important;
@@ -2559,24 +2561,24 @@ a:hover {
         position: relative;
         z-index: 20;
     }
-    
+
     .carousel-caption h1 {
         font-size: 24px !important;
         margin-bottom: 10px !important;
     }
-    
+
     .carousel-caption p {
         font-size: 14px !important;
         margin-bottom: 15px !important;
     }
-    
+
     .carousel-buttons {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-    
+
     .carousel-buttons .btn {
         font-size: 14px;
         padding: 8px 15px !important;
@@ -2585,7 +2587,7 @@ a:hover {
         width: 80%;
         max-width: 200px;
     }
-    
+
     /* Hide blue overlay on mobile to make buttons clickable */
     .header-carousel .header-carousel-item::before,
     .header-carousel .header-carousel-item::after,
@@ -2597,51 +2599,51 @@ a:hover {
     .header-carousel .header-carousel-item-img-3::after {
         display: none !important;
     }
-    
+
     /* Make sure the carousel caption is above everything else */
     .header-carousel .header-carousel-item .carousel-caption {
         z-index: 20 !important;
     }
-    
+
     /* Compact header for mobile */
     .topbar {
         padding: 2px 0;
         min-height: 26px;
     }
-    
+
     .topbar .btn-square {
         width: 22px;
         height: 22px;
         font-size: 11px;
         margin: 0 1px;
     }
-    
+
     .topbar .d-flex {
         flex-wrap: nowrap;
         justify-content: center;
     }
-    
+
     .topbar .me-3 {
         margin-right: 3px !important;
         font-size: 11px;
     }
-    
+
     .topbar a {
         font-size: 11px;
     }
-    
+
     /* Ensure buttons are clickable */
     .header-carousel-item {
         position: relative;
     }
-    
+
     .header-carousel-item-img-1,
     .header-carousel-item-img-2,
     .header-carousel-item-img-3 {
         position: relative;
         z-index: 1;
     }
-    
+
     /* Fix map scrolling */
     #map {
         touch-action: none;
@@ -2689,11 +2691,11 @@ a:hover {
     .footer-logo {
         max-height: 100px;
     }
-    
+
     .footer-contact p {
         font-size: 13px;
     }
-    
+
     .footer-social a {
         width: 30px;
         height: 30px;
@@ -2719,12 +2721,13 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+
     /* Compact header for mobile */
     .topbar {
         padding: 2px 0;
         min-height: 26px;
     }
-    
+
     .city-selector .btn {
         font-size: 0.7rem;
         padding: 1px 6px;
@@ -2747,7 +2750,7 @@ a:hover {
         z-index: 20 !important;
         padding: 20px;
     }
-    
+
     .carousel-caption-inner {
         background-color: rgba(0, 0, 0, 0.6);
         padding: 20px !important;
@@ -2758,18 +2761,18 @@ a:hover {
         max-width: 500px;
         margin: 0 auto;
     }
-    
+
     .carousel-buttons {
         position: relative;
         z-index: 30 !important;
     }
-    
+
     .carousel-buttons .btn {
         position: relative;
         z-index: 30 !important;
         pointer-events: auto !important;
     }
-    
+
     /* Ensure the entire carousel item doesn't have pointer events blocking */
     .header-carousel-item * {
         pointer-events: auto !important;
