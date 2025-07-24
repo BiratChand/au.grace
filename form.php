@@ -11,6 +11,11 @@ $formSubmitted = false;
 $mailSent = false;
 $errorMessage = "";
 
+// Get the current city's email from city_content.json
+include_once 'includes/location_handler.php';
+$cityContent = getCityContent();
+$cityEmail = isset($cityContent['contact_info']['email']) ? $cityContent['contact_info']['email'] : 'info@graceinternational.com.au';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Simple validation
     if (empty($_POST['name'])) {
@@ -40,13 +45,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Process the form if no errors
     if (empty($nameErr) && empty($emailErr) && empty($numberErr) && empty($messageErr)) {
         $formSubmitted = true;
-
-        $to = "bcrypt81@gmail.com";
-        $subject = "Contact Form Submission";
-
+        
+        $to = "bcrypt81@gmail.com"; // Backup email
+        $cityName = getCurrentUserCity(); // Get the current city name
+        $subject = "Contact Form Submission from " . $cityName;
+            
         $emailBody = '
                         <div style="font-family:Arial,sans-serif;font-size:15px;line-height:1.6;color:#333;">
-                            <h2 style="color:#2d89ef;">New Contact Form Submission</h2>
+                            <h2 style="color:#2d89ef;">New Contact Form Submission from ' . $cityName . '</h2>
                             <table cellpadding="8" style="border-collapse:collapse;">
                                 <tr>
                                     <td style="font-weight:bold;">Name:</td>
@@ -83,12 +89,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             
             $mail->setFrom('data@learnatgrace.com', 'Grace Support');
             $mail->addReplyTo($email, $name);
-            $mail->addAddress($to); // typically your own email            
+            
+            // Add city-specific email address as recipient
+            $mail->addAddress($cityEmail); 
+            
+            // Also add backup email if different
+            if ($cityEmail != $to) {
+                $mail->addCC($to);
+            }
 
             // Content
+            $mail->isHTML(true);
             $mail->Subject = $subject;
             $mail->Body    = $emailBody;
-            $mail->AltBody = $emailBody;
+            $mail->AltBody = strip_tags(str_replace('<br>', "\n", $emailBody));
 
             if ($mail->send()) {
                 $mailSent = true;
@@ -123,58 +137,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <div class="alert alert-success">
                                         <h4><i class="fas fa-check-circle me-2"></i> Thank You!</h4>
                                         <p>Your message has been sent successfully. We will get back to you as soon as possible.</p>
-                                    </div>
+            </div>
                                 <?php elseif (!empty($errorMessage)): ?>
                                     <div class="alert alert-danger">
                                         <h4><i class="fas fa-exclamation-circle me-2"></i> Error!</h4>
                                         <p><?php echo $errorMessage; ?></p>
-                                    </div>
+                </div>
                                 <?php endif; ?>
 
                                 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                                     <div class="form-floating mb-4">
-                                        <input type="text" class="form-control <?php echo (!empty($nameErr)) ? 'is-invalid' : ''; ?>"
-                                            id="name" name="name" placeholder="Full Name" value="<?php echo $name; ?>">
+                                        <input type="text" class="form-control <?php echo (!empty($nameErr)) ? 'is-invalid' : ''; ?>" 
+                                               id="name" name="name" placeholder="Full Name" value="<?php echo $name; ?>">
                                         <label for="name">Full Name</label>
                                         <?php if (!empty($nameErr)): ?>
                                             <div class="invalid-feedback"><?php echo $nameErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
-
+                </div>
+                                    
                                     <div class="form-floating mb-4">
-                                        <input type="email" class="form-control <?php echo (!empty($emailErr)) ? 'is-invalid' : ''; ?>"
-                                            id="email" name="email" placeholder="Email Address" value="<?php echo $email; ?>">
+                                        <input type="email" class="form-control <?php echo (!empty($emailErr)) ? 'is-invalid' : ''; ?>" 
+                                               id="email" name="email" placeholder="Email Address" value="<?php echo $email; ?>">
                                         <label for="email">Email Address</label>
                                         <?php if (!empty($emailErr)): ?>
                                             <div class="invalid-feedback"><?php echo $emailErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
-
+                </div>
+                                    
                                     <div class="form-floating mb-4">
-                                        <input type="text" class="form-control <?php echo (!empty($numberErr)) ? 'is-invalid' : ''; ?>"
-                                            id="number" name="number" placeholder="Phone Number" value="<?php echo $number; ?>">
+                                        <input type="text" class="form-control <?php echo (!empty($numberErr)) ? 'is-invalid' : ''; ?>" 
+                                               id="number" name="number" placeholder="Phone Number" value="<?php echo $number; ?>">
                                         <label for="number">Phone Number</label>
                                         <?php if (!empty($numberErr)): ?>
                                             <div class="invalid-feedback"><?php echo $numberErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
+                </div>
                                     <div class="form-floating mb-4">
-                                        <textarea class="form-control <?php echo (!empty($messageErr)) ? 'is-invalid' : ''; ?>"
-                                            id="message" name="message" placeholder="Message" style="height: 150px;"><?php echo $message; ?></textarea>
+                                        <textarea class="form-control <?php echo (!empty($messageErr)) ? 'is-invalid' : ''; ?>" 
+                                                  id="message" name="message" placeholder="Message" style="height: 150px;"><?php echo $message; ?></textarea>
                                         <label for="message">Message</label>
                                         <?php if (!empty($messageErr)): ?>
                                             <div class="invalid-feedback"><?php echo $messageErr; ?></div>
                                         <?php endif; ?>
-                                    </div>
+                </div>
                                     <div class="text-center">
                                         <button type="submit" class="glossy-button">
                                             <i class="fas fa-paper-plane me-2"></i> Send Message
                                         </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
                 </div>
             </div>
         </div>

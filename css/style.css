@@ -32,14 +32,16 @@
     /* Add background color */
     color: var(--bs-white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* Add shadow for depth */
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .back-to-top:hover {
     transform: translateY(-5px);
-    /* Add hover effect */
-    background-color: var(--bs-dark);
 }
 
 /*** Button Start ***/

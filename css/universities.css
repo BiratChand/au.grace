@@ -1,0 +1,185 @@
+/* Universities Carousel Styling */
+.universities-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    left: 0;
+    right: 0;
+    pointer-events: none; /* Allow clicks to pass through to items */
+}
+
+.universities-carousel .owl-nav .owl-prev,
+.universities-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: var(--bs-primary);
+    border-radius: 50%;
+    font-size: 18px;
+    transition: .3s;
+    pointer-events: auto; /* Make buttons clickable */
+    opacity: 0.9;
+    z-index: 10;
+}
+
+.universities-carousel .owl-nav .owl-prev {
+    left: -20px;
+}
+
+.universities-carousel .owl-nav .owl-next {
+    right: -20px;
+}
+
+.universities-carousel .owl-nav .owl-prev:hover,
+.universities-carousel .owl-nav .owl-next:hover {
+    background: var(--bs-dark);
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.university-item {
+    margin: 15px;
+    transition: all 0.3s;
+}
+
+.university-logo {
+    height: 180px;
+    width: 180px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(0, 123, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transition: all 0.3s;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.university-logo img {
+    max-width: 80%;
+    max-height: 80%;
+    transition: all 0.3s;
+    object-fit: contain;
+}
+
+.university-item:hover .university-logo {
+    border-color: var(--bs-primary);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.university-item:hover .university-logo img {
+    transform: scale(1.1);
+}
+
+/* Universities Grid for the dedicated page */
+.universities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.university-grid-item {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+.university-grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.university-grid-logo {
+    height: 150px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.university-grid-logo img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.university-grid-name {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--bs-dark);
+}
+
+.university-grid-description {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.university-grid-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--bs-primary);
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.university-grid-link:hover {
+    background-color: var(--bs-dark);
+    color: #fff;
+}
+
+@media (max-width: 992px) {
+    .universities-carousel .owl-nav .owl-prev {
+        left: -20px;
+    }
+    
+    .universities-carousel .owl-nav .owl-next {
+        right: -20px;
+    }
+    
+    .university-logo {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .universities-carousel .owl-nav {
+        display: none;
+    }
+    
+    .university-logo {
+        height: 120px;
+        width: 120px;
+    }
+    
+    .universities-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .university-logo {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .universities-grid {
+        grid-template-columns: 1fr;
+    }
+} 

@@ -564,6 +564,12 @@ $branches_json_for_js = json_encode($branches_data);
     </div>
 </div>
 
+<!-- Associated Universities Section -->
+<?php
+include 'includes/universities_handler.php';
+echoUniversitiesCarousel(['featuredOnly' => true]);
+?>
+
 <!-- FAQ Start -->
 <?php
 include 'includes/faq_handler.php';

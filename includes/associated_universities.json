@@ -1,0 +1,148 @@
+{
+  "universities": [
+    {
+      "id": 1,
+      "name": "ATMC",
+      "logo": "img/Partners/universities-atmc.png",
+      "website": "https://www.atmc.edu.au/",
+      "description": "Australian Technical & Management College (ATMC) partners with leading Australian universities to deliver quality higher education programs.",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "OCC",
+      "logo": "img/Partners/navitas-300x300.png",
+      "website": "https://www.occ.edu.au/",
+      "description": "OCC offers a wide range of programs designed to prepare students for success in higher education and beyond.",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "APIC",
+      "logo": "img/Partners/universities-apic.png",
+      "website": "https://apicollege.edu.au/",
+      "description": "Asia Pacific International College (APIC) is an Australian higher education provider offering business and IT courses.",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "Australian Institute of Higher Education",
+      "logo": "img/Partners/universities-australian-institute.png",
+      "website": "https://aih.nsw.edu.au/",
+      "description": "The Australian Institute of Higher Education (AIH) is committed to delivering quality education and graduate outcomes.",
+      "featured": true
+    },
+    {
+      "id": 5,
+      "name": "Avila University",
+      "logo": "img/Partners/La-Trobe-300x300.png",
+      "website": "https://www.avila.edu/",
+      "description": "Avila University offers innovative programs with a focus on preparing students for professional success.",
+      "featured": true
+    },
+    {
+      "id": 6,
+      "name": "Bellevue College",
+      "logo": "img/Partners/tafe-300x300.png",
+      "website": "https://www.bellevuecollege.edu/",
+      "description": "Bellevue College provides quality education and career preparation for students from diverse backgrounds.",
+      "featured": true
+    },
+    {
+      "id": 7,
+      "name": "Blue Mountains International Hotel Management School",
+      "logo": "img/Partners/universities-bluemountains.png",
+      "website": "https://www.bluemountains.edu.au/",
+      "description": "Blue Mountains International Hotel Management School is Australia's leading hotel school for hospitality education.",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "name": "Box Hill Institute",
+      "logo": "img/Partners/universities-boxhill.png",
+      "website": "https://www.boxhill.edu.au/",
+      "description": "Box Hill Institute offers a wide range of courses designed to provide practical, real-world skills.",
+      "featured": false
+    },
+    {
+      "id": 9,
+      "name": "Charles Sturt University",
+      "logo": "img/Partners/universities-charles-sturt.png",
+      "website": "https://www.csu.edu.au/",
+      "description": "Charles Sturt University is Australia's most experienced online university and has a reputation for excellence in professional education.",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "name": "Chisholm Institute",
+      "logo": "img/Partners/universities-chisholm.png",
+      "website": "https://www.chisholm.edu.au/",
+      "description": "Chisholm Institute is one of Victoria's premier public vocational education and training providers.",
+      "featured": false
+    },
+    {
+      "id": 11,
+      "name": "Cambridge International College",
+      "logo": "img/Partners/universities-cic.png",
+      "website": "https://cambridgecollege.com.au/",
+      "description": "Cambridge International College offers quality education with a focus on business and management courses.",
+      "featured": false
+    },
+    {
+      "id": 12,
+      "name": "Crown Institute of Higher Education",
+      "logo": "img/Partners/crown-300x300.png",
+      "website": "https://www.cihe.edu.au/",
+      "description": "Crown Institute of Higher Education is committed to providing quality education with a focus on student success.",
+      "featured": false
+    },
+    {
+      "id": 13,
+      "name": "CQUniversity",
+      "logo": "img/Partners/universities-cqu.png",
+      "website": "https://www.cqu.edu.au/",
+      "description": "CQUniversity is Australia's largest regional university offering a diverse range of programs and research opportunities.",
+      "featured": false
+    },
+    {
+      "id": 14,
+      "name": "ECA College",
+      "logo": "img/Partners/universities-eca.png",
+      "website": "https://www.eca.edu.au/",
+      "description": "ECA College provides quality education and training in a supportive learning environment.",
+      "featured": false
+    },
+    {
+      "id": 15,
+      "name": "Edith Cowan University",
+      "logo": "img/Partners/universities-ecu.png",
+      "website": "https://www.ecu.edu.au/",
+      "description": "Edith Cowan University is committed to widening participation and developing alternative pathways to higher education.",
+      "featured": false
+    },
+    {
+      "id": 16,
+      "name": "Excelsia College",
+      "logo": "img/Partners/universities-excelsia.png",
+      "website": "https://excelsia.edu.au/",
+      "description": "Excelsia College provides quality education with a Christian worldview, fostering creativity and innovation.",
+      "featured": false
+    },
+    {
+      "id": 17,
+      "name": "Federation University",
+      "logo": "img/Partners/universities-federation.png",
+      "website": "https://federation.edu.au/",
+      "description": "Federation University Australia is one of the nation's leading regional universities, with a strong focus on excellence.",
+      "featured": false
+    },
+    {
+      "id": 18,
+      "name": "IHNA",
+      "logo": "img/Partners/ihna-300x300.png",
+      "website": "https://www.ihna.edu.au/",
+      "description": "Institute of Health and Nursing Australia (IHNA) is a premier healthcare education provider in Australia.",
+      "featured": false
+    }
+  ]
+} 

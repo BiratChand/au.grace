@@ -68,8 +68,13 @@
 
 
 <!-- Back to Top -->
-<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+<a href="#" class="back-to-top"><i class="fa fa-arrow-up"></i></a>
 
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/<?php echo str_replace(['+', ' ', '(', ')', '-'], '', $cityContent['contact_info']['whatsapp']); ?>?text=Hello%20Grace%20International,%20I%20have%20a%20question" 
+   class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 <!-- JavaScript Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -88,6 +93,45 @@
 
 <!-- Location Javascript -->
 <script src="js/location.js"></script>
+
+<!-- Initialize any remaining carousels -->
+<script>
+$(document).ready(function() {
+    // Initialize any universities carousels that might not have been initialized yet
+    if (typeof $.fn.owlCarousel !== 'undefined') {
+        $(".universities-carousel:not(.owl-loaded)").each(function() {
+            $(this).owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                smartSpeed: 1000,
+                margin: 25,
+                loop: true,
+                nav: true,
+                navText: [
+                    '<i class="fas fa-chevron-left"></i>',
+                    '<i class="fas fa-chevron-right"></i>'
+                ],
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 2
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 5
+                    }
+                }
+            });
+        });
+    }
+});
+</script>
 </body>
 
 </html>
