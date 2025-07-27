@@ -31,6 +31,8 @@ if (session_status() == PHP_SESSION_NONE) {
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+    <link rel="shortcut icon" href="img/G-Logo.png" type="image/x-icon">
+
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
