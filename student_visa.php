@@ -24,14 +24,9 @@ include 'database.php';
     <div class="left">
         <div class="row justify-content-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <p class="left">Student Visa (Subclass 500) is your ticket to study, work, and live in Australia to
-                    undertake a full-time course in a recognised educational facility. This visa is for
-                    international students and includes options like permitting students to work while studying,
-                    offering quality education, and a future in one of the most vibrant and multicultural countries
-                    in the world.
+                <p class="left">The Subclass 500 visa allows international students to study full-time at a recognized Australian educational institution. It's your ticket to study, work, and live in Australia while undertaking a full-time course. Whether you are an undergraduate, a vocational course, or a postgraduate student, this visa offers an array of choices in Australia.
                     <br><br>
-                    Whether you are an undergraduate, a vocation course or a postgraduate course student, a Subclass
-                    500 visa allows you to have an array of choices in Australia.
+                    Whether you are an undergraduate, a vocation course or a postgraduate course student, a Subclass 500 visa allows you to have an array of choices in Australia.
                 <div class="pt-4 text-center">
                     <a class="btn btn-primary rounded-pill py-2 px-4" href="form1.php">Want to know more? Click Here.</a>
                 </div>
@@ -46,15 +41,11 @@ include 'database.php';
         <div class="row justify-content-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <h1 class="text-center">OVERVIEW</h1><br>
-                <p class="left">The Student Visa (Subclass 500) enables foreign students to attend full-time
-                    education in Australia in two regulated institutions: primary and secondary schools, vocational
-                    education and training, universities, or other Institutions. This visa also allows students to
-                    be accompanied by members of their families, which completes their education abroad.
+                <p class="left">The Student Visa (Subclass 500) enables international students to undertake full‑time education in Australia at CRICOS‑registered institutions—including primary and secondary schools, vocational education and training providers, universities, and other higher education institutions. This visa also allows eligible family members (partner and dependent children) to accompany the student during their stay.
                     <br><br>
-                    It is usually for the duration of your course, up to five years. Some of the extensions can be
-                    done if you want to further your education in a certain field. The base amount of the Student
-                    Visa (Subclass 500) will cost $ 650, but this is without add-ons which include health and
-                    character requirements, insurance and English tests.
+                    It is generally granted for the duration of your course plus additional time allowed for travel and graduation, up to a maximum of five years, with extensions possible if you pursue further studies.
+                    <br><br>
+                    As of 1 July 2025, the base application charge (VAC) for the primary applicant is AUD 2,000, reflecting a 25% increase from the previous AUD 1,600. Additional applicants aged 18 or over must pay AUD 1,225 each, while those under 18 are charged AUD 400 each. These fees do not include additional costs such as Overseas Student Health Cover (OSHC), English tests, or health and character assessments.
                 </p>
 
             </div>
@@ -81,11 +72,7 @@ include 'database.php';
                     <div id="collapseFourA" class="accordion-collapse collapse" aria-labelledby="headingFourA"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>Student visa holders are allowed to work between 20-40 hours per fortnight depending
-                                on sessional classes. This enables students to be able to feed on themselves, get
-                                working experience within the local area, and at the same time, equip new skills.
-                                You also have the luxury of working as many hours as possible, especially during
-                                holiday break resulting in more money.
+                            <p>Student visa holders are permitted to work up to 48 hours per fortnight during study periods, giving them the opportunity to support themselves financially, gain local work experience, and develop new skills. During scheduled course breaks or holidays, students are allowed to work unlimited hours, offering the flexibility to earn more income and engage more fully in the Australian workforce.
                             </p>
                         </div>
                     </div>
@@ -99,10 +86,8 @@ include 'database.php';
                     <div id="collapseFourB" class="accordion-collapse collapse" aria-labelledby="headingFourB"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p> Your spouse and dependent children are permitted to come to Australia under the
-                                Subclass 500 Visa. Even as your partner can attend full-time or part-time, serving
-                                as breadwinner, children can go to school, and the family will be well taken care of
-                                as everyone supports your educational endeavours.
+                            <p> Your spouse and dependent children can accompany you to Australia under the Subclass 500 Student Visa. While your partner may be eligible to work up to 48 hours per fortnight during your study period, if you are enrolled in a master's (coursework or research) or PhD program, they can work unlimited hours once your course has commenced.
+                                Meanwhile, your children are allowed to attend school, ensuring the whole family is supported and can thrive while you pursue your education in Australia.
                             </p>
                         </div>
                     </div>
@@ -116,11 +101,7 @@ include 'database.php';
                     <div id="collapseFourC" class="accordion-collapse collapse" aria-labelledby="headingFourC"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>Every individual who comes to Australia with a Subclass 500 visa has to abide by the
-                                country’s taxation laws. The money you earn from a part-time job will be taxed below
-                                the student visa tax rate. To avoid issues with staying abreast of one’s
-                                responsibilities, thus tax filing is done on an annual basis and compliance with the
-                                number of working hours permitted under the visa.
+                            <p>Students on a Subclass 500 visa must comply with Australian tax laws. If staying over six months, they’re usually taxed as residents and can earn up to AUD 18,200 tax-free. A Tax File Number (TFN) is required, and tax returns must be filed annually. Students must also follow work limits and may claim superannuation refunds when leaving Australia, depending on their visa status.
                             </p>
                         </div>
                     </div>
@@ -134,9 +115,7 @@ include 'database.php';
                     <div id="collapseFourD" class="accordion-collapse collapse" aria-labelledby="headingFourD"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p> All students must have Overseas Student Health Cover (OSHC) which guarantees entitle
-                                you and your dependents to freely access Australia’s high-quality healthcare
-                                services.
+                            <p> All international students must hold valid Overseas Student Health Cover (OSHC) for the entire duration of their Subclass 500 visa, and this coverage must also extend to any accompanying dependants. OSHC guarantees access to Australia’s world‑class medical services without substantial out‑of‑pocket expenses, including treatments at hospitals, visits to GPs, ambulance services and essential pharmaceuticals
                             </p>
                         </div>
                     </div>
@@ -213,9 +192,7 @@ include 'database.php';
                 <div id="collapseFourH" class="accordion-collapse collapse" aria-labelledby="headingFourH"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body my-2">
-                        <p> You have to prove that you have enough financial resources to support tuition and other
-                            miscellaneous fees, living expenses at least of a minimum of AUD 21,041 per year, and
-                            travel expenses.
+                        <p> Prove sufficient funds for tuition, fees, living expenses (minimum AUD 29,710/year), and travel costs.
                         </p>
                     </div>
                 </div>
@@ -299,11 +276,7 @@ include 'database.php';
 
                 <li><strong>Step 5 - Wait for Processing Time</strong><br><br>
                     <ul>
-                        <li>On average, the 500 visa processing takes 4 to 6 weeks. Do not delay your application by
-                            failing to fill in all required information. Applications are evaluated on several
-                            factors such as whether the supporting documentation is true, your proposed course, and
-                            the volume of cases for immigration officials when you apply. To ensure a faster
-                            approval it is advisable to review all the necessary documents before submission.</li>
+                        <li>Processing takes 22 days to 7–9 months, with a median of 53 days (Higher Education: 34–75 days). Submit complete applications early with CoE, financial proof (AUD 29,710/year), and OSHC to avoid delays.</li>
                         <br>
                     </ul>
                 </li>
@@ -329,15 +302,14 @@ include 'database.php';
             <div class="col-lg-6 col-xl-7 wow fadeInLeft" data-wow-delay="0.3s">
                 <h2 class="text-primary">Overview of Costs</h2>
                 <p>
-                    The cost required to apply for a Student Visa (Subclass 500) is not only costly but comes with
-                    other essential requirements. Here’s a breakdown of costs:</p>
+                    Applying for an Australian Student Visa (Subclass 500) involves several significant costs. It is crucial for prospective students to be aware of the most current figures, as these are subject to change. Here is a breakdown of the updated costs:</p>
                 <ul>
-                    <li> <strong>Visa Application Fee:</strong> Starts at AUD 650.</li>
-                    <li> <strong>Health Insurance (OSHC):</strong> They begin at AUD 438 annually depending on the
+                    <li> <strong>Visa Application Fee:</strong> Starts at AUD 730.</li>
+                    <li> <strong>Health Insurance (OSHC):</strong> They begin at AUD 500 to AUD 600 annually depending on the
                         provider and the type of cover you want.</li>
                     <li> <strong>English Proficiency Tests:</strong> Tests that include funding fees are likely to
-                        cost between AUD 300 to AUD 350.</li>
-                    <li> <strong>Living Expenses:</strong> Living costs amount to at least AUD 21,041 per year.</li>
+                        cost between AUD 420 to AUD 520.</li>
+                    <li> <strong>Living Expenses:</strong> Living costs amount to at least AUD 29,710 per year.</li>
                     <li> <strong>Other Expenses:</strong> These may include books, notes, fees from medical
                         check-ups, and any other expenditure incurred while travelling.</li>
 
@@ -362,21 +334,16 @@ include 'database.php';
             <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
                 <h2 class="text-primary">Student Visa Application Processing Time</h2>
                 <p>
-                    The decision time for the Student visa (Subclass 500) takes about 4-6 weeks, not including the
-                    time you will take to collect your documents. The time taken can vary depending on factors such
-                    as:</p>
+                    The decision time for the Student visa (Subclass 500) can take up to 5 weeks for Higher Education applications, while VET sector applications can take up to 17 weeks, not including the time you will take to collect your documents. The time taken can vary depending on factors such as:
                 <ul>
-                    <li> The completeness of your application and the accuracy of the documents.</li>
-                    <li> The type of program you are applying to and the school you are applying to.</li>
-                    <li> The volume of work of immigration services.</li>
+                    <li>The completeness of your application and the accuracy of the documents.</li>
+                    <li>The education sector you are applying to, as VET sector applications generally take longer to process than Higher Education.</li>
+                    <li>The volume of work of immigration services, especially with the high number of applications from regions like Nepal.</li>
                 </ul>
-                <p>Since the process is time-sensitive, it’s important to ensure that all documents are tendered as
-                    and when they are needed. The submission of unabridged documents may create problems that result
-                    in the processing authority calling for more information, which will, in the long run, take time
-                    to process.
-                    <br><br>
-                    Our competent migration agents at Grace International can also assist you in making the
-                    transition quicker without much waiting time.
+                Since the process is time-sensitive, it’s important to ensure that all documents are tendered as and when they are needed. An incomplete application or weak responses to the Genuine Student (GS) questions may create problems that result in the processing authority calling for more information, which will, in the long run, take time to process.
+                <br><br>
+                Our competent migration agents at Grace International can also assist you in making the
+                transition quicker without much waiting time.
                 </p>
             </div>
         </div>
@@ -398,7 +365,7 @@ include 'database.php';
                     network of over 500 education providers ensure that students are informed of the complications
                     in the student visa process in their region.
                     <br><br>
-                    Education consultants in our team boast a 97% visa success rate and over 25,000 success stories
+                    Education consultants in our team boast a 97% visa success rate and over 50,000 success stories
                     from our clients all over the world, which explains why you should trust us to help you achieve
                     your educational goals in Australia.
                 </p>

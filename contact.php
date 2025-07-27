@@ -16,38 +16,64 @@ include 'data/contact_details.php';
     }
 
     .nav-buttons {
-        margin: 60px 0;
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
     .nav-buttons button {
-        padding: 10px 20px;
-        margin: 0 10px;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
         border: 2px solid #00a1d6;
         background-color: #00a1d6;
         color: white;
         cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+        min-width: 120px;
+        text-align: center;
+        white-space: normal;
     }
 
-    .nav-buttons .active {
+    .nav-buttons button.active {
         background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .nav-buttons button:hover {
+        background-color: #008cb3;
     }
 
     .subsection-buttons {
-        margin: 10px 0;
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
     .subsection-buttons button {
-        padding: 8px 15px;
-        margin: 0 5px;
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
         border: 1px solid #00a1d6;
         background-color: #fff;
         color: #00a1d6;
         cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+        min-width: 100px;
     }
 
-    .subsection-buttons .active {
+    .subsection-buttons button.active {
         background-color: #28a745;
         color: white;
+        border-color: #28a745;
+    }
+
+    .subsection-buttons button:hover {
+        background-color: #e6f3fa;
     }
 
     .contact-section {
@@ -64,7 +90,6 @@ include 'data/contact_details.php';
         display: block;
     }
 
-
     /* Mobile-specific styles (up to 768px) */
     @media (max-width: 768px) {
         .nav-buttons {
@@ -79,6 +104,8 @@ include 'data/contact_details.php';
             font-size: 0.8rem;
             min-width: 0;
             width: 100%;
+            white-space: normal;
+            word-wrap: break-word;
         }
 
         .subsection-buttons {
@@ -105,13 +132,35 @@ include 'data/contact_details.php';
             max-width: 100%;
         }
     }
+
+    /* Laptop and larger screens (above 768px) */
+    @media (min-width: 769px) {
+        .nav-buttons {
+            gap: 1rem;
+        }
+
+        .nav-buttons button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+        }
+
+        .subsection-buttons button {
+            padding: 0.6rem 1.2rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-section {
+            max-width: 1300px;
+            padding: 2rem;
+        }
+    }
 </style>
 
 <!-- Navigation buttons -->
 <div class="nav-buttons">
     <button data-section="all" <?php echo $activeSection === 'all' ? 'class="active"' : ''; ?>>ALL BRANCHES</button>
-    <button data-section="south_asia" <?php echo $activeSection === 'south_asia' ? 'class="active"' : ''; ?>>SOUTH ASIA OFFICES</button>
     <button data-section="australia" <?php echo $activeSection === 'australia' ? 'class="active"' : ''; ?>>AUSTRALIA OFFICES</button>
+    <button data-section="south_asia" <?php echo $activeSection === 'south_asia' ? 'class="active"' : ''; ?>>SOUTH ASIA OFFICES</button>
     <button data-section="dubai" <?php echo $activeSection === 'dubai' ? 'class="active"' : ''; ?>>DUBAI OFFICE</button>
     <button data-section="indonesia" <?php echo $activeSection === 'indonesia' ? 'class="active"' : ''; ?>>INDONESIA OFFICE</button>
     <button data-section="kenya" <?php echo $activeSection === 'kenya' ? 'class="active"' : ''; ?>>KENYA OFFICE</button>

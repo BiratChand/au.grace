@@ -27,6 +27,12 @@ $contacts = [
             'address' => 'Hanumandas Road, Next building to Hotel Peace Palace, Baglung, Nepal'
         ],
         [
+            'name' => 'Banepa Office',
+            'phone' => '9709160061/62/63',
+            'email' => 'banepa@grace.edu.np',
+            'address' => 'Banepa, Tindobato'
+        ],
+        [
             'name' => 'Bardibas Office',
             'phone' => '+977-044-590312 / 9841133810',
             'email' => 'bardibas@grace.edu.np',
@@ -91,6 +97,11 @@ $contacts = [
             'phone' => '065-590550',
             'email' => 'damauli@grace.edu.np',
             'address' => 'Bhorletar Chowk, Damauli, Tanahun, Nepal'
+        ],
+        [
+            'name' => 'Dandenong Office',
+            'phone' => '+61 (03) 70097653, +61 (0)431794684',
+            'address' => 'Level 10, 14 Mason Street, Dandenong, VIC 3175, Australia'
         ],
         [
             'name' => 'Dang Office',
@@ -165,10 +176,10 @@ $contacts = [
             'address' => 'Indrachowk, kawasoti-2, Nawalpur, Nepal'
         ],
         [
-            'name' => 'Kumaripati Office',
+            'name' => 'Lalitpur Office',
             'phone' => '+977 9766385821 / +977 1-5920013/14',
             'email' => 'kumaripati@grace.edu.np',
-            'address' => '3rd Floor, CG Building, Kumaripati, Lalitpur, Nepal'
+            'address' => 'Kumaripati, Lalitpur (3rd Floor, CG Building)'
         ],
         [
             'name' => 'Melbourne Office',
@@ -207,10 +218,22 @@ $contacts = [
             'address' => '383 Hay St, Perth WA 6000, Australia'
         ],
         [
+            'name' => 'Pokhara Office',
+            'phone' => '+977 9846054807 / (061) 551013/ (061) 553013',
+            'email' => 'pokhara@grace.edu.np',
+            'address' => 'Mahendrapool, Pokhara'
+        ],
+        [
             'name' => 'Simara Office',
             'phone' => '+977 985-5030941',
             'email' => 'simara@grace.edu.np',
             'address' => 'Simara Business Center, Simara, Nepal'
+        ],
+        [
+            'name' => 'Surkhet Office',
+            'phone' => '+977 9858054080 / (083) 520211',
+            'email' => 'surkhet@grace.edu.np',
+            'address' => 'Birendranagar-6, Surkhet (Near Maya Nursing Home)'
         ],
         [
             'name' => 'Sydney Office',
@@ -225,6 +248,61 @@ $contacts = [
             'address' => 'Abdul Hamid Road, Kadamtoli, Sylhet, (1st Floor), Humayun Rashid Chattar, Bangladesh'
         ]
     ],
+    'australia' => [
+        [
+            'name' => 'Adelaide Office',
+            'phone' => '+61 (08) 7225 7892',
+            'email' => 'adelaide@graceintlgroup.com',
+            'address' => 'Suite 2, Level 1, 9A Hindley St., Adelaide, SA 5000, Australia'
+        ],
+        [
+            'name' => 'Brisbane Office',
+            'phone' => '+61 (08) 0732663358',
+            'email' => 'brisbane@graceintlgroup.com',
+            'address' => 'Level 5, 190 Edward Street, Brisbane 4000, Australia'
+        ],
+        [
+            'name' => 'Canberra Office',
+            'phone' => '+61414 331 025',
+            'email' => 'canberra@graceintlgroup.com',
+            'address' => 'Suite 1.04/ 17-21 University Avenue City ACT 2601, Australia'
+        ],
+        [
+            'name' => 'Dandenong Office',
+            'phone' => '+61 (03) 70097653, +61 (0)431794684',
+            'address' => 'Level 10, 14 Mason Street, Dandenong, VIC 3175, Australia'
+        ],
+        [
+            'name' => 'Glenroy Office',
+            'phone' => '+61 431 715 577',
+            'email' => 'glenroy@graceintlgroup.com',
+            'address' => 'Unit 3/1 Post Office Pl, Glenroy, VIC 3046, Australia'
+        ],
+        [
+            'name' => 'Hobart Office',
+            'phone' => '03 6289 6655',
+            'email' => 'tasmania@graceintlgroup.com',
+            'address' => 'Suite 105, Level 1, 86 Murray Street, Hobart TAS 7000, Australia'
+        ],
+        [
+            'name' => 'Melbourne Office',
+            'phone' => '+61 (03) 9662 9020',
+            'email' => 'melbourne@graceintlgroup.com',
+            'address' => 'Level 14, 282 Collins Street, Melbourne, VIC 3000, Australia'
+        ],
+        [
+            'name' => 'Perth Office',
+            'phone' => '+61 (08) 93252445',
+            'email' => 'perth@graceintlgroup.com',
+            'address' => '383 Hay St, Perth WA 6000, Australia'
+        ],
+        [
+            'name' => 'Sydney Office',
+            'phone' => '+61 (02) 9286 3447',
+            'email' => 'sydney@graceintlgroup.com',
+            'address' => 'Suite 1508, Level 15, 97-99 Bathurst Street, Sydney, NSW 2000, Australia'
+        ]
+    ],
     'south_asia' => [
         'Nepal' => [
             'Bagbazar' => [
@@ -233,29 +311,17 @@ $contacts = [
                 'email' => 'bagbazar@grace.edu.np',
                 'address' => 'Bagbazar, Kathmandu (Opposite of Pipalbot), Nepal'
             ],
-            'Buddhanagar' => [
-                'name' => 'Buddhanagar Office',
-                'phone' => '+977 01 5913321 / 20',
-                'email' => 'reception.buddhanagar@grace.edu.np',
-                'address' => 'Buddhanagar, Nearby Himalayan Ayurved Medical Science College, Kathmandu, Nepal'
-            ],
-            'New Baneshwor' => [
-                'name' => 'New Baneshwor Office',
-                'phone' => '+977 (01) 4796880 / 4796881',
-                'email' => 'baneshwor@grace.edu.np',
-                'address' => 'PC Complex 2nd Floor, New Baneshwor, Kathmandu, Nepal'
-            ],
-            'Kumaripati' => [
-                'name' => 'Kumaripati Office',
-                'phone' => '+977 9766385821 / +977 1-5920013/14',
-                'email' => 'kumaripati@grace.edu.np',
-                'address' => '3rd Floor, CG Building, Kumaripati, Lalitpur, Nepal'
-            ],
             'Baglung' => [
                 'name' => 'Baglung Office',
                 'phone' => '+977 (068) 522667',
                 'email' => 'baglung@grace.edu.np',
                 'address' => 'Hanumandas Road, Next building to Hotel Peace Palace, Baglung, Nepal'
+            ],
+            'Banepa' => [
+                'name' => 'Banepa Office',
+                'phone' => '9709160061/62/63',
+                'email' => 'banepa@grace.edu.np',
+                'address' => 'Banepa, Tindobato'
             ],
             'Bardibas' => [
                 'name' => 'Bardibas Office',
@@ -274,6 +340,12 @@ $contacts = [
                 'phone' => '(023) 536117',
                 'email' => 'birtamod@grace.edu.np',
                 'address' => 'Hanuman Central, 4th Floor, Birtamode, Nepal'
+            ],
+            'Buddhanagar' => [
+                'name' => 'Buddhanagar Office',
+                'phone' => '+977 01 5913321 / 20',
+                'email' => 'reception.buddhanagar@grace.edu.np',
+                'address' => 'Buddhanagar, Nearby Himalayan Ayurved Medical Science College, Kathmandu, Nepal'
             ],
             'Butwal' => [
                 'name' => 'Butwal Office',
@@ -329,17 +401,49 @@ $contacts = [
                 'email' => 'kawasoti@grace.edu.np',
                 'address' => 'Indrachowk, kawasoti-2, Nawalpur, Nepal'
             ],
+            'Lalitpur' => [
+                'name' => 'Lalitpur Office',
+                'phone' => '+977 9766385821 / +977 1-5920013/14',
+                'email' => 'kumaripati@grace.edu.np',
+                'address' => 'Kumaripati, Lalitpur (3rd Floor, CG Building)'
+            ],
+            'New Baneshwor' => [
+                'name' => 'New Baneshwor Office',
+                'phone' => '+977 (01) 4796880 / 4796881',
+                'email' => 'baneshwor@grace.edu.np',
+                'address' => 'PC Complex 2nd Floor, New Baneshwor, Kathmandu, Nepal'
+            ],
             'Parsa' => [
                 'name' => 'Parsa Office',
                 'phone' => '+977 9855019797 / (056) 582053',
                 'email' => 'parsa@grace.edu.np',
                 'address' => 'Khairahani, Parsa, Nepal'
             ],
+            'Pokhara' => [
+                'name' => 'Pokhara Office',
+                'phone' => '+977 9846054807 / (061) 551013/ (061) 553013',
+                'email' => 'pokhara@grace.edu.np',
+                'address' => 'Mahendrapool, Pokhara'
+            ],
             'Simara' => [
                 'name' => 'Simara Office',
                 'phone' => '+977 985-5030941',
                 'email' => 'simara@grace.edu.np',
                 'address' => 'Simara Business Center, Simara, Nepal'
+            ],
+            'Surkhet' => [
+                'name' => 'Surkhet Office',
+                'phone' => '+977 9858054080 / (083) 520211',
+                'email' => 'surkhet@grace.edu.np',
+                'address' => 'Birendranagar-6, Surkhet (Near Maya Nursing Home)'
+            ]
+        ],
+        'Bangladesh' => [
+            'Sylhet' => [
+                'name' => 'Sylhet Office',
+                'phone' => '+8801765710165 / +61469884800',
+                'email' => 'director.bangladesh@graceintlgroup.com',
+                'address' => 'Abdul Hamid Road, Kadamtoli, Sylhet, (1st Floor), Humayun Rashid Chattar, Bangladesh'
             ]
         ],
         'India' => [
@@ -354,14 +458,6 @@ $contacts = [
                 'phone' => '+91 (01) 244367660',
                 'email' => 'bdm@graceintlgroup.com',
                 'address' => 'G-308, Floor 3rd, Sushant Shopping Arcade, Sushant Lok Phase -1, Gurugram, Haryana, India'
-            ]
-        ],
-        'Bangladesh' => [
-            'Sylhet' => [
-                'name' => 'Sylhet Office',
-                'phone' => '+8801765710165 / +61469884800',
-                'email' => 'director.bangladesh@graceintlgroup.com',
-                'address' => 'Abdul Hamid Road, Kadamtoli, Sylhet, (1st Floor), Humayun Rashid Chattar, Bangladesh'
             ]
         ],
         'Pakistan' => [
@@ -379,56 +475,6 @@ $contacts = [
                 'email' => 'srilanka@graceintlgroup.com',
                 'address' => '21 Charles Place, Rawatawatta, Moratuwa, Sri Lanka'
             ]
-        ]
-    ],
-    'australia' => [
-        [
-            'name' => 'Sydney Office',
-            'phone' => '+61 (02) 9286 3447',
-            'email' => 'sydney@graceintlgroup.com',
-            'address' => 'Suite 1508, Level 15, 97-99 Bathurst Street, Sydney, NSW 2000, Australia'
-        ],
-        [
-            'name' => 'Melbourne Office',
-            'phone' => '+61 (03) 9662 9020',
-            'email' => 'melbourne@graceintlgroup.com',
-            'address' => 'Level 14, 282 Collins Street, Melbourne, VIC 3000, Australia'
-        ],
-        [
-            'name' => 'Glenroy Office',
-            'phone' => '+61 431 715 577',
-            'email' => 'glenroy@graceintlgroup.com',
-            'address' => 'Unit 3/1 Post Office Pl, Glenroy, VIC 3046, Australia'
-        ],
-        [
-            'name' => 'Adelaide Office',
-            'phone' => '+61 (08) 7225 7892',
-            'email' => 'adelaide@graceintlgroup.com',
-            'address' => 'Suite 2, Level 1, 9A Hindley St., Adelaide, SA 5000, Australia'
-        ],
-        [
-            'name' => 'Brisbane Office',
-            'phone' => '+61 (08) 0732663358',
-            'email' => 'brisbane@graceintlgroup.com',
-            'address' => 'Level 5, 190 Edward Street, Brisbane 4000, Australia'
-        ],
-        [
-            'name' => 'Canberra Office',
-            'phone' => '+61414 331 025',
-            'email' => 'canberra@graceintlgroup.com',
-            'address' => 'Suite 1.04/ 17-21 University Avenue City ACT 2601, Australia'
-        ],
-        [
-            'name' => 'Hobart Office',
-            'phone' => '03 6289 6655',
-            'email' => 'tasmania@graceintlgroup.com',
-            'address' => 'Suite 105, Level 1, 86 Murray Street, Hobart TAS 7000, Australia'
-        ],
-        [
-            'name' => 'Perth Office',
-            'phone' => '+61 (08) 93252445',
-            'email' => 'perth@graceintlgroup.com',
-            'address' => '383 Hay St, Perth WA 6000, Australia'
         ]
     ],
     'dubai' => [
