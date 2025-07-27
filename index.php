@@ -75,7 +75,7 @@ include 'database.php';
                 $title = isset($welcome['title']) ? $welcome['title'] : 'Welcome to Grace International';
                 $subtitle = isset($welcome['subtitle']) ? $welcome['subtitle'] : 'Where we connect life & learning.';
                 $stats = isset($welcome['stats']) ? $welcome['stats'] : [
-                    'students' => '26K+',
+                    'students' => '50K+',
                     'partners' => '500+',
                     'years' => '18'
                 ];
