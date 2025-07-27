@@ -16,7 +16,7 @@ jobs:
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.HOSTINGER_SSH_HOST }}
-        username: ${{ secrets.HOSTINGER_SSH_USER }}
+        username: u914194824
         key: ${{ secrets.HOSTINGER_SSH_KEY }}
         port: 65002
         script: |
