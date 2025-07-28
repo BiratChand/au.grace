@@ -42,13 +42,13 @@ if (session_status() == PHP_SESSION_NONE) {
 
     <!-- Header Styles -->
     <link href="css/header-styles.css" rel="stylesheet">
-    
+
     <!-- WhatsApp Button Styles -->
     <link href="css/whatsapp.css" rel="stylesheet">
-    
+
     <!-- Universities Styles -->
     <link href="css/universities.css" rel="stylesheet">
-    
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 

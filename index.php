@@ -186,7 +186,7 @@ include 'database.php';
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
                 <div class="service-item bg-light rounded">
                     <div class="service-img">
-                        <img src="img/naati pte.jpg" class="img-fluid w-100 rounded-top" alt="">
+                        <img src="img/naati pte.png" class="img-fluid w-100 rounded-top" alt="">
                     </div>
                     <div class="service-content text-center p-4">
                         <div class="service-content-inner">
