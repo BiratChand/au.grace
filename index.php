@@ -3,7 +3,7 @@ $pageTitle = "Grace International";
 $currentPage = "index";
 include 'header.php';
 include 'navbar.php';
-include 'database.php';
+//include 'database.php';
 
 ?>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
@@ -121,6 +121,29 @@ include 'database.php';
                                     <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up"><?php echo $stats['years']; ?></span>
                                 </div>
                                 <p class="mb-0 text-dark fw-medium">YEARS</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="stat-card p-4 text-center h-100">
+                                <div class="mb-2">
+                                    <?php
+                                    // Parse the partners value to separate number and suffix
+                                    preg_match('/^(\d+)(.*)$/', $stats['agents'], $matches);
+                                    $agentsNum = isset($matches[1]) ? $matches[1] : '20';
+                                    $agentsSuffix = isset($matches[2]) ? $matches[2] : '+';
+                                    ?>
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up"><?php echo $agentsNum; ?></span>
+                                    <span class="display-5 fw-bold text-primary"><?php echo $agentsSuffix; ?></span>
+                                </div>
+                                <p class="mb-0 text-dark fw-medium">MIGRATION AGENTS</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="stat-card p-4 text-center h-100">
+                                <div class="mb-2">
+                                    <span class="counter-value display-5 fw-bold text-primary" data-toggle="counter-up"><?php echo $stats['branch']; ?></span>
+                                </div>
+                                <p class="mb-0 text-dark fw-medium">TOTAL BRANCHES</p>
                             </div>
                         </div>
                     </div>
