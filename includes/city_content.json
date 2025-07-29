@@ -2,19 +2,19 @@
   "SYDNEY": {
     "sliders": [
       {
-        "image": "img/carousel-1.jpg",
+        "image": "img/Melbourne.png",
         "title": "STUDY|WORK|MIGRATE",
         "subtitle": "in Sydney, Australia",
         "position": "start"
       },
       {
-        "image": "img/passports.jpg",
+        "image": "img/passports.png",
         "title": "STUDY|WORK|MIGRATE",
         "subtitle": "in Sydney, Australia",
         "position": "center"
       },
       {
-        "image": "img/world-map.jpg",
+        "image": "img/worldmap.png",
         "title": "STUDY|WORK|MIGRATE",
         "subtitle": "in Sydney, Australia",
         "position": "end"
@@ -102,10 +102,10 @@
       "phone": "+61 (02) 9286 3447",
       "email": "sydney@graceintlgroup.com",
       "whatsapp": "+61492881100",
-      "facebook": "https://facebook.com/",
-      "instagram": "https://instagram.com/",
-      "linkedin": "https://linkedin.com/",
-      "twitter": "https://twitter.com/"
+      "facebook": "https://www.facebook.com/GraceIntlsydney/",
+      "instagram": "https://www.instagram.com/graceintlsydney/",
+      "linkedin": "https://www.linkedin.com/company/grace-international-education-and-migration-sydney/",
+      "twitter": "https://www.tiktok.com/@graceintlsydney"
     }
   },
   "MELBOURNE": {

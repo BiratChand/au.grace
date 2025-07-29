@@ -103,8 +103,8 @@ include 'navbar.php';
                     <ul>
                         <li>Have not submitted an application for a Parent visa</li><br>
                         <li>Have already submitted an application for a <a
-                                href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103">Parent
-                                (Migrant) visa (subclass103);</a> however, you are not in the queue yet</li><br>
+                                href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103"><strong>Parent
+                                    (Migrant) visa (subclass103);</strong></a> however, you are not in the queue yet</li><br>
                     </ul>
                 </li>
 
@@ -113,8 +113,8 @@ include 'navbar.php';
                     <ul>
                         <li>Have not submitted an application for a Parent visa</li><br>
                         <li>Have already submitted an application for a <a
-                                href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103">Parent
-                                (Migrant) visa (subclass103);</a> however, you are not in the queue yet</li><br>
+                                href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/parent-103"><strong>
+                                    (Migrant) visa (subclass103);</strong></a> however, you are not in the queue yet</li><br>
                     </ul>
                 </li>
 
@@ -207,20 +207,14 @@ include 'navbar.php';
                 <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
                     <h2 class="text-primary">Cost</h2>
                     <p>
-                        For each applicant, the visa cost is around AUD145. You can also use an online Visa
-                        Pricing
-                        Estimator to forecast your visa costs. However, if additional fees for health checks,
-                        police
-                        reports, and biometrics are needed, such charges will not be listed in the Visa Pricing
-                        Estimator.
+                        For each applicant, the visa cost is AUD $190. You can use the Visa Pricing Estimator on the Department of Home Affairs website to forecast your visa costs. However, additional fees for health checks, police reports, and biometrics are not included in the Visa Pricing Estimator.
                         <br><br>
-                        Likewise, under the following conditions, you may be able to fast-track your visa
-                        application:
+                        Under the following conditions, you may be eligible to fast-track your visa application:
                     </p>
                     <ul>
-                        <li> You hold a passport from China (but not Hong Kong or Macau).</li>
+                        <li> You hold a passport from China (excluding Hong Kong or Macau).</li>
                         <li> You hold a passport from India.</li>
-                        <li> You hold a passport from the UAE (United Arab Emirates)</li>
+                        <li> You hold a passport from the UAE (United Arab Emirates).</li>
                     </ul>
                     <p> Also, note that there is an additional fast-tracking charge of AUD1,000.
                     </p>

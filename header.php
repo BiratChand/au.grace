@@ -102,7 +102,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <div class="col-4 text-center text-lg-end">
                     <div class="d-flex align-items-center justify-content-end">
                         <a href="<?php echo $cityContent['contact_info']['facebook']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="<?php echo $cityContent['contact_info']['twitter']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="<?php echo $cityContent['contact_info']['twitter']; ?>" class="btn-square rounded-circle me-3" style="background-color: #000000; color: #ffffff;"><i class="fab fa-tiktok"></i></a>
                         <a href="<?php echo $cityContent['contact_info']['instagram']; ?>" class="btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
                         <a href="<?php echo $cityContent['contact_info']['linkedin']; ?>" class="btn-square rounded-circle me-0"><i class="fab fa-linkedin-in"></i></a>
                     </div>

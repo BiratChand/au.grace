@@ -42,12 +42,8 @@ include 'navbar.php';
     <div class="left">
         <div class="row justify-content-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <p class="left">The 407 Training Visa (Subclass 407) functions as a period visa that enables foreign
-                    individuals to practice their field of expertise in Australian workplace settings. This
-                    particular visa exists to support citizens in boosting their abilities as well as gaining
-                    professional expertise to advance their professional careers across different sectors. The 407
-                    Training Visa gives eligible candidates an exceptional pathway to pursue training together with
-                    work opportunities in Australia.
+                <p class="left">The Training Visa (Subclass 407) remains a temporary visa designed to allow international individuals to enhance their expertise through structured workplace-based training in Australia. This visa supports professionals, students, and trainees in developing their skills and gaining valuable professional experience to advance their careers across various industries. The Subclass 407 Training Visa offers eligible candidates a unique opportunity to pursue occupational training and work opportunities in Australia, fostering both personal growth and global career advancement.
+
                 </p>
             </div>
         </div>
@@ -59,10 +55,7 @@ include 'navbar.php';
         <div class="row justify-content-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <h1 class="text-center">What is a 407 Training Visa? How does it help?</h1><br>
-                <p class="left">Through the 407 Training Visa program, people receive permission to participate in
-                    planned Australian workplace training programs. The visa serves professionals requiring
-                    occupational training for skill improvement and accreditation purposes to fulfill registration
-                    needs. This visa provides advantages through the following benefits:
+                <p class="left">This visa is ideal for those aiming to build their global competence through practical Australian work experience while keeping flexibility in their travel plans. It remains a popular option for those looking to stay current with evolving industry practices.
                 </p><br>
                 <div class="accordion-item border-0 mb-0">
                     <h2 class="accordion-header" id="headingFour">
@@ -75,15 +68,9 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>Structured workplace-based training offered through the 407 Training Visa enhances
-                                ability levels of individuals in specific occupational areas. The training allows
-                                professionals to accumulate practical experience and advance their expertise toward
-                                his or her specialised field.
-                                <br><br>
-                                Individuals interested in upskilling their expertise in healthcare, together with
-                                engineering and information technology fields, as well as hospitality, can benefit
-                                from this visa. The formal training programs provide candidates with practical
-                                education experiences that meet industry guidelines.
+                            <p>The 407 visa allows individuals to join industry-specific training programs that enhance practical abilities and boost technical skills. This helps professionals become more effective and competitive in their job roles.
+                                <br><br>Participants receive hands-on experience and learn advanced techniques in real Australian work environments, helping them stay updated with the latest trends and standards in their industry.
+
                             </p>
                         </div>
                     </div>
@@ -97,16 +84,8 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>The 407 training visa provides specialised training schemes which advance
-                                professional development for its participants. The programs give vital industry
-                                knowledge combined with practical experience that makes job candidates better within
-                                their professional fields.
-                                <br><br>
-                                The mentoring opportunities alongside professional training under this visa scheme
-                                allows applicants to develop their marketable skills while exposing them to
-                                sophisticated methods so they can take on authentic projects that will boost their
-                                career advancement. The visa stands out as a great choice for people who need to
-                                track the most recent developments in their industries.
+                            <p>This visa encourages career advancement by providing opportunities for training under qualified mentors. The structured training plans approved under this visa let participants take on real projects, which helps them build credibility and confidence in their field.
+                                <br><br> In addition, the exposure to Australian work culture and business practices gives participants an edge in the global job market.
                             </p>
                         </div>
                     </div>
@@ -163,17 +142,11 @@ include 'navbar.php';
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                 <h1 clas="text-center">What Benefits Do You Have in this Visa?</h1><br>
                 <ul>
-                    <li><strong>Stay Duration: </strong>Training programs can be done without time constraint
-                        because this visa remains valid for 2 consecutive years.</li>
-                    <li><strong>Family Inclusion: </strong>The visa allows applicants to request inclusion of their
-                        dependents such as spouse and children in their visa application form.</li>
-                    <li><strong>Multiple Entries: </strong>Through this visa type, visa holders have the permission
-                        to enter and leave Australia repeatedly throughout the duration of their authorized stay.
-                    </li>
-                    <li><strong>Occupational Training: </strong>Through Occupational Training applicants get
-                        practical experience under experienced professionals who work in real-world workplaces.</li>
-                    <li><strong>Work Rights: </strong>The training program features controlled work rights that let
-                        participants learn new skills through organised workplace experiences.</li>
+                    <li><strong>Stay Duration: </strong>The 407 Training Visa is valid for up to 2 years, giving applicants enough time to complete structured training programs without time pressure.</li>
+                    <li><strong>Family Inclusion: </strong>Applicants can include dependents (spouse and children) in their visa application. From 1 July 2023, dependents are allowed to work up to 40 hours per fortnight during their stay in Australia.</li>
+                    <li><strong>Multiple Entries: </strong>The visa allows multiple entries, meaning holders can enter and leave Australia freely during the visa's validity—ideal for managing personal or professional commitments abroad. </li>
+                    <li><strong>Occupational Training: </strong>The visa supports hands-on, occupation-specific training under qualified professionals in real workplaces. This is designed to help applicants meet registration, licensing, or upskilling requirements in their field.</li>
+                    <li><strong>Work Rights: </strong>Visa holders can participate in structured, supervised training as part of their workplace program. This provides controlled work rights that help build practical experience in a real job setting, without breaching visa conditions.</li>
                 </ul>
             </div>
         </div>
@@ -200,7 +173,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>The applicant needs to be 18 years old or older during the visa application period.
+                            <p>Applicants must be 18 years or older at the time of application.
                             </p>
                         </div>
                     </div>
@@ -214,8 +187,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>The applicant needs a valid sponsorship from an organization that fulfills the
-                                training visa criteria.
+                            <p> You must have a valid sponsorship from an approved Australian organization. This sponsor must be registered and meet all legal obligations under the 407 visa program.
                             </p>
                         </div>
                     </div>
@@ -229,8 +201,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>The training must be nominated by the sponsor, ensuring that it aligns with the
-                                applicant’s qualifications and career goals.
+                            <p>Your sponsor must submit a nomination for the training program unless they are a Commonwealth Government agency.
                             </p>
                         </div>
                     </div>
@@ -247,18 +218,11 @@ include 'navbar.php';
                             <p>The training program must be structured and workplace-based, and it must fall into
                                 one of the following categories:
                                 <br><br>
-                                a) <strong>Training required for licensing or registration:</strong> Necessary for
-                                individuals who
-                                need additional training before being allowed to work in Australia.
+                                a) <strong>Training for Registration or Licensing:</strong> For individuals needing training to meet professional registration or licensing requirements in their home country or in Australia.
                                 <br><br>
-                                b) <strong>Training to improve skills in a specific occupation:</strong> Helps
-                                professionals gain
-                                expertise in their field.
+                                b) <strong> Training to Enhance Occupational Skills:</strong> For skilled workers who want to improve their skills in an eligible occupation through practical training.
                                 <br><br>
-                                c) <strong>Training to enhance overseas qualifications or professional
-                                    development:</strong> Designed
-                                for individuals looking to refine their existing qualifications to meet Australian
-                                standards.
+                                c) <strong>Training for Overseas Qualification or Professional Development:</strong> For individuals looking to refine their current qualifications or gain non-award professional development (mainly for overseas employers sending staff).
                             </p>
                         </div>
                     </div>
@@ -272,8 +236,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>A valid Training Visa 407 demands English proficiency, which implies professionals
-                                must show their ability to communicate effectively in professional environments.
+                            <p>You must demonstrate functional English, typically by providing evidence of English test results (e.g., IELTS 4.5 average or equivalent), unless exempted.
                             </p>
                         </div>
                     </div>
@@ -287,9 +250,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>A candidate needs to prove their intention to use the visa exclusively for temporary
-                                training needs while avoiding any plans for permanent residency through Genuine
-                                Temporary Entrant (GTE).
+                            <p>Applicants must show they genuinely intend to stay in Australia temporarily for training purposes only. You must not use this visa as a pathway to permanent residency.
                             </p>
                         </div>
                     </div>
@@ -303,7 +264,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>Applicants must meet Australian health and character standards.
+                            <p>You must undergo health examinations and provide police clearance certificates to prove that you meet the health and character requirements.
                             </p>
                         </div>
                     </div>
@@ -317,9 +278,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>The visa applicant needs to offer evidence of financial resources sufficient for
-                                living expenses along with training fees and optional family related costs if
-                                applicable.
+                            <p>You must provide proof of sufficient funds to cover your stay, including living costs, training expenses, and any costs for accompanying family members.
                             </p>
                         </div>
                     </div>
@@ -333,7 +292,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>The entire period of residence requires a sufficient health insurance plan.
+                            <p>Applicants (and any dependents) must maintain adequate health insurance while in Australia, usually through an Overseas Visitor Health Cover (OVHC) policy.
                             </p>
                         </div>
                     </div>
@@ -347,8 +306,7 @@ include 'navbar.php';
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body my-2">
-                            <p>The Australian Government requires any applicant to show no existing unpaid debts in
-                                their application.
+                            <p>You must not owe any money to the Australian Government. If you do, it must be repaid in full or arranged before applying
                             </p>
                         </div>
                     </div>
@@ -439,11 +397,11 @@ include 'navbar.php';
             <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
                 <h1 class="left">407 Training Visa Cost & Fees</h1><br>
                 <ul>
-                    <li><strong>Primary Applicant: </strong>AUD $325.</li>
+                    <li>AUD $415 for each dependent aged 18 or older.</li>
+                    <li> AUD $105 for each dependent under 18 years of age.</li>
                     <li><strong>Additional Applicants (Dependents): </strong>Fees vary based on age and relationship
                         to the primary applicant.</li>
-                    <li><strong>Other Costs: </strong>Health examinations, police clearances, and document
-                        translations may incur additional expenses.</li>
+                    <li><strong>Other Costs: </strong>Health examinations, police clearances, and document translations may incur additional expenses.</li>
                 </ul>
             </div>
         </div>
@@ -458,8 +416,8 @@ include 'navbar.php';
                 <p>Applicants can include dependents (spouse and children) in their visa application. They must
                     provide:</p>
                 <ul>
-                    <li><strong>75% of applications: </strong>Processed in 4-6 months.</li>
-                    <li><strong>90% of applications: </strong>Processed in 8 months.</li>
+                    <li><strong>50% of applications: </strong>Processed in 1-2 months.</li>
+                    <li><strong>90% of applications: </strong>Processed in 9 months.</li>
                 </ul>
             </div>
             <div class="col-lg-6 col-xl-5 wow fadeInRight" data-wow-delay="0.3s">

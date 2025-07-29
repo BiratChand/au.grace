@@ -44,20 +44,17 @@ include 'navbar.php';
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 col-xl-7 wow fadeInLeft" data-wow-delay="0.1s">
                 <h1 class="left">Cost For You and Family Members</h1><br>
-                <p class="left">The visa costs about AUD4,045 for the principal or primary applicant. You can
-                    forecast visa costs using visa cost estimators on Australian government websites.
+                <p class="left">The visa costs AUD $4,770 for the primary applicant. You can forecast visa costs using the Visa Pricing Estimator on the Department of Home Affairs website.
                     <br><br>
-                    Similarly, you must pay additional fees for each family member you add to the application. In
-                    addition, if the authorities demand it, you must pay a second installment fee for family members
-                    of about AUD4,885.
-                    <br><br>
-                    The second installment charge is required when someone in the application is over the age of 18
-                    or 18 years old but has a limited command of the English language. However, it must be paid only
-                    if the authorities decide to issue the visa for such a family member.
-                    <br><br>
-                    The Visa Pricing Estimator will not contain the charges of the second installment and other
-                    extra costs. You might also have to pay additional charges for health checks, police
-                    certificates, and biometrics.
+                    Additional fees apply for each family member included in the application:
+                <ul>
+                    <li>AUD $2,385 for each dependent aged 18 or older.</li>
+                    <li>AUD $1,195 for each dependent under 18 years of age.</li>
+                </ul>
+                <br><br>
+                A second installment fee of AUD $4,885 may be required for family members aged 18 or older who have less than functional English proficiency. This fee is only payable if the authorities decide to grant the visa for such a family member.
+                <br><br>
+                The Visa Pricing Estimator does not include the second installment fee or other additional costs, such as health checks, police certificates, and biometrics.
                 </p>
             </div>
             <div class="col-lg-6 col-xl-5 wow fadeInRight" data-wow-delay="0.3s">
@@ -79,21 +76,17 @@ include 'navbar.php';
             </div>
             <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
                 <h1 class="left">Processing Times</h1><br>
-                <p class="left">TYour visa application will be considered on an individual basis. As a result, the
-                    total processing time will differ depending on the person.
+                <p class="left">Your visa application will be assessed on an individual basis, and processing times will vary depending on the applicant's circumstances.
                     <br><br>
                     The following are some factors that influence the time it takes for your application to be
                     processed.
                 </p>
                 <ul>
-                    <li>if your application was complete and if all of the relevant documentation were included</li>
-                    <li>the time it takes you to respond to any requests from authorities, such as for additional
-                        information</li>
-                    <li>the time it takes to review the initial and additional information</li>
-                    <li>the time it takes to obtain required information from external agencies, which may include
-                        information about your or family member’s character, health, or national security.</li>
-                    <li>Your permanent migration visa decision will also be influenced by the number of places
-                        available in the migration program.</li>
+                    <li>Whether your application was complete and included all required documentation.</li>
+                    <li>How quickly you respond to requests from authorities for additional information.</li>
+                    <li>The time required to review both initial and additional information provided.</li>
+                    <li>The time needed to obtain information from external agencies, including checks on your or your family members’ character, health, or national security.</li>
+                    <li>The availability of places in the migration program, which impacts permanent migration visa decisions.</li>
                 </ul>
             </div>
         </div>

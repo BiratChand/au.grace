@@ -32,7 +32,7 @@
     /* Add background color */
     color: var(--bs-white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,7 +360,7 @@
     border-radius: 300px;
     border: 100px solid rgba(68, 210, 246, 0.2);
     animation: RotateMoveCircle 10s linear infinite;
-    background: transparent;
+
     z-index: 2 !important;
 }
 
@@ -392,7 +392,6 @@
     top: -150px;
     left: 70px;
     transform: rotate(-30deg);
-    background: rgba(68, 210, 246, 0.2);
     animation: RotateMoveRight 5s linear infinite;
     z-index: 2 !important;
 }
@@ -419,7 +418,6 @@
     top: -150px;
     left: -265px;
     transform: rotate(-30deg);
-    background: var(--bs-dark);
     animation: RotateMoveLeft 5s linear infinite;
     opacity: 0.7;
     z-index: 2 !important;
@@ -446,7 +444,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
     z-index: 2 !important;
 }
 
@@ -456,7 +453,6 @@
     height: 100%;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2752,7 +2748,7 @@ a:hover {
     }
 
     .carousel-caption-inner {
-        background-color: rgba(0, 0, 0, 0.6);
+
         padding: 20px !important;
         border-radius: 8px;
         position: relative;
@@ -2776,5 +2772,15 @@ a:hover {
     /* Ensure the entire carousel item doesn't have pointer events blocking */
     .header-carousel-item * {
         pointer-events: auto !important;
+    }
+
+    .fs-6 {
+        font-size: 1em;
+    }
+
+    .btn {
+        width: 80%;
+        margin: 5px auto;
+        display: block;
     }
 }

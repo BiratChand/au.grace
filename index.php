@@ -147,7 +147,7 @@ include 'navbar.php';
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><br>
             </div>
             <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.1s">
                 <div class="glossy-card p-3" style="position: relative;">
@@ -610,3 +610,14 @@ echoFAQs(['limit' => 4]);
 include 'form.php';
 include 'footer.php';
 ?>
+<style>
+    .header-carousel-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .header-carousel-item-img-1,
+    .header-carousel-item-img-2 {
+        width: 100%;
+    }
+</style>
