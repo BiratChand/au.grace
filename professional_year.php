@@ -21,9 +21,8 @@ include 'navbar.php';
     <div class="left">
         <div class="row justify-content-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="left">Professional Year is a structured career development designed for the international
-                    students in Australia to help them adapt Australian work culture and enhance a student’s ability
-                    to be employed in their chosen discipline working in their technical and personal skills.
+                <p class="left"></p>
+                The Professional Year program is a structured career development initiative for international students in Australia. It is designed to help graduates adapt to the Australian workplace culture, improve their employability, and develop both technical and interpersonal skills relevant to their chosen field.
                 </p><br><br>
             </div>
         </div>

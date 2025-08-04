@@ -34,11 +34,11 @@
     "teams": [
       {
         "id": 1,
-        "name": "Pawan Thapaliya",
-        "position": "Principal Migration Agent",
-        "marn": "1466008",
-        "image": "img/Pawan-Thapaliya-600x428.jpg",
-        "description": "Pawan, our principal migration agent, leads Grace International's Melbourne team. Registered since 2014, he excels in time management, team leadership, and delivering exceptional migration services with expertise and dedication.",
+        "name": "Simrita Ranjitkar",
+        "position": "Executive Director/RMA",
+        "marn": "MARN: 1798972",
+        "image": "img/Team/Sydney/SIMRITA RANJITKAR.png",
+        "description": "Simrita Ranjitkar serves as the Executive Director and Registered Migration Agent at Grace International Sydney. She leads with expertise in Australian immigration and education services, guiding international students with professionalism and care. Her dedication ensures seamless support throughout the migration process, making Grace International a trusted destination for clients.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -47,11 +47,11 @@
       },
       {
         "id": 2,
-        "name": "Viola Rong",
-        "position": "Certified Migration Agent",
-        "marn": "1801289",
-        "image": "img/Viola-Rong-600x428.jpg",
-        "description": "Certified migration agent since 2018 Viola has been working in visa and migration for almost seven years. She has an eye for detail and has excellent communication and interpersonal skills.",
+        "name": "Sirat Teji",
+        "position": "Registered Migration Agent",
+        "marn": "MARN: 2217800",
+        "image": "img/Team/Sydney/SIRAT TEJI.png",
+        "description": "Sirat Teji is a Registered Migration Agent at Grace International Sydney, specializing in Australian immigration services. With in-depth knowledge of visa processes and regulations, she provides personalized guidance to clients. Her commitment to excellence ensures reliable support for individuals pursuing education, career, or settlement opportunities in Australia.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -60,11 +60,11 @@
       },
       {
         "id": 3,
-        "name": "Viola Rong",
-        "position": "Certified Migration Agent",
-        "marn": "1801289",
-        "image": "img/Viola-Rong-600x428.jpg",
-        "description": "Certified migration agent since 2018 Viola has been working in visa and migration for almost seven years. She has an eye for detail and has excellent communication and interpersonal skills.",
+        "name": "Liya Varkey",
+        "position": "Registered Migration Agent",
+        "marn": "MARN: 2318097",
+        "image": "img/Team/Sydney/LIYA VARKEY.png",
+        "description": "Liya Varkey is a Registered Migration Agent at Grace International Sydney, offering expert guidance on Australian visa and migration matters. Known for her professionalism and attention to detail, she supports clients through every step of the process, ensuring a smooth and informed journey toward their education and migration goals.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -73,11 +73,11 @@
       },
       {
         "id": 4,
-        "name": "Viola Rong 3",
-        "position": "Certified Migration Agent",
-        "marn": "1801289",
-        "image": "img/Viola-Rong-600x428.jpg",
-        "description": "Certified migration agent since 2018 Viola has been working in visa and migration for almost seven years. She has an eye for detail and has excellent communication and interpersonal skills.",
+        "name": "Nirajan Tamrakar",
+        "position": "Director - Strathfield",
+        "marn": "",
+        "image": "img/Team/Sydney/Nirajan Tamrakar.png",
+        "description": "Nirajan Tamrakar is the Director of Grace International Strathfield, leading the branch with a focus on student success and client satisfaction. With strong expertise in international education and migration services, he ensures high-quality support and personalized solutions for students and migrants pursuing opportunities in Australia.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -86,11 +86,171 @@
       },
       {
         "id": 5,
-        "name": "Viola Rong 2",
-        "position": "Certified Migration Agent",
-        "marn": "1801289",
-        "image": "img/Viola-Rong-600x428.jpg",
-        "description": "Certified migration agent since 2018 Viola has been working in visa and migration for almost seven years. She has an eye for detail and has excellent communication and interpersonal skills.",
+        "name": "Krishna Pandey",
+        "position": "Director - Paramatta",
+        "marn": "",
+        "image": "img/Team/Sydney/KRISHNA PANDEY.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Stephan Narayan",
+        "position": "Director of Business Development",
+        "marn": "",
+        "image": "img/Team/Sydney/Stephan Narayan.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Ujjwal Bidari",
+        "position": "Senior Skill Assessment Officer",
+        "marn": "",
+        "qeac": "QEAC: 12603",
+        "image": "img/Team/Sydney/Ujjwal Bidari.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Kapil Burlakoti",
+        "position": "Business Development Associates/ Senior Education Consultant",
+        "marn": "",
+        "qeac": "QEAC: 12047",
+        "image": "img/Team/Sydney/Kapil Burlakoti.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Manisha Gurung",
+        "position": "Admissions Manager / Associate",
+        "marn": "",
+        "qeac": "QEAC: 12188",
+        "image": "img/Team/Sydney/Manisha Gurung.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 10,
+        "name": "Rupak Regmi",
+        "position": "Education Counsellor",
+        "marn": "",
+        "qeac": "QEAC: 11708 || CCG No.: 2068",
+        "image": "img/Team/Sydney/Rupak Regmi.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 11,
+        "name": "Ranjan Parajuli",
+        "position": "H.O.D- Parramatta",
+        "marn": "",
+        "image": "img/Team/Sydney/Ranjan Parajuli.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 12,
+        "name": "Anuj Pokharel",
+        "position": "Senior Education Counsellor",
+        "marn": "",
+        "image": "img/Team/Sydney/Anuj Pokharel.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 13,
+        "name": "Ruby Ojha",
+        "position": "Senior Admission & Marketing Officer",
+        "marn": "",
+        "image": "img/Team/Sydney/Ruby Ojha.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 14,
+        "name": "Pragya Kafle",
+        "position": "Skill Assessment Officer",
+        "marn": "",
+        "image": "img/Team/Sydney/Pragya Kafle.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 15,
+        "name": "Sachita Thapa",
+        "position": "Senior Migration Admin Officer",
+        "marn": "",
+        "image": "img/Team/Sydney/Sachita Thapa.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 16,
+        "name": "Rachana Pokhrel",
+        "position": "Admission Officer",
+        "marn": "",
+        "image": "img/Team/Sydney/Rachana Pokhrel.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 17,
+        "name": "Ashila Rahmani Kamila",
+        "position": "Education Counsellor - Indonesia Market",
+        "marn": "",
+        "image": "img/Team/Sydney/Ashila Rahmani Kamila.png",
+        "description": "",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",

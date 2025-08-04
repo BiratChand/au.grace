@@ -44,10 +44,7 @@ include 'navbar.php';
     <div class="left">
         <div class="row justify-content-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="left">Although English is not an official language in Australia, it’s the language
-                    primarily used. As an international student, you will need to be proficient in English to make
-                    daily conversations with the locals and in classrooms. Hence, English proficiency tests are
-                    required if you want to pursue a degree and work in Australia.
+                <p class="left">English, though not an official language in Australia, is the primary language for communication and education. International students must demonstrate English proficiency through tests like IELTS or TOEFL for university admission and visas, enabling effective daily interactions, academic success, and work opportunities in Australia.
                 </p>
             </div>
         </div>
@@ -61,11 +58,7 @@ include 'navbar.php';
                 <h1 class="text-center"><strong>National Accreditation Authority for<br> Translators and
                         Interpreters in
                         Australia<br>(NAATI)</strong></h1><br>
-                <p class="left">NAATI is the only body approved to provide accreditation for translators and
-                    interpreters who want to pursue a career as professional language practitioners in Australia.
-                    <br><br>
-                    Prospective applicants also have the chance to get five points for their PR through the
-                    NAATI-CCL Test.
+                <p class="left">NAATI is the only recognized authority in Australia that provides accreditation for translators and interpreters aiming to become professional language practitioners. Additionally, applicants can earn five extra points toward their Permanent Residency (PR) by passing the NAATI Credentialed Community Language (CCL) Test.
                 </p>
             </div>
         </div>
@@ -77,10 +70,7 @@ include 'navbar.php';
         <div class="row justify-content-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <h1 class="text-center"><strong>Pearson English Language Test (PTE) </strong></h1><br>
-                <p class="left">PTE is one of the English proficiency tests to assess the language skills of
-                    non-English speakers planning to study in English-speaking countries like Australia. Australia’s
-                    Department of Home Affairs accepts this test for all visa applications.
-                </p>
+                <p class="left">The Pearson Test of English (PTE) is a widely accepted English proficiency exam for non-native speakers seeking to study, work, or migrate to Australia. Recognized by the Department of Home Affairs, PTE evaluates listening, reading, speaking, and writing skills, and its results are accepted for all visa categories.</p>
             </div>
         </div>
     </div>

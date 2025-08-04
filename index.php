@@ -400,12 +400,12 @@ include 'navbar.php';
                         <div class="card-body text-center">
                             <h4 class="card-title">' . $member['name'] . '</h4>
                             <span class="team-position">' . $member['position'] . '</span>
-                            <div class="marn-badge">MARN: ' . $member['marn'] . '</div>
+                            <div class="marn-badge">' . $member['marn'] . '</div>
                             <p class="card-text">' . $member['description'] . '</p>
                         </div>
                     </div>
                 </div>';
-                $delay += 0.2;
+                $delay += 0.1;
             }
             ?>
         </div>
