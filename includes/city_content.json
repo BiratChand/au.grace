@@ -521,11 +521,11 @@
     "teams": [
       {
         "id": 1,
-        "name": "Pawan Thapaliya",
-        "position": "Principal Migration Agent",
-        "marn": "1466008",
-        "image": "img/Pawan-Thapaliya-600x428.jpg",
-        "description": "Pawan, our principal migration agent, leads Grace International's Melbourne team. Registered since 2014, he excels in time management, team leadership, and delivering exceptional migration services with expertise and dedication.",
+        "name": "Ganesh Neupane",
+        "position": "Migration Agent/New Zealand Immigration Advisor",
+        "marn": "MARN: 2318356",
+        "image": "img/Team/Brisbane/Ganesh Neupane.png",
+        "description": "Ganesh Neupane is a Migration Agent and New Zealand Immigration Advisor at Grace International Brisbane. With extensive knowledge of both Australian and New Zealand immigration systems, he provides tailored advice and support. His client-focused approach ensures clear guidance and successful outcomes for individuals pursuing international education and migration opportunities.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -534,11 +534,11 @@
       },
       {
         "id": 2,
-        "name": "Viola Rong",
-        "position": "Certified Migration Agent",
-        "marn": "1801289",
-        "image": "img/Viola-Rong-600x428.jpg",
-        "description": "Certified migration agent since 2018 Viola has been working in visa and migration for almost seven years. She has an eye for detail and has excellent communication and interpersonal skills.",
+        "name": "Asmita Neupane",
+        "position": "Operation Head/Director",
+        "marn": "QEAC: Q399",
+        "image": "img/Team/Brisbane/Asmita Neupane.png",
+        "description": "Asmita Neupane is the Operations Head and Director at Grace International Brisbane. She oversees strategic planning and daily operations, ensuring efficient service delivery in education and migration consulting. With strong leadership and a client-first mindset, she plays a key role in guiding students and migrants toward successful outcomes in Australia.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -547,11 +547,11 @@
       },
       {
         "id": 3,
-        "name": "Simrita Kanjitkar",
-        "position": "Registered Migration Agent",
-        "marn": "1798972",
-        "image": "img/Simrita-Ranjitkar-1.png",
-        "description": "Simrita, a highly focused and reliable registered migration agent since 2017, works at Grace International's Sydney office. A team player with exceptional communication, she embraces challenges to support clients effectively.",
+        "name": "Sonish Mainali",
+        "position": "Admisison Head",
+        "marn": "QEAC: 14125",
+        "image": "img/Team/Brisbane/Sonish Mainali.png",
+        "description": "Sonish Mainali is the Admission Head at Grace International Brisbane, leading the admissions team with dedication and expertise. He ensures a smooth and efficient application process for international students, providing accurate guidance and support. His commitment helps students make informed decisions and successfully pursue their academic goals in Australia.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -560,24 +560,11 @@
       },
       {
         "id": 4,
-        "name": "Sirat Teji",
-        "position": "Registered Migration Agent",
-        "marn": "22717800",
-        "image": "img/Sirat-Teji-400x400.jpeg",
-        "description": "Sirat Teji, a skilled Registered Migration Agent at Grace International Sydney, specializes in Australian Migration Law, offering tailored solutions for General Skilled Migration, Partner, Student, and Temporary Graduate visas.",
-        "social": {
-          "linkedin": "https://linkedin.com/",
-          "facebook": "https://facebook.com/",
-          "twitter": "https://twitter.com/"
-        }
-      },
-      {
-        "id": 5,
-        "name": "Sujan Shrestha",
-        "position": "Registered Migration Agent",
-        "marn": "22717800",
-        "image": "img/Sujan-Shrestha-400x400.jpeg",
-        "description": "Sujan Shrestha, a skilled Registered Migration Agent at Grace International Sydney, specializes in Australian Migration Law, offering tailored solutions for General Skilled Migration, Partner, Student, and Temporary Graduate visas.",
+        "name": "Kushal Shrestha",
+        "position": "Business Strategy Analyst",
+        "marn": "QEAC: 14104",
+        "image": "img/Team/Brisbane/Kushal Shrestha.png",
+        "description": "Kushal Shrestha is the Business Strategy Analyst at Grace International Brisbane, responsible for developing data-driven strategies to enhance organizational growth. He analyzes market trends, identifies opportunities, and supports decision-making processes. His analytical expertise and strategic insights contribute significantly to the company’s long-term success in the education and migration sector.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -589,9 +576,9 @@
       "phone": "+61 (08) 0732663358",
       "email": "brisbane@graceintlgroup.com",
       "whatsapp": "+61492881100",
-      "facebook": "https://www.facebook.com/graceintlbrisbane",
-      "instagram": "https://www.instagram.com/graceinternationalbrisbane/",
-      "linkedin": "https://linkedin.com/",
+      "facebook": "https://www.facebook.com/graceintlbrisbane/",
+      "instagram": "http://instagram.com/grace_international_brisbane/",
+      "linkedin": "https://www.linkedin.com/in/grace-intl-brisbane-994382258/",
       "twitter": "https://www.tiktok.com/@graceintlbrisbane"
     }
   },

@@ -167,7 +167,7 @@ $contacts = [
             'name' => 'Jakarta Office',
             'phone' => '(+62) 87850020074',
             'email' => 'director.indonesia@graceintlgroup.com',
-            'address' => 'Menara BCA Level 45 & 50, JI. MH Thamrin No. 1, Menteng, Jakarta-10310, Indonesia'
+            'address' => 'Wisma Kodel, 9th floor, Jl. H. R. Rasuna Said kavling B4, Kuningan, Jakarta 12910 Indonesia'
         ],
         [
             'name' => 'Kawasoti Office',
@@ -191,7 +191,7 @@ $contacts = [
             'name' => 'Moratuwa Office',
             'phone' => '61 430500165',
             'email' => 'srilanka@graceintlgroup.com',
-            'address' => '21 Charles Place, Rawatawatta, Moratuwa, Sri Lanka'
+            'address' => '6A 1/1, Vajira road, Colombo 4, Sri Lanka'
         ],
         [
             'name' => 'New Baneshwor Office',
@@ -473,7 +473,7 @@ $contacts = [
                 'name' => 'Moratuwa Office',
                 'phone' => '61 430500165',
                 'email' => 'srilanka@graceintlgroup.com',
-                'address' => '21 Charles Place, Rawatawatta, Moratuwa, Sri Lanka'
+                'address' => '6A 1/1, Vajira road, Colombo 4, Sri Lanka'
             ]
         ]
     ],
@@ -490,7 +490,7 @@ $contacts = [
             'name' => 'Jakarta Office',
             'phone' => '(+62) 87850020074',
             'email' => 'director.indonesia@graceintlgroup.com',
-            'address' => 'Menara BCA Level 45 & 50, JI. MH Thamrin No. 1, Menteng, Jakarta-10310, Indonesia'
+            'address' => 'Wisma Kodel, 9th floor, Jl. H. R. Rasuna Said kavling B4, Kuningan, Jakarta 12910 Indonesia'
         ]
     ],
     'kenya' => [
