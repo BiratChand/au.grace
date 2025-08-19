@@ -114,7 +114,7 @@ include 'navbar.php';
 
             <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
                 <div class="service-img">
-                    <img src="img/Partners/universities-torrens.png" class="img-fluid w-100 rounded-top" alt="">
+                    <img src="img/Partners/Torrens University.png" class="img-fluid w-100 rounded-top" alt="">
                 </div>
                 <div class="service-content text-center p-4">
                     <div class="service-content-inner">
