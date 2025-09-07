@@ -256,6 +256,58 @@
           "facebook": "https://facebook.com/",
           "twitter": "https://twitter.com/"
         }
+      },
+      {
+        "id": 18,
+        "name": "Aakriti Devkota",
+        "position": "Admissions & Tax Officer",
+        "marn": "",
+        "image": "img/Team/Sydney/Aakriti Devkota.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 19,
+        "name": "Angeela Shrestha",
+        "position": "Admission Officer",
+        "marn": "",
+        "image": "img/Team/Sydney/Angeela Shrestha.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 20,
+        "name": "Bill Roland Balleras",
+        "position": "Education Counsellor - Phillipines Market",
+        "marn": "",
+        "image": "img/Team/Sydney/Bill Roland Balleras.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 21,
+        "name": "Sajesh Maharjan",
+        "position": "Education Counsellor / Branch Officer - Strathfield",
+        "marn": "",
+        "image": "img/Team/Sydney/SAJESH MAHARJAN.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
       }
     ],
     "contact_info": {
