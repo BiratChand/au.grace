@@ -87,6 +87,12 @@ $contacts = [
             'address' => 'Sahid Chowk, Narayangarh, Chitwan, Nepal'
         ],
         [
+            'name' => 'Colombo Office',
+            'phone' => '61 430500165',
+            'email' => 'srilanka@graceintlgroup.com',
+            'address' => '6A 1/1, Vajira road, Colombo 4, Sri Lanka'
+        ],
+        [
             'name' => 'Damak Office',
             'phone' => '+977 9845863530 / +977 (023) 572536',
             'email' => 'damak@grace.edu.np',
@@ -198,12 +204,6 @@ $contacts = [
             'phone' => '+61 (03) 9662 9020',
             'email' => 'melbourne@graceintlgroup.com',
             'address' => 'Level 14, 282 Collins Street, Melbourne, VIC 3000, Australia'
-        ],
-        [
-            'name' => 'Moratuwa Office',
-            'phone' => '61 430500165',
-            'email' => 'srilanka@graceintlgroup.com',
-            'address' => '6A 1/1, Vajira road, Colombo 4, Sri Lanka'
         ],
         [
             'name' => 'New Baneshwor Office',
@@ -518,8 +518,8 @@ $contacts = [
             ]
         ],
         'Sri lanka' => [
-            'Moratuwa' => [
-                'name' => 'Moratuwa Office',
+            'Colombo' => [
+                'name' => 'Colombo Office',
                 'phone' => '61 430500165',
                 'email' => 'srilanka@graceintlgroup.com',
                 'address' => '6A 1/1, Vajira road, Colombo 4, Sri Lanka'
