@@ -689,5 +689,4 @@ $cards = [
     ?>
 </body>
 
-
 <?php include 'footer.php'; ?>
