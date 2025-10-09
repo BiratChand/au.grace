@@ -70,7 +70,7 @@ $contacts = [
         ],
         [
             'name' => 'Canberra Office',
-            'phone' => '+61414 331 025',
+            'phone' => '+61 262 471 050',
             'email' => 'canberra@graceintlgroup.com',
             'address' => 'Suite 1.04/ 17-21 University Avenue City ACT 2601, Australia'
         ],
@@ -110,6 +110,12 @@ $contacts = [
             'address' => 'Ghorahi 15, Newroad Dang Infront of Ganesh Chitralaya, Dang, Nepal'
         ],
         [
+            'name' => 'Darwin Office',
+            'phone' => '+61 411 632 575',
+            'email' => 'darwin@graceintlgroup.com',
+            'address' => '43 Cavenagh Street, Darwin, NT, 0800 Level 1, Australia'
+        ],
+        [
             'name' => 'Delhi Office',
             'phone' => '+91 (11) 45542231',
             'email' => 'india@graceintlgroup.com',
@@ -144,6 +150,12 @@ $contacts = [
             'phone' => '+91 (01) 244367660',
             'email' => 'bdm@graceintlgroup.com',
             'address' => 'G-308, Floor 3rd, Sushant Shopping Arcade, Sushant Lok Phase -1, Gurugram, Haryana, India'
+        ],
+        [
+            'name' => 'Haymarket Office',
+            'phone' => '+61 (02) 9286 3447',
+            'email' => 'central.aus@grace.edu.np',
+            'address' => 'Suite 453, Level 5, 311-315 Castlereagh St, Haymarket NSW 2000, Australia'
         ],
         [
             'name' => 'Hetauda Office',
@@ -206,6 +218,12 @@ $contacts = [
             'address' => 'F-8 Markaz, Al Babar Center Level 1 Islamabad, Pakistan'
         ],
         [
+            'name' => 'Parramatta Office',
+            'phone' => '+61 (02) 9286 3447',
+            'email' => 'parramatta@grace.edu.np',
+            'address' => '109 Church Street, Parramatta, NSW 2150, Australia'
+        ],
+        [
             'name' => 'Parsa Office',
             'phone' => '+977 9855019797 / (056) 582053',
             'email' => 'parsa@grace.edu.np',
@@ -228,6 +246,12 @@ $contacts = [
             'phone' => '+977 985-5030941',
             'email' => 'simara@grace.edu.np',
             'address' => 'Simara Business Center, Simara, Nepal'
+        ],
+        [
+            'name' => 'Strathfield Office',
+            'phone' => '+61 (02) 9286 3447',
+            'email' => 'strathfield@grace.edu.np',
+            'address' => 'Unit 1/14 Boulevarde, Strathfield NSW 2135, Australia'
         ],
         [
             'name' => 'Surkhet Office',
@@ -263,20 +287,33 @@ $contacts = [
         ],
         [
             'name' => 'Canberra Office',
-            'phone' => '+61414 331 025',
+            'phone' => '+61 262 471 050',
             'email' => 'canberra@graceintlgroup.com',
             'address' => 'Suite 1.04/ 17-21 University Avenue City ACT 2601, Australia'
         ],
         [
             'name' => 'Dandenong Office',
             'phone' => '+61 (03) 70097653, +61 (0)431794684',
+            'email' => 'dandenong@graceintlgroup.com',
             'address' => 'Level 10, 14 Mason Street, Dandenong, VIC 3175, Australia'
+        ],
+        [
+            'name' => 'Darwin Office',
+            'phone' => '+61 411 632 575',
+            'email' => 'darwin@graceintlgroup.com',
+            'address' => '43 Cavenagh Street, Darwin, NT, 0800 Level 1, Australia'
         ],
         [
             'name' => 'Glenroy Office',
             'phone' => '+61 431 715 577',
             'email' => 'glenroy@graceintlgroup.com',
             'address' => 'Unit 3/1 Post Office Pl, Glenroy, VIC 3046, Australia'
+        ],
+        [
+            'name' => 'Haymarket Office',
+            'phone' => '+61 (02) 9286 3447',
+            'email' => 'central.aus@grace.edu.np',
+            'address' => 'Suite 453, Level 5, 311-315 Castlereagh St, Haymarket NSW 2000, Australia'
         ],
         [
             'name' => 'Hobart Office',
@@ -291,10 +328,22 @@ $contacts = [
             'address' => 'Level 14, 282 Collins Street, Melbourne, VIC 3000, Australia'
         ],
         [
+            'name' => 'Parramatta Office',
+            'phone' => '+61 (02) 9286 3447',
+            'email' => 'parramatta@grace.edu.np',
+            'address' => '109 Church Street, Parramatta, NSW 2150, Australia'
+        ],
+        [
             'name' => 'Perth Office',
             'phone' => '+61 (08) 93252445',
             'email' => 'perth@graceintlgroup.com',
             'address' => '383 Hay St, Perth WA 6000, Australia'
+        ],
+        [
+            'name' => 'Strathfield Office',
+            'phone' => '+61 (02) 9286 3447',
+            'email' => 'strathfield@grace.edu.np',
+            'address' => 'Unit 1/14 Boulevarde, Strathfield NSW 2135, Australia'
         ],
         [
             'name' => 'Sydney Office',

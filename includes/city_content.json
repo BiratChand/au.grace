@@ -28,7 +28,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
@@ -87,7 +87,7 @@
       {
         "id": 5,
         "name": "Krishna Pandey",
-        "position": "Director - Paramatta",
+        "position": "Director - Parramatta",
         "marn": "",
         "image": "img/Team/Sydney/Krishna Pandey.png",
         "description": "",
@@ -349,7 +349,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
@@ -458,7 +458,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
@@ -567,7 +567,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
@@ -663,7 +663,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
@@ -772,17 +772,17 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
       {
         "id": 1,
-        "name": "Pawan Thapaliya",
-        "position": "Principal Migration Agent",
-        "marn": "1466008",
-        "image": "img/Pawan-Thapaliya-600x428.jpg",
-        "description": "Pawan, our principal migration agent, leads Grace International's Melbourne team. Registered since 2014, he excels in time management, team leadership, and delivering exceptional migration services with expertise and dedication.",
+        "name": "Betty Langat",
+        "position": "Head of Operations",
+        "marn": "",
+        "image": "img/Team/Dandenong/Betty Langat.png",
+        "description": "Betty Langat is the Head of Operations at Grace International Dandenong, overseeing daily functions with precision and commitment. With strong expertise in student services and institutional coordination, she ensures smooth processes and dedicated support. Betty’s professionalism builds trust and reliability, making Grace International Dandenong a valued partner for students and stakeholders.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -791,11 +791,11 @@
       },
       {
         "id": 2,
-        "name": "Viola Rong",
-        "position": "Certified Migration Agent",
-        "marn": "1801289",
-        "image": "img/Viola-Rong-600x428.jpg",
-        "description": "Certified migration agent since 2018 Viola has been working in visa and migration for almost seven years. She has an eye for detail and has excellent communication and interpersonal skills.",
+        "name": "Disha Dabra",
+        "position": "Student Counsellor",
+        "marn": "",
+        "image": "img/Team/Dandenong/DISHA  DABRA.png",
+        "description": "Disha Dabra brings confidence and resilience to her role at Grace International, driven by skill and a mindset that embraces challenges. Thriving in complexity, she focuses on growth beyond comfort zones. With a solution-oriented approach, Disha consistently delivers impactful results, exceeding expectations and supporting students with professionalism and care.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -804,11 +804,11 @@
       },
       {
         "id": 3,
-        "name": "Simrita Kanjitkar",
-        "position": "Registered Migration Agent",
-        "marn": "1798972",
-        "image": "img/Simrita-Ranjitkar-1.png",
-        "description": "Simrita, a highly focused and reliable registered migration agent since 2017, works at Grace International's Sydney office. A team player with exceptional communication, she embraces challenges to support clients effectively.",
+        "name": "Bhavika Diliker",
+        "position": "Student Counsellor",
+        "marn": "",
+        "image": "img/Team/Dandenong/BHAVIKA DILIKER.png",
+        "description": "Bhavika Diliker is a passionate and dedicated member of the Grace International team, committed to supporting students and clients with care and professionalism. She strives to make every interaction positive and welcoming, helping individuals achieve their dreams with confidence while upholding the trusted values and reputation of Grace International.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -817,24 +817,11 @@
       },
       {
         "id": 4,
-        "name": "Sirat Teji",
-        "position": "Registered Migration Agent",
-        "marn": "22717800",
-        "image": "img/Sirat-Teji-400x400.jpeg",
-        "description": "Sirat Teji, a skilled Registered Migration Agent at Grace International Sydney, specializes in Australian Migration Law, offering tailored solutions for General Skilled Migration, Partner, Student, and Temporary Graduate visas.",
-        "social": {
-          "linkedin": "https://linkedin.com/",
-          "facebook": "https://facebook.com/",
-          "twitter": "https://twitter.com/"
-        }
-      },
-      {
-        "id": 5,
-        "name": "Sujan Shrestha",
-        "position": "Registered Migration Agent",
-        "marn": "22717800",
-        "image": "img/Sujan-Shrestha-400x400.jpeg",
-        "description": "Sujan Shrestha, a skilled Registered Migration Agent at Grace International Sydney, specializes in Australian Migration Law, offering tailored solutions for General Skilled Migration, Partner, Student, and Temporary Graduate visas.",
+        "name": "Shanice Kipkebut",
+        "position": "Skilled Assessment Counsellor",
+        "marn": "",
+        "image": "img/Team/Dandenong/SHANICE KIPKEBUT.png",
+        "description": "Shanice Kipkebut serves as a Skilled Assessment Counsellor at Grace International, guiding students with expertise and care. She provides accurate assessments and tailored advice, ensuring smooth application processes. With professionalism and dedication, Shanice helps students navigate opportunities with confidence, making Grace International a trusted partner in their academic and career journeys.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -881,7 +868,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
@@ -990,17 +977,17 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
       {
         "id": 1,
-        "name": "Pawan Thapaliya",
-        "position": "Principal Migration Agent",
-        "marn": "1466008",
-        "image": "img/Pawan-Thapaliya-600x428.jpg",
-        "description": "Pawan, our principal migration agent, leads Grace International's Melbourne team. Registered since 2014, he excels in time management, team leadership, and delivering exceptional migration services with expertise and dedication.",
+        "name": "Bikendra Sapkota",
+        "position": "Director",
+        "marn": "QEAC: S707",
+        "image": "img/Team/Tasmania/Bikendra Sapkota.png",
+        "description": "Bikendra Sapkota serves as the Director of Grace International Tasmania, leading with vision and dedication. With strong expertise in education and student support, he ensures quality guidance and seamless services. Bikendra’s commitment fosters trust and confidence, making Grace International Tasmania a reliable partner for students pursuing academic and career success.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -1009,11 +996,11 @@
       },
       {
         "id": 2,
-        "name": "Viola Rong",
-        "position": "Certified Migration Agent",
-        "marn": "1801289",
-        "image": "img/Viola-Rong-600x428.jpg",
-        "description": "Certified migration agent since 2018 Viola has been working in visa and migration for almost seven years. She has an eye for detail and has excellent communication and interpersonal skills.",
+        "name": "Pawan Thapaliya",
+        "position": "Registered Migration Agent",
+        "marn": "MARN: 1466008",
+        "image": "img/Team/Tasmania/Pawan Thapaliya.png",
+        "description": "Pawan Thapaliya serves as a Registered Migration Agent at Grace International, offering expert guidance in Australian immigration and education pathways. With professionalism and care, he supports clients through every stage of their journey. Pawan’s dedication ensures accurate advice, smooth processes, and confidence for students and families pursuing their aspirations.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -1022,11 +1009,11 @@
       },
       {
         "id": 3,
-        "name": "Simrita Kanjitkar",
+        "name": "Viola Rong",
         "position": "Registered Migration Agent",
-        "marn": "1798972",
-        "image": "img/Simrita-Ranjitkar-1.png",
-        "description": "Simrita, a highly focused and reliable registered migration agent since 2017, works at Grace International's Sydney office. A team player with exceptional communication, she embraces challenges to support clients effectively.",
+        "marn": "MARN: 1801289",
+        "image": "img/Team/Tasmania/Viola Rong.png",
+        "description": "Viola Rong serves as a Registered Migration Agent at Grace International, specializing in Australian immigration and education services. She provides expert guidance with professionalism and care, ensuring clients receive accurate advice and support. Viola’s dedication helps students and families achieve their migration goals with confidence, making every step seamless.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -1035,11 +1022,11 @@
       },
       {
         "id": 4,
-        "name": "Sirat Teji",
+        "name": "Ganesh Neupane",
         "position": "Registered Migration Agent",
-        "marn": "22717800",
-        "image": "img/Sirat-Teji-400x400.jpeg",
-        "description": "Sirat Teji, a skilled Registered Migration Agent at Grace International Sydney, specializes in Australian Migration Law, offering tailored solutions for General Skilled Migration, Partner, Student, and Temporary Graduate visas.",
+        "marn": "MARN: 2318356",
+        "image": "img/Team/Tasmania/Ganesh Neupane.png",
+        "description": "Ganesh Neupane serves as a Registered Migration Agent at Grace International, guiding students and families with expertise in Australian immigration and education services. With a client-focused approach, he provides accurate advice and seamless support. Ganesh’s dedication helps clients achieve their goals with confidence, making every migration journey smooth and successful.",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -1048,11 +1035,50 @@
       },
       {
         "id": 5,
-        "name": "Sujan Shrestha",
-        "position": "Registered Migration Agent",
-        "marn": "22717800",
-        "image": "img/Sujan-Shrestha-400x400.jpeg",
+        "name": "Raj Kiran Adhikari",
+        "position": "Director of Business Development",
+        "marn": "QEAC: S704",
+        "image": "img/Team/Tasmania/Raj Kiran Adhikari.png",
+        "description": "Raj Kiran Adhikari serves as the Director of Business Development at Grace International, driving growth with vision and strategy. He focuses on building partnerships, expanding opportunities, and enhancing client experiences. With dedication and expertise, Raj ensures Grace International continues to thrive as a trusted leader in education and migration services.",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Aarti Karki",
+        "position": "Admin Officer",
+        "marn": "",
+        "image": "img/Team/Tasmania/AARATI KARKI.png",
         "description": "Sujan Shrestha, a skilled Registered Migration Agent at Grace International Sydney, specializes in Australian Migration Law, offering tailored solutions for General Skilled Migration, Partner, Student, and Temporary Graduate visas.",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Mansi Ghimire",
+        "position": "Admin/Marketing Officer",
+        "marn": "",
+        "image": "img/Team/Tasmania/Mansi Ghimire.png",
+        "description": "",
+        "social": {
+          "linkedin": "https://linkedin.com/",
+          "facebook": "https://facebook.com/",
+          "twitter": "https://twitter.com/"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Krishna Rijal",
+        "position": "Account Officer",
+        "marn": "",
+        "image": "img/Team/Tasmania/Krishna Rijal.png",
+        "description": "",
         "social": {
           "linkedin": "https://linkedin.com/",
           "facebook": "https://facebook.com/",
@@ -1099,7 +1125,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
@@ -1208,7 +1234,7 @@
         "partners": "500+",
         "years": "18",
         "agents": "20+",
-        "branch": "42"
+        "branch": "45"
       }
     },
     "teams": [
